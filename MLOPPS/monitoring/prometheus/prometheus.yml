@@ -1,0 +1,46 @@
+# Prometheus Configuration
+
+global:
+  scrape_interval: 15s  # Tần suất scrape metrics
+  evaluation_interval: 15s  # Tần suất đánh giá rules
+  scrape_timeout: 10s  # Timeout cho mỗi lần scrape
+
+alerting:
+  alertmanagers:  # Cấu hình AlertManager
+  - static_configs:
+    - targets:
+      - alertmanager:9093  # AlertManager endpoint
+
+rule_files:  # Files chứa alerting rules
+  - "rules/*.yml"
+
+scrape_configs:
+  - job_name: 'prometheus'  # Metrics của Prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'mlops-api'  # Metrics của API
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['mlops-api-service:8000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        regex: '(.*):.*'
+        replacement: '${1}'
+
+  - job_name: 'node-exporter'  # Metrics của Node Exporter
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  - job_name: 'cadvisor'  # Metrics của cAdvisor
+    static_configs:
+      - targets: ['cadvisor:8080']
+
+  - job_name: 'grafana'  # Metrics của Grafana
+    static_configs:
+      - targets: ['grafana:3000']
+
+  - job_name: 'alertmanager'  # Metrics của AlertManager
+    static_configs:
+      - targets: ['alertmanager:9093'] 

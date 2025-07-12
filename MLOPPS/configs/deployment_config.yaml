@@ -1,0 +1,58 @@
+# Cấu hình Deployment
+
+deployment:
+  # Cấu hình infrastructure
+  infrastructure:
+    provider: "kubernetes"  # Platform deployment (có thể là: kubernetes, docker-compose)
+    namespace: "mlops"     # Kubernetes namespace
+    replicas: 3           # Số lượng replicas
+    resources:  # Giới hạn tài nguyên
+      cpu: "1"    # CPU cores
+      memory: "2Gi"  # Memory
+    
+  # Cấu hình API
+  api:
+    host: "0.0.0.0"  # Host address
+    port: 8000       # Port
+    workers: 4       # Số lượng workers
+    timeout: 30      # Timeout (seconds)
+    rate_limit: 100  # Rate limit requests
+    
+  # Cấu hình monitoring
+  monitoring:
+    prometheus:  # Prometheus config
+      enabled: true
+      port: 9090
+    grafana:  # Grafana config
+      enabled: true
+      port: 3000
+    logging:  # Logging config
+      level: "INFO"  # Log level
+      format: "json"  # Log format
+    
+  # Cấu hình security
+  security:
+    authentication:  # Authentication config
+      enabled: true
+      type: "jwt"  # JWT authentication
+    ssl:  # SSL config
+      enabled: true
+      cert_path: "/etc/ssl/certs"  # SSL certificate path
+    
+  # Cấu hình CI/CD
+  cicd:
+    provider: "github-actions"  # CI/CD provider
+    environments:  # Deployment environments
+      - name: "development"  # Dev environment
+        branch: "dev"
+      - name: "staging"     # Staging environment
+        branch: "staging"
+      - name: "production"  # Production environment
+        branch: "main"
+    
+  # Cấu hình backup
+  backup:
+    enabled: true
+    frequency: "daily"  # Backup frequency
+    retention: "30d"    # Retention period
+    storage: "s3://mlops-backups"  # Backup storage location 

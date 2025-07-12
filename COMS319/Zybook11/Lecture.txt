@@ -1,0 +1,2 @@
+React is a front-end JavaScript for creating interactive user interface
+Allow dev to create custion HTMLelement.

@@ -1,0 +1,78 @@
+groups:
+  - name: mlops_alerts
+    rules:
+      # API Health Alerts
+      - alert: APIHighLatency
+        expr: http_request_duration_seconds{quantile="0.9"} > 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High API latency detected"
+          description: "API endpoint {{ $labels.endpoint }} has high latency ({{ $value }}s)"
+
+      - alert: APIHighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High API error rate"
+          description: "API endpoint {{ $labels.endpoint }} has high error rate ({{ $value }})"
+
+      # Model Performance Alerts
+      - alert: ModelHighLatency
+        expr: model_prediction_duration_seconds > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High model prediction latency"
+          description: "Model predictions are taking longer than expected ({{ $value }}s)"
+
+      - alert: ModelLowConfidence
+        expr: model_prediction_confidence < 0.7
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low model confidence"
+          description: "Model predictions have low confidence ({{ $value }})"
+
+      # System Resource Alerts
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage"
+          description: "CPU usage is above 80% ({{ $value }}%)"
+
+      - alert: HighMemoryUsage
+        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is above 85% ({{ $value }}%)"
+
+      # Data Quality Alerts
+      - alert: DataDriftDetected
+        expr: data_drift_score > 0.1
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "Data drift detected"
+          description: "Significant data drift detected (score: {{ $value }})"
+
+      - alert: MissingData
+        expr: data_missing_ratio > 0.1
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "High missing data ratio"
+          description: "High ratio of missing data detected ({{ $value }})" 

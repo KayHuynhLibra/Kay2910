@@ -1,0 +1,109 @@
+name: Frontend CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'frontend/**'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'frontend/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+      
+      - name: Install dependencies
+        run: cd frontend && npm ci
+      
+      - name: Run linting
+        run: cd frontend && npm run lint
+      
+      - name: Run tests
+        run: cd frontend && npm test
+      
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          directory: frontend/coverage
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: ./frontend
+          push: true
+          tags: |
+            your-org/frontend:latest
+            your-org/frontend:${{ github.sha }}
+          cache-from: type=registry,ref=your-org/frontend:buildcache
+          cache-to: type=registry,ref=your-org/frontend:buildcache,mode=max
+
+  deploy-staging:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    environment: staging
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-1
+      
+      - name: Update kubeconfig
+        run: aws eks update-kubeconfig --name staging-cluster
+      
+      - name: Deploy to staging
+        run: |
+          kubectl set image deployment/frontend frontend=your-org/frontend:${{ github.sha }} -n staging
+          kubectl rollout status deployment/frontend -n staging
+
+  deploy-production:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-1
+      
+      - name: Update kubeconfig
+        run: aws eks update-kubeconfig --name production-cluster
+      
+      - name: Deploy to production
+        run: |
+          kubectl set image deployment/frontend frontend=your-org/frontend:${{ github.sha }} -n production
+          kubectl rollout status deployment/frontend -n production 

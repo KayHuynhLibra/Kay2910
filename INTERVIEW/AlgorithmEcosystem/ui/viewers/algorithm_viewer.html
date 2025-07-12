@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👁️ Algorithm Viewer - Algorithm Ecosystem</title>
+    <link rel="stylesheet" href="../../shared/styles.css">
+    <link rel="stylesheet" href="../../shared/components.css">
+    <link rel="stylesheet" href="../../shared/animations.css">
+    <link rel="stylesheet" href="../../shared/accessibility.css">
+    <link rel="stylesheet" href="../../shared/utilities.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../index.html" class="back-button">
+                ← Quay lại Navigation Hub
+            </a>
+            <h1>👁️ Algorithm Viewer</h1>
+            <p>Xem và tương tác với các thuật toán</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">🔍 Algorithm Explorer</h3>
+            </div>
+            <div class="card-body">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm thuật toán..." data-search>
+                </div>
+                
+                <div class="filter-panel">
+                    <div class="filter-group">
+                        <div class="filter-group-title">Độ khó</div>
+                        <div class="filter-options">
+                            <div class="filter-option" data-filter="difficulty" data-value="easy">
+                                <input type="checkbox" id="filter-easy" checked>
+                                <label for="filter-easy">Easy</label>
+                            </div>
+                            <div class="filter-option" data-filter="difficulty" data-value="medium">
+                                <input type="checkbox" id="filter-medium" checked>
+                                <label for="filter-medium">Medium</label>
+                            </div>
+                            <div class="filter-option" data-filter="difficulty" data-value="hard">
+                                <input type="checkbox" id="filter-hard" checked>
+                                <label for="filter-hard">Hard</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="algorithm-list" data-search-container>
+                    <div class="algorithm-card" data-searchable="Two Sum" data-filterable="easy" data-algorithm-id="1">
+                        <div class="algorithm-card-header">
+                            <div>
+                                <h4 class="algorithm-card-title">Two Sum</h4>
+                                <div class="algorithm-card-meta">
+                                    <span class="algorithm-card-difficulty easy">Easy</span>
+                                    <span class="algorithm-card-category">Arrays</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="algorithm-card-description">
+                            Tìm hai số trong mảng có tổng bằng target.
+                        </div>
+                        <div class="algorithm-card-actions">
+                            <button class="btn btn-primary">Xem chi tiết</button>
+                            <button class="btn btn-success">Đánh dấu hoàn thành</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/scripts.js"></script>
+
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('shared/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

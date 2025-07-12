@@ -1,0 +1,38 @@
+Command: dir
+Timestamp: 2025-06-29T04:54:50.165465
+==================================================
+ Volume in drive D is COMS
+ Volume Serial Number is C7B8-A440
+
+ Directory of D:\MCP
+
+06/29/2025  04:46 AM    <DIR>          .
+06/29/2025  01:12 AM             2,807 .gitignore
+06/29/2025  04:54 AM             5,520 auto_logger.py
+06/29/2025  04:07 AM    <DIR>          checkpoints
+06/29/2025  01:07 AM    <DIR>          code
+06/29/2025  04:16 AM               441 config.json
+06/29/2025  04:38 AM            15,915 create_sample_data.py
+06/29/2025  04:38 AM    <DIR>          data
+06/29/2025  04:38 AM    <DIR>          datasets
+06/29/2025  04:34 AM             7,848 demo_data_processing.py
+06/29/2025  04:09 AM             7,015 demo_simple.py
+06/29/2025  04:43 AM            20,299 deploy_experiments.py
+06/29/2025  04:38 AM    <DIR>          experiments
+06/29/2025  04:46 AM    <DIR>          historylog
+06/29/2025  04:10 AM            11,834 interactive_demo.py
+06/29/2025  01:12 AM             1,097 LICENSE
+06/29/2025  04:38 AM    <DIR>          logs
+06/29/2025  04:38 AM    <DIR>          models
+06/29/2025  04:38 AM    <DIR>          outputs
+06/29/2025  01:12 AM             7,530 PROJECT_SUMMARY.md
+06/29/2025  01:04 AM             2,200 README.md
+06/29/2025  01:04 AM               671 requirements.txt
+06/29/2025  01:11 AM    <DIR>          resources
+06/29/2025  04:46 AM            10,414 session_logger.py
+06/29/2025  01:11 AM             8,993 setup.py
+06/29/2025  01:05 AM    <DIR>          theory
+06/29/2025  01:10 AM    <DIR>          tutorials
+06/29/2025  04:46 AM    <DIR>          __pycache__
+              14 File(s)        102,584 bytes
+              14 Dir(s)  465,690,214,400 bytes free

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>🤖 AI/ML Dashboard</h2>
+                <button class="close-btn" onclick="toggleSidebar()">×</button>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" onclick="loadContent('overview')" class="nav-item">
+                    <span class="icon">📊</span>
+                    <span class="text">Tổng Quan</span>
+                </a>
+                <a href="#" onclick="loadContent('topics')" class="nav-item">
+                    <span class="icon">📚</span>
+                    <span class="text">Chủ Đề</span>
+                </a>
+                <a href="#" onclick="loadContent('browse')" class="nav-item">
+                    <span class="icon">📁</span>
+                    <span class="text">Duyệt Files</span>
+                </a>
+                <a href="#" onclick="loadContent('theory')" class="nav-item">
+                    <span class="icon">📖</span>
+                    <span class="text">Lý Thuyết</span>
+                </a>
+                <a href="#" onclick="loadContent('quiz')" class="nav-item">
+                    <span class="icon">🧠</span>
+                    <span class="text">Quiz</span>
+                </a>
+                <a href="#" onclick="loadContent('code')" class="nav-item">
+                    <span class="icon">💻</span>
+                    <span class="text">Code</span>
+                </a>
+                <a href="#" onclick="loadContent('project')" class="nav-item">
+                    <span class="icon">🚀</span>
+                    <span class="text">Project</span>
+                </a>
+                <a href="#" onclick="loadContent('datasets')" class="nav-item">
+                    <span class="icon">📊</span>
+                    <span class="text">Datasets</span>
+                </a>
+                <a href="#" onclick="loadContent('roadmap')" class="nav-item">
+                    <span class="icon">🗺️</span>
+                    <span class="text">Roadmap</span>
+                </a>
+                <a href="#" onclick="loadContent('exercises')" class="nav-item">
+                    <span class="icon">✏️</span>
+                    <span class="text">Exercises</span>
+                </a>
+                <a href="#" onclick="loadContent('resources')" class="nav-item">
+                    <span class="icon">🔗</span>
+                    <span class="text">Resources</span>
+                </a>
+                <a href="#" onclick="showAvailableFiles()" class="nav-item">
+                    <span class="icon">📄</span>
+                    <span class="text">Xem Nội Dung Thực</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+                <h1>AI/ML Learning Dashboard</h1>
+                <div class="header-actions">
+                    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <main class="content" id="content-area">
+                <!-- Default content will be loaded here -->
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="load-content.js"></script>
+</body>
+</html> 

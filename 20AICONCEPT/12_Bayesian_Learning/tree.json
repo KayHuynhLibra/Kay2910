@@ -1,0 +1,2211 @@
+[
+  {
+    "type": "folder",
+    "name": "01_Fundamentals",
+    "path": "01_Fundamentals",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Bayes_Theorem",
+        "path": "01_Fundamentals/01_Bayes_Theorem",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/BEST_PRACTICES_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/CODE_EXAMPLES_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/IMPLEMENTATION_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/PROJECT_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/QUIZ_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/ROADMAP_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_bayes_theorem.md",
+            "path": "01_Fundamentals/01_Bayes_Theorem/THEORY_01_bayes_theorem.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_bayes_theorem.txt",
+            "path": "01_Fundamentals/01_Bayes_Theorem/requirements_01_bayes_theorem.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Prior_Posterior",
+        "path": "01_Fundamentals/02_Prior_Posterior",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/BEST_PRACTICES_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/CODE_EXAMPLES_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/IMPLEMENTATION_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/PROJECT_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/QUIZ_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/ROADMAP_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_prior_posterior.md",
+            "path": "01_Fundamentals/02_Prior_Posterior/THEORY_02_prior_posterior.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_prior_posterior.txt",
+            "path": "01_Fundamentals/02_Prior_Posterior/requirements_02_prior_posterior.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Likelihood",
+        "path": "01_Fundamentals/03_Likelihood",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/BEST_PRACTICES_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/CODE_EXAMPLES_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/03_Likelihood/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/IMPLEMENTATION_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/PROJECT_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/QUIZ_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/ROADMAP_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_likelihood.md",
+            "path": "01_Fundamentals/03_Likelihood/THEORY_03_likelihood.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_likelihood.txt",
+            "path": "01_Fundamentals/03_Likelihood/requirements_03_likelihood.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Bayesian_Inference",
+        "path": "01_Fundamentals/04_Bayesian_Inference",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/BEST_PRACTICES_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/CODE_EXAMPLES_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/IMPLEMENTATION_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/PROJECT_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/QUIZ_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/ROADMAP_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_bayesian_inference.md",
+            "path": "01_Fundamentals/04_Bayesian_Inference/THEORY_04_bayesian_inference.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_bayesian_inference.txt",
+            "path": "01_Fundamentals/04_Bayesian_Inference/requirements_04_bayesian_inference.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Uncertainty_Quantification",
+        "path": "01_Fundamentals/05_Uncertainty_Quantification",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/BEST_PRACTICES_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/CODE_EXAMPLES_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/IMPLEMENTATION_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/PROJECT_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/QUIZ_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/ROADMAP_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_uncertainty_quantification.md",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/THEORY_05_uncertainty_quantification.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_uncertainty_quantification.txt",
+            "path": "01_Fundamentals/05_Uncertainty_Quantification/requirements_05_uncertainty_quantification.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_01_fundamentals.md",
+        "path": "01_Fundamentals/BEST_PRACTICES_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_01_fundamentals.md",
+        "path": "01_Fundamentals/CODE_EXAMPLES_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_01_fundamentals.md",
+        "path": "01_Fundamentals/IMPLEMENTATION_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_01_fundamentals.md",
+        "path": "01_Fundamentals/PROJECT_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_01_fundamentals.md",
+        "path": "01_Fundamentals/QUIZ_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_01_fundamentals.md",
+        "path": "01_Fundamentals/ROADMAP_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_01_fundamentals.md",
+        "path": "01_Fundamentals/THEORY_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_01_fundamentals.txt",
+        "path": "01_Fundamentals/requirements_01_fundamentals.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "02_Bayesian_Networks",
+    "path": "02_Bayesian_Networks",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Graphical_Models",
+        "path": "02_Bayesian_Networks/01_Graphical_Models",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/BEST_PRACTICES_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/CODE_EXAMPLES_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/IMPLEMENTATION_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/PROJECT_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/QUIZ_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/ROADMAP_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_graphical_models.md",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/THEORY_01_graphical_models.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_graphical_models.txt",
+            "path": "02_Bayesian_Networks/01_Graphical_Models/requirements_01_graphical_models.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Directed_Graphs",
+        "path": "02_Bayesian_Networks/02_Directed_Graphs",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/BEST_PRACTICES_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/CODE_EXAMPLES_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/IMPLEMENTATION_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/PROJECT_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/QUIZ_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/ROADMAP_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_directed_graphs.md",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/THEORY_02_directed_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_directed_graphs.txt",
+            "path": "02_Bayesian_Networks/02_Directed_Graphs/requirements_02_directed_graphs.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Undirected_Graphs",
+        "path": "02_Bayesian_Networks/03_Undirected_Graphs",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/BEST_PRACTICES_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/CODE_EXAMPLES_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/IMPLEMENTATION_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/PROJECT_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/QUIZ_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/ROADMAP_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_undirected_graphs.md",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/THEORY_03_undirected_graphs.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_undirected_graphs.txt",
+            "path": "02_Bayesian_Networks/03_Undirected_Graphs/requirements_03_undirected_graphs.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Inference_Algorithms",
+        "path": "02_Bayesian_Networks/04_Inference_Algorithms",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/BEST_PRACTICES_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/CODE_EXAMPLES_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/IMPLEMENTATION_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/PROJECT_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/QUIZ_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/ROADMAP_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_inference_algorithms.md",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/THEORY_04_inference_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_inference_algorithms.txt",
+            "path": "02_Bayesian_Networks/04_Inference_Algorithms/requirements_04_inference_algorithms.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Learning_Algorithms",
+        "path": "02_Bayesian_Networks/05_Learning_Algorithms",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/BEST_PRACTICES_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/CODE_EXAMPLES_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/IMPLEMENTATION_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/PROJECT_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/QUIZ_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/ROADMAP_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_learning_algorithms.md",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/THEORY_05_learning_algorithms.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_learning_algorithms.txt",
+            "path": "02_Bayesian_Networks/05_Learning_Algorithms/requirements_05_learning_algorithms.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/BEST_PRACTICES_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/CODE_EXAMPLES_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/IMPLEMENTATION_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/PROJECT_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/QUIZ_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/ROADMAP_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_02_bayesian_networks.md",
+        "path": "02_Bayesian_Networks/THEORY_02_bayesian_networks.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_02_bayesian_networks.txt",
+        "path": "02_Bayesian_Networks/requirements_02_bayesian_networks.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "03_MCMC",
+    "path": "03_MCMC",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Metropolis_Hastings",
+        "path": "03_MCMC/01_Metropolis_Hastings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/BEST_PRACTICES_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/CODE_EXAMPLES_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/IMPLEMENTATION_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/PROJECT_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/QUIZ_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/ROADMAP_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_metropolis_hastings.md",
+            "path": "03_MCMC/01_Metropolis_Hastings/THEORY_01_metropolis_hastings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_metropolis_hastings.txt",
+            "path": "03_MCMC/01_Metropolis_Hastings/requirements_01_metropolis_hastings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Gibbs_Sampling",
+        "path": "03_MCMC/02_Gibbs_Sampling",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/BEST_PRACTICES_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/CODE_EXAMPLES_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/IMPLEMENTATION_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/PROJECT_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/QUIZ_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/ROADMAP_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_gibbs_sampling.md",
+            "path": "03_MCMC/02_Gibbs_Sampling/THEORY_02_gibbs_sampling.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_gibbs_sampling.txt",
+            "path": "03_MCMC/02_Gibbs_Sampling/requirements_02_gibbs_sampling.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Hamiltonian_Monte_Carlo",
+        "path": "03_MCMC/03_Hamiltonian_Monte_Carlo",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/BEST_PRACTICES_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/CODE_EXAMPLES_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/IMPLEMENTATION_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/PROJECT_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/QUIZ_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/ROADMAP_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_hamiltonian_monte_carlo.md",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/THEORY_03_hamiltonian_monte_carlo.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_hamiltonian_monte_carlo.txt",
+            "path": "03_MCMC/03_Hamiltonian_Monte_Carlo/requirements_03_hamiltonian_monte_carlo.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_NUTS",
+        "path": "03_MCMC/04_NUTS",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/BEST_PRACTICES_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/CODE_EXAMPLES_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_MCMC/04_NUTS/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/IMPLEMENTATION_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/PROJECT_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/QUIZ_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/ROADMAP_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_nuts.md",
+            "path": "03_MCMC/04_NUTS/THEORY_04_nuts.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_nuts.txt",
+            "path": "03_MCMC/04_NUTS/requirements_04_nuts.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Diagnostics",
+        "path": "03_MCMC/05_Diagnostics",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/BEST_PRACTICES_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/CODE_EXAMPLES_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_MCMC/05_Diagnostics/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/IMPLEMENTATION_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/PROJECT_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/QUIZ_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/ROADMAP_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_diagnostics.md",
+            "path": "03_MCMC/05_Diagnostics/THEORY_05_diagnostics.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_diagnostics.txt",
+            "path": "03_MCMC/05_Diagnostics/requirements_05_diagnostics.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_03_mcmc.md",
+        "path": "03_MCMC/BEST_PRACTICES_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_03_mcmc.md",
+        "path": "03_MCMC/CODE_EXAMPLES_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_03_mcmc.md",
+        "path": "03_MCMC/IMPLEMENTATION_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_03_mcmc.md",
+        "path": "03_MCMC/PROJECT_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_03_mcmc.md",
+        "path": "03_MCMC/QUIZ_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_03_mcmc.md",
+        "path": "03_MCMC/ROADMAP_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_03_mcmc.md",
+        "path": "03_MCMC/THEORY_03_mcmc.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_03_mcmc.txt",
+        "path": "03_MCMC/requirements_03_mcmc.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "04_Variational_Inference",
+    "path": "04_Variational_Inference",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Mean_Field_VI",
+        "path": "04_Variational_Inference/01_Mean_Field_VI",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/BEST_PRACTICES_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/CODE_EXAMPLES_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/IMPLEMENTATION_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/PROJECT_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/QUIZ_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/ROADMAP_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_mean_field_vi.md",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/THEORY_01_mean_field_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_mean_field_vi.txt",
+            "path": "04_Variational_Inference/01_Mean_Field_VI/requirements_01_mean_field_vi.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Stochastic_VI",
+        "path": "04_Variational_Inference/02_Stochastic_VI",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/BEST_PRACTICES_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/CODE_EXAMPLES_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/IMPLEMENTATION_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/PROJECT_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/QUIZ_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/ROADMAP_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_stochastic_vi.md",
+            "path": "04_Variational_Inference/02_Stochastic_VI/THEORY_02_stochastic_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_stochastic_vi.txt",
+            "path": "04_Variational_Inference/02_Stochastic_VI/requirements_02_stochastic_vi.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Black_Box_VI",
+        "path": "04_Variational_Inference/03_Black_Box_VI",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/BEST_PRACTICES_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/CODE_EXAMPLES_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/IMPLEMENTATION_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/PROJECT_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/QUIZ_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/ROADMAP_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_black_box_vi.md",
+            "path": "04_Variational_Inference/03_Black_Box_VI/THEORY_03_black_box_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_black_box_vi.txt",
+            "path": "04_Variational_Inference/03_Black_Box_VI/requirements_03_black_box_vi.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Normalizing_Flows",
+        "path": "04_Variational_Inference/04_Normalizing_Flows",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/BEST_PRACTICES_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/CODE_EXAMPLES_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/IMPLEMENTATION_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/PROJECT_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/QUIZ_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/ROADMAP_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_normalizing_flows.md",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/THEORY_04_normalizing_flows.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_normalizing_flows.txt",
+            "path": "04_Variational_Inference/04_Normalizing_Flows/requirements_04_normalizing_flows.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Amortized_VI",
+        "path": "04_Variational_Inference/05_Amortized_VI",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/BEST_PRACTICES_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/CODE_EXAMPLES_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/IMPLEMENTATION_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/PROJECT_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/QUIZ_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/ROADMAP_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_amortized_vi.md",
+            "path": "04_Variational_Inference/05_Amortized_VI/THEORY_05_amortized_vi.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_amortized_vi.txt",
+            "path": "04_Variational_Inference/05_Amortized_VI/requirements_05_amortized_vi.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_04_variational_inference.md",
+        "path": "04_Variational_Inference/BEST_PRACTICES_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_04_variational_inference.md",
+        "path": "04_Variational_Inference/CODE_EXAMPLES_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_04_variational_inference.md",
+        "path": "04_Variational_Inference/IMPLEMENTATION_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_04_variational_inference.md",
+        "path": "04_Variational_Inference/PROJECT_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_04_variational_inference.md",
+        "path": "04_Variational_Inference/QUIZ_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_04_variational_inference.md",
+        "path": "04_Variational_Inference/ROADMAP_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_04_variational_inference.md",
+        "path": "04_Variational_Inference/THEORY_04_variational_inference.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_04_variational_inference.txt",
+        "path": "04_Variational_Inference/requirements_04_variational_inference.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "05_Gaussian_Processes",
+    "path": "05_Gaussian_Processes",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_GP_Regression",
+        "path": "05_Gaussian_Processes/01_GP_Regression",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/BEST_PRACTICES_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/CODE_EXAMPLES_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/IMPLEMENTATION_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/PROJECT_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/QUIZ_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/ROADMAP_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_gp_regression.md",
+            "path": "05_Gaussian_Processes/01_GP_Regression/THEORY_01_gp_regression.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_gp_regression.txt",
+            "path": "05_Gaussian_Processes/01_GP_Regression/requirements_01_gp_regression.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_GP_Classification",
+        "path": "05_Gaussian_Processes/02_GP_Classification",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/BEST_PRACTICES_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/CODE_EXAMPLES_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/IMPLEMENTATION_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/PROJECT_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/QUIZ_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/ROADMAP_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_gp_classification.md",
+            "path": "05_Gaussian_Processes/02_GP_Classification/THEORY_02_gp_classification.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_gp_classification.txt",
+            "path": "05_Gaussian_Processes/02_GP_Classification/requirements_02_gp_classification.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Kernel_Functions",
+        "path": "05_Gaussian_Processes/03_Kernel_Functions",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/BEST_PRACTICES_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/CODE_EXAMPLES_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/IMPLEMENTATION_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/PROJECT_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/QUIZ_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/ROADMAP_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_kernel_functions.md",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/THEORY_03_kernel_functions.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_kernel_functions.txt",
+            "path": "05_Gaussian_Processes/03_Kernel_Functions/requirements_03_kernel_functions.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Hyperparameter_Learning",
+        "path": "05_Gaussian_Processes/04_Hyperparameter_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/BEST_PRACTICES_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/CODE_EXAMPLES_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/IMPLEMENTATION_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/PROJECT_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/QUIZ_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/ROADMAP_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_hyperparameter_learning.md",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/THEORY_04_hyperparameter_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_hyperparameter_learning.txt",
+            "path": "05_Gaussian_Processes/04_Hyperparameter_Learning/requirements_04_hyperparameter_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Sparse_GPs",
+        "path": "05_Gaussian_Processes/05_Sparse_GPs",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/BEST_PRACTICES_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/CODE_EXAMPLES_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/IMPLEMENTATION_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/PROJECT_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/QUIZ_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/ROADMAP_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_sparse_gps.md",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/THEORY_05_sparse_gps.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_sparse_gps.txt",
+            "path": "05_Gaussian_Processes/05_Sparse_GPs/requirements_05_sparse_gps.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/BEST_PRACTICES_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/CODE_EXAMPLES_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/IMPLEMENTATION_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/PROJECT_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/QUIZ_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/ROADMAP_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_05_gaussian_processes.md",
+        "path": "05_Gaussian_Processes/THEORY_05_gaussian_processes.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_05_gaussian_processes.txt",
+        "path": "05_Gaussian_Processes/requirements_05_gaussian_processes.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "06_Tools",
+    "path": "06_Tools",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_PyMC",
+        "path": "06_Tools/01_PyMC",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_pymc.md",
+            "path": "06_Tools/01_PyMC/BEST_PRACTICES_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_pymc.md",
+            "path": "06_Tools/01_PyMC/CODE_EXAMPLES_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/01_PyMC/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_pymc.md",
+            "path": "06_Tools/01_PyMC/IMPLEMENTATION_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_pymc.md",
+            "path": "06_Tools/01_PyMC/PROJECT_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_pymc.md",
+            "path": "06_Tools/01_PyMC/QUIZ_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_pymc.md",
+            "path": "06_Tools/01_PyMC/ROADMAP_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_pymc.md",
+            "path": "06_Tools/01_PyMC/THEORY_01_pymc.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_pymc.txt",
+            "path": "06_Tools/01_PyMC/requirements_01_pymc.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Stan",
+        "path": "06_Tools/02_Stan",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_stan.md",
+            "path": "06_Tools/02_Stan/BEST_PRACTICES_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_stan.md",
+            "path": "06_Tools/02_Stan/CODE_EXAMPLES_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/02_Stan/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_stan.md",
+            "path": "06_Tools/02_Stan/IMPLEMENTATION_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_stan.md",
+            "path": "06_Tools/02_Stan/PROJECT_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_stan.md",
+            "path": "06_Tools/02_Stan/QUIZ_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_stan.md",
+            "path": "06_Tools/02_Stan/ROADMAP_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_stan.md",
+            "path": "06_Tools/02_Stan/THEORY_02_stan.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_stan.txt",
+            "path": "06_Tools/02_Stan/requirements_02_stan.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_TensorFlow_Probability",
+        "path": "06_Tools/03_TensorFlow_Probability",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/BEST_PRACTICES_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/CODE_EXAMPLES_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/03_TensorFlow_Probability/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/IMPLEMENTATION_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/PROJECT_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/QUIZ_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/ROADMAP_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_tensorflow_probability.md",
+            "path": "06_Tools/03_TensorFlow_Probability/THEORY_03_tensorflow_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_tensorflow_probability.txt",
+            "path": "06_Tools/03_TensorFlow_Probability/requirements_03_tensorflow_probability.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_PyTorch_Probability",
+        "path": "06_Tools/04_PyTorch_Probability",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/BEST_PRACTICES_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/CODE_EXAMPLES_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/04_PyTorch_Probability/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/IMPLEMENTATION_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/PROJECT_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/QUIZ_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/ROADMAP_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_pytorch_probability.md",
+            "path": "06_Tools/04_PyTorch_Probability/THEORY_04_pytorch_probability.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_pytorch_probability.txt",
+            "path": "06_Tools/04_PyTorch_Probability/requirements_04_pytorch_probability.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Edward",
+        "path": "06_Tools/05_Edward",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_edward.md",
+            "path": "06_Tools/05_Edward/BEST_PRACTICES_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_edward.md",
+            "path": "06_Tools/05_Edward/CODE_EXAMPLES_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/05_Edward/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_edward.md",
+            "path": "06_Tools/05_Edward/IMPLEMENTATION_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_edward.md",
+            "path": "06_Tools/05_Edward/PROJECT_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_edward.md",
+            "path": "06_Tools/05_Edward/QUIZ_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_edward.md",
+            "path": "06_Tools/05_Edward/ROADMAP_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_edward.md",
+            "path": "06_Tools/05_Edward/THEORY_05_edward.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_edward.txt",
+            "path": "06_Tools/05_Edward/requirements_05_edward.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_06_tools.md",
+        "path": "06_Tools/BEST_PRACTICES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_06_tools.md",
+        "path": "06_Tools/CODE_EXAMPLES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_06_tools.md",
+        "path": "06_Tools/IMPLEMENTATION_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_06_tools.md",
+        "path": "06_Tools/PROJECT_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_06_tools.md",
+        "path": "06_Tools/QUIZ_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_06_tools.md",
+        "path": "06_Tools/ROADMAP_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_06_tools.md",
+        "path": "06_Tools/THEORY_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_06_tools.txt",
+        "path": "06_Tools/requirements_06_tools.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "07_Applications",
+    "path": "07_Applications",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Medical_Diagnosis",
+        "path": "07_Applications/01_Medical_Diagnosis",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/BEST_PRACTICES_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/CODE_EXAMPLES_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/01_Medical_Diagnosis/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/IMPLEMENTATION_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/PROJECT_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/QUIZ_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/ROADMAP_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_medical_diagnosis.md",
+            "path": "07_Applications/01_Medical_Diagnosis/THEORY_01_medical_diagnosis.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_medical_diagnosis.txt",
+            "path": "07_Applications/01_Medical_Diagnosis/requirements_01_medical_diagnosis.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Risk_Assessment",
+        "path": "07_Applications/02_Risk_Assessment",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/BEST_PRACTICES_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/CODE_EXAMPLES_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/02_Risk_Assessment/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/IMPLEMENTATION_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/PROJECT_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/QUIZ_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/ROADMAP_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_risk_assessment.md",
+            "path": "07_Applications/02_Risk_Assessment/THEORY_02_risk_assessment.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_risk_assessment.txt",
+            "path": "07_Applications/02_Risk_Assessment/requirements_02_risk_assessment.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Recommendation_Systems",
+        "path": "07_Applications/03_Recommendation_Systems",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/BEST_PRACTICES_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/CODE_EXAMPLES_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/03_Recommendation_Systems/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/IMPLEMENTATION_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/PROJECT_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/QUIZ_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/ROADMAP_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_recommendation_systems.md",
+            "path": "07_Applications/03_Recommendation_Systems/THEORY_03_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_recommendation_systems.txt",
+            "path": "07_Applications/03_Recommendation_Systems/requirements_03_recommendation_systems.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Time_Series_Forecasting",
+        "path": "07_Applications/04_Time_Series_Forecasting",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/BEST_PRACTICES_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/CODE_EXAMPLES_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/IMPLEMENTATION_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/PROJECT_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/QUIZ_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/ROADMAP_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_time_series_forecasting.md",
+            "path": "07_Applications/04_Time_Series_Forecasting/THEORY_04_time_series_forecasting.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_time_series_forecasting.txt",
+            "path": "07_Applications/04_Time_Series_Forecasting/requirements_04_time_series_forecasting.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Active_Learning",
+        "path": "07_Applications/05_Active_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/BEST_PRACTICES_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/CODE_EXAMPLES_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/05_Active_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/IMPLEMENTATION_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/PROJECT_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/QUIZ_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/ROADMAP_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_active_learning.md",
+            "path": "07_Applications/05_Active_Learning/THEORY_05_active_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_active_learning.txt",
+            "path": "07_Applications/05_Active_Learning/requirements_05_active_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_07_applications.md",
+        "path": "07_Applications/BEST_PRACTICES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_07_applications.md",
+        "path": "07_Applications/CODE_EXAMPLES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_07_applications.md",
+        "path": "07_Applications/IMPLEMENTATION_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_07_applications.md",
+        "path": "07_Applications/PROJECT_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_07_applications.md",
+        "path": "07_Applications/QUIZ_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_07_applications.md",
+        "path": "07_Applications/ROADMAP_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_07_applications.md",
+        "path": "07_Applications/THEORY_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_07_applications.txt",
+        "path": "07_Applications/requirements_07_applications.txt"
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "name": "BEST_PRACTICES_12_bayesian_learning.md",
+    "path": "BEST_PRACTICES_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "CODE_EXAMPLES_12_bayesian_learning.md",
+    "path": "CODE_EXAMPLES_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "COMPLEX_PROBLEMS.md",
+    "path": "COMPLEX_PROBLEMS.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION.md",
+    "path": "IMPLEMENTATION.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION_12_bayesian_learning.md",
+    "path": "IMPLEMENTATION_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "PROJECT_12_bayesian_learning.md",
+    "path": "PROJECT_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "QUIZ_12_bayesian_learning.md",
+    "path": "QUIZ_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "ROADMAP_12_bayesian_learning.md",
+    "path": "ROADMAP_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY.md",
+    "path": "THEORY.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY_12_bayesian_learning.md",
+    "path": "THEORY_12_bayesian_learning.md"
+  },
+  {
+    "type": "file",
+    "name": "requirements.txt",
+    "path": "requirements.txt"
+  },
+  {
+    "type": "file",
+    "name": "requirements_12_bayesian_learning.txt",
+    "path": "requirements_12_bayesian_learning.txt"
+  }
+]

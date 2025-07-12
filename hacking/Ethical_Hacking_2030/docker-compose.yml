@@ -1,0 +1,83 @@
+version: '3.8'
+
+services:
+  # Main development environment
+  dev:
+    build: .
+    volumes:
+      - .:/app
+      - ~/.ssh:/root/.ssh:ro
+    ports:
+      - "8000:8000"  # Web interface
+      - "8080:8080"  # Burp Suite
+      - "9090:9090"  # Custom tools
+    environment:
+      - PYTHONPATH=/app
+      - DISPLAY=${DISPLAY}
+    privileged: true
+    network_mode: host
+
+  # Database for storing results
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=ethical_hacker
+      - POSTGRES_PASSWORD=secure_password
+      - POSTGRES_DB=ethical_hacking
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # Redis for caching
+  redis:
+    image: redis:7
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+
+  # Elasticsearch for log analysis
+  elasticsearch:
+    image: elasticsearch:8.11.1
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+
+  # Kibana for visualization
+  kibana:
+    image: kibana:8.11.1
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+  # Grafana for monitoring
+  grafana:
+    image: grafana/grafana:10.2.0
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+
+  # Prometheus for metrics
+  prometheus:
+    image: prom/prometheus:v2.45.0
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+
+volumes:
+  postgres_data:
+  redis_data:
+  elasticsearch_data:
+  grafana_data:
+  prometheus_data: 

@@ -1,0 +1,2246 @@
+[
+  {
+    "type": "folder",
+    "name": "01_Image_Processing",
+    "path": "01_Image_Processing",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Filtering",
+        "path": "01_Image_Processing/01_Filtering",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/BEST_PRACTICES_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/CODE_EXAMPLES_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Image_Processing/01_Filtering/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/IMPLEMENTATION_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/PROJECT_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/QUIZ_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/ROADMAP_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_filtering.md",
+            "path": "01_Image_Processing/01_Filtering/THEORY_01_filtering.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_filtering.txt",
+            "path": "01_Image_Processing/01_Filtering/requirements_01_filtering.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Edge_Detection",
+        "path": "01_Image_Processing/02_Edge_Detection",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/BEST_PRACTICES_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/CODE_EXAMPLES_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Image_Processing/02_Edge_Detection/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/IMPLEMENTATION_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/PROJECT_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/QUIZ_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/ROADMAP_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_edge_detection.md",
+            "path": "01_Image_Processing/02_Edge_Detection/THEORY_02_edge_detection.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_edge_detection.txt",
+            "path": "01_Image_Processing/02_Edge_Detection/requirements_02_edge_detection.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Feature_Extraction",
+        "path": "01_Image_Processing/03_Feature_Extraction",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/BEST_PRACTICES_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/CODE_EXAMPLES_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/IMPLEMENTATION_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/PROJECT_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/QUIZ_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/ROADMAP_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_feature_extraction.md",
+            "path": "01_Image_Processing/03_Feature_Extraction/THEORY_03_feature_extraction.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_feature_extraction.txt",
+            "path": "01_Image_Processing/03_Feature_Extraction/requirements_03_feature_extraction.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Image_Enhancement",
+        "path": "01_Image_Processing/04_Image_Enhancement",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/BEST_PRACTICES_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/CODE_EXAMPLES_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/IMPLEMENTATION_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/PROJECT_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/QUIZ_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/ROADMAP_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_image_enhancement.md",
+            "path": "01_Image_Processing/04_Image_Enhancement/THEORY_04_image_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_image_enhancement.txt",
+            "path": "01_Image_Processing/04_Image_Enhancement/requirements_04_image_enhancement.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Geometric_Transforms",
+        "path": "01_Image_Processing/05_Geometric_Transforms",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/BEST_PRACTICES_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/CODE_EXAMPLES_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/IMPLEMENTATION_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/PROJECT_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/QUIZ_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/ROADMAP_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_geometric_transforms.md",
+            "path": "01_Image_Processing/05_Geometric_Transforms/THEORY_05_geometric_transforms.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_geometric_transforms.txt",
+            "path": "01_Image_Processing/05_Geometric_Transforms/requirements_05_geometric_transforms.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_01_image_processing.md",
+        "path": "01_Image_Processing/BEST_PRACTICES_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_01_image_processing.md",
+        "path": "01_Image_Processing/CODE_EXAMPLES_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "01_Image_Processing/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_01_image_processing.md",
+        "path": "01_Image_Processing/IMPLEMENTATION_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_01_image_processing.md",
+        "path": "01_Image_Processing/PROJECT_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_01_image_processing.md",
+        "path": "01_Image_Processing/QUIZ_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_01_image_processing.md",
+        "path": "01_Image_Processing/ROADMAP_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_01_image_processing.md",
+        "path": "01_Image_Processing/THEORY_01_image_processing.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_01_image_processing.txt",
+        "path": "01_Image_Processing/requirements_01_image_processing.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "02_Object_Detection",
+    "path": "02_Object_Detection",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Traditional_Methods",
+        "path": "02_Object_Detection/01_Traditional_Methods",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/BEST_PRACTICES_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/CODE_EXAMPLES_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/IMPLEMENTATION_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/PROJECT_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/QUIZ_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/ROADMAP_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_traditional_methods.md",
+            "path": "02_Object_Detection/01_Traditional_Methods/THEORY_01_traditional_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_traditional_methods.txt",
+            "path": "02_Object_Detection/01_Traditional_Methods/requirements_01_traditional_methods.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Deep_Learning_Methods",
+        "path": "02_Object_Detection/02_Deep_Learning_Methods",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/BEST_PRACTICES_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/CODE_EXAMPLES_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/IMPLEMENTATION_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/PROJECT_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/QUIZ_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/ROADMAP_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_deep_learning_methods.md",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/THEORY_02_deep_learning_methods.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_deep_learning_methods.txt",
+            "path": "02_Object_Detection/02_Deep_Learning_Methods/requirements_02_deep_learning_methods.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_YOLO",
+        "path": "02_Object_Detection/03_YOLO",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/BEST_PRACTICES_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/CODE_EXAMPLES_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Object_Detection/03_YOLO/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/IMPLEMENTATION_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/PROJECT_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/QUIZ_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/ROADMAP_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_yolo.md",
+            "path": "02_Object_Detection/03_YOLO/THEORY_03_yolo.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_yolo.txt",
+            "path": "02_Object_Detection/03_YOLO/requirements_03_yolo.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Faster_RCNN",
+        "path": "02_Object_Detection/04_Faster_RCNN",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/BEST_PRACTICES_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/CODE_EXAMPLES_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/IMPLEMENTATION_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/PROJECT_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/QUIZ_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/ROADMAP_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_faster_rcnn.md",
+            "path": "02_Object_Detection/04_Faster_RCNN/THEORY_04_faster_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_faster_rcnn.txt",
+            "path": "02_Object_Detection/04_Faster_RCNN/requirements_04_faster_rcnn.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_SSD",
+        "path": "02_Object_Detection/05_SSD",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/BEST_PRACTICES_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/CODE_EXAMPLES_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Object_Detection/05_SSD/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/IMPLEMENTATION_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/PROJECT_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/QUIZ_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/ROADMAP_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_ssd.md",
+            "path": "02_Object_Detection/05_SSD/THEORY_05_ssd.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_ssd.txt",
+            "path": "02_Object_Detection/05_SSD/requirements_05_ssd.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_02_object_detection.md",
+        "path": "02_Object_Detection/BEST_PRACTICES_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_02_object_detection.md",
+        "path": "02_Object_Detection/CODE_EXAMPLES_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "02_Object_Detection/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_02_object_detection.md",
+        "path": "02_Object_Detection/IMPLEMENTATION_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_02_object_detection.md",
+        "path": "02_Object_Detection/PROJECT_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_02_object_detection.md",
+        "path": "02_Object_Detection/QUIZ_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_02_object_detection.md",
+        "path": "02_Object_Detection/ROADMAP_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_02_object_detection.md",
+        "path": "02_Object_Detection/THEORY_02_object_detection.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_02_object_detection.txt",
+        "path": "02_Object_Detection/requirements_02_object_detection.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "03_Image_Segmentation",
+    "path": "03_Image_Segmentation",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Semantic_Segmentation",
+        "path": "03_Image_Segmentation/01_Semantic_Segmentation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/BEST_PRACTICES_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/CODE_EXAMPLES_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/IMPLEMENTATION_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/PROJECT_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/QUIZ_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/ROADMAP_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_semantic_segmentation.md",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/THEORY_01_semantic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_semantic_segmentation.txt",
+            "path": "03_Image_Segmentation/01_Semantic_Segmentation/requirements_01_semantic_segmentation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Instance_Segmentation",
+        "path": "03_Image_Segmentation/02_Instance_Segmentation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/BEST_PRACTICES_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/CODE_EXAMPLES_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/IMPLEMENTATION_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/PROJECT_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/QUIZ_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/ROADMAP_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_instance_segmentation.md",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/THEORY_02_instance_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_instance_segmentation.txt",
+            "path": "03_Image_Segmentation/02_Instance_Segmentation/requirements_02_instance_segmentation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Panoptic_Segmentation",
+        "path": "03_Image_Segmentation/03_Panoptic_Segmentation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/BEST_PRACTICES_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/CODE_EXAMPLES_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/IMPLEMENTATION_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/PROJECT_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/QUIZ_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/ROADMAP_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_panoptic_segmentation.md",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/THEORY_03_panoptic_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_panoptic_segmentation.txt",
+            "path": "03_Image_Segmentation/03_Panoptic_Segmentation/requirements_03_panoptic_segmentation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_U_Net",
+        "path": "03_Image_Segmentation/04_U_Net",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/BEST_PRACTICES_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/CODE_EXAMPLES_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Image_Segmentation/04_U_Net/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/IMPLEMENTATION_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/PROJECT_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/QUIZ_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/ROADMAP_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_u_net.md",
+            "path": "03_Image_Segmentation/04_U_Net/THEORY_04_u_net.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_u_net.txt",
+            "path": "03_Image_Segmentation/04_U_Net/requirements_04_u_net.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Mask_RCNN",
+        "path": "03_Image_Segmentation/05_Mask_RCNN",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/BEST_PRACTICES_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/CODE_EXAMPLES_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/IMPLEMENTATION_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/PROJECT_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/QUIZ_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/ROADMAP_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_mask_rcnn.md",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/THEORY_05_mask_rcnn.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_mask_rcnn.txt",
+            "path": "03_Image_Segmentation/05_Mask_RCNN/requirements_05_mask_rcnn.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/BEST_PRACTICES_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/CODE_EXAMPLES_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "03_Image_Segmentation/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/IMPLEMENTATION_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/PROJECT_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/QUIZ_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/ROADMAP_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_03_image_segmentation.md",
+        "path": "03_Image_Segmentation/THEORY_03_image_segmentation.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_03_image_segmentation.txt",
+        "path": "03_Image_Segmentation/requirements_03_image_segmentation.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "04_Image_Generation",
+    "path": "04_Image_Generation",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_GANs",
+        "path": "04_Image_Generation/01_GANs",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/BEST_PRACTICES_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/CODE_EXAMPLES_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Image_Generation/01_GANs/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/IMPLEMENTATION_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/PROJECT_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/QUIZ_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/ROADMAP_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_gans.md",
+            "path": "04_Image_Generation/01_GANs/THEORY_01_gans.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_gans.txt",
+            "path": "04_Image_Generation/01_GANs/requirements_01_gans.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_VAEs",
+        "path": "04_Image_Generation/02_VAEs",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/BEST_PRACTICES_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/CODE_EXAMPLES_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Image_Generation/02_VAEs/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/IMPLEMENTATION_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/PROJECT_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/QUIZ_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/ROADMAP_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_vaes.md",
+            "path": "04_Image_Generation/02_VAEs/THEORY_02_vaes.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_vaes.txt",
+            "path": "04_Image_Generation/02_VAEs/requirements_02_vaes.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Diffusion_Models",
+        "path": "04_Image_Generation/03_Diffusion_Models",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/BEST_PRACTICES_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/CODE_EXAMPLES_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/IMPLEMENTATION_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/PROJECT_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/QUIZ_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/ROADMAP_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_diffusion_models.md",
+            "path": "04_Image_Generation/03_Diffusion_Models/THEORY_03_diffusion_models.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_diffusion_models.txt",
+            "path": "04_Image_Generation/03_Diffusion_Models/requirements_03_diffusion_models.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Style_Transfer",
+        "path": "04_Image_Generation/04_Style_Transfer",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/BEST_PRACTICES_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/CODE_EXAMPLES_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Image_Generation/04_Style_Transfer/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/IMPLEMENTATION_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/PROJECT_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/QUIZ_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/ROADMAP_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_style_transfer.md",
+            "path": "04_Image_Generation/04_Style_Transfer/THEORY_04_style_transfer.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_style_transfer.txt",
+            "path": "04_Image_Generation/04_Style_Transfer/requirements_04_style_transfer.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Image_Inpainting",
+        "path": "04_Image_Generation/05_Image_Inpainting",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/BEST_PRACTICES_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/CODE_EXAMPLES_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/IMPLEMENTATION_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/PROJECT_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/QUIZ_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/ROADMAP_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_image_inpainting.md",
+            "path": "04_Image_Generation/05_Image_Inpainting/THEORY_05_image_inpainting.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_image_inpainting.txt",
+            "path": "04_Image_Generation/05_Image_Inpainting/requirements_05_image_inpainting.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_04_image_generation.md",
+        "path": "04_Image_Generation/BEST_PRACTICES_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_04_image_generation.md",
+        "path": "04_Image_Generation/CODE_EXAMPLES_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "04_Image_Generation/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_04_image_generation.md",
+        "path": "04_Image_Generation/IMPLEMENTATION_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_04_image_generation.md",
+        "path": "04_Image_Generation/PROJECT_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_04_image_generation.md",
+        "path": "04_Image_Generation/QUIZ_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_04_image_generation.md",
+        "path": "04_Image_Generation/ROADMAP_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_04_image_generation.md",
+        "path": "04_Image_Generation/THEORY_04_image_generation.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_04_image_generation.txt",
+        "path": "04_Image_Generation/requirements_04_image_generation.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "05_Video_Analysis",
+    "path": "05_Video_Analysis",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Action_Recognition",
+        "path": "05_Video_Analysis/01_Action_Recognition",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/BEST_PRACTICES_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/CODE_EXAMPLES_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/IMPLEMENTATION_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/PROJECT_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/QUIZ_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/ROADMAP_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_action_recognition.md",
+            "path": "05_Video_Analysis/01_Action_Recognition/THEORY_01_action_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_action_recognition.txt",
+            "path": "05_Video_Analysis/01_Action_Recognition/requirements_01_action_recognition.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Object_Tracking",
+        "path": "05_Video_Analysis/02_Object_Tracking",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/BEST_PRACTICES_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/CODE_EXAMPLES_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/IMPLEMENTATION_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/PROJECT_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/QUIZ_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/ROADMAP_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_object_tracking.md",
+            "path": "05_Video_Analysis/02_Object_Tracking/THEORY_02_object_tracking.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_object_tracking.txt",
+            "path": "05_Video_Analysis/02_Object_Tracking/requirements_02_object_tracking.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Video_Segmentation",
+        "path": "05_Video_Analysis/03_Video_Segmentation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/BEST_PRACTICES_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/CODE_EXAMPLES_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/IMPLEMENTATION_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/PROJECT_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/QUIZ_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/ROADMAP_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_video_segmentation.md",
+            "path": "05_Video_Analysis/03_Video_Segmentation/THEORY_03_video_segmentation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_video_segmentation.txt",
+            "path": "05_Video_Analysis/03_Video_Segmentation/requirements_03_video_segmentation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Temporal_Modeling",
+        "path": "05_Video_Analysis/04_Temporal_Modeling",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/BEST_PRACTICES_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/CODE_EXAMPLES_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/IMPLEMENTATION_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/PROJECT_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/QUIZ_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/ROADMAP_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_temporal_modeling.md",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/THEORY_04_temporal_modeling.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_temporal_modeling.txt",
+            "path": "05_Video_Analysis/04_Temporal_Modeling/requirements_04_temporal_modeling.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Video_Generation",
+        "path": "05_Video_Analysis/05_Video_Generation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/BEST_PRACTICES_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/CODE_EXAMPLES_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Video_Analysis/05_Video_Generation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/IMPLEMENTATION_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/PROJECT_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/QUIZ_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/ROADMAP_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_video_generation.md",
+            "path": "05_Video_Analysis/05_Video_Generation/THEORY_05_video_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_video_generation.txt",
+            "path": "05_Video_Analysis/05_Video_Generation/requirements_05_video_generation.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_05_video_analysis.md",
+        "path": "05_Video_Analysis/BEST_PRACTICES_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_05_video_analysis.md",
+        "path": "05_Video_Analysis/CODE_EXAMPLES_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "05_Video_Analysis/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_05_video_analysis.md",
+        "path": "05_Video_Analysis/IMPLEMENTATION_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_05_video_analysis.md",
+        "path": "05_Video_Analysis/PROJECT_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_05_video_analysis.md",
+        "path": "05_Video_Analysis/QUIZ_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_05_video_analysis.md",
+        "path": "05_Video_Analysis/ROADMAP_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_05_video_analysis.md",
+        "path": "05_Video_Analysis/THEORY_05_video_analysis.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_05_video_analysis.txt",
+        "path": "05_Video_Analysis/requirements_05_video_analysis.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "06_Tools",
+    "path": "06_Tools",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_OpenCV",
+        "path": "06_Tools/01_OpenCV",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/BEST_PRACTICES_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/CODE_EXAMPLES_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/01_OpenCV/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/IMPLEMENTATION_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/PROJECT_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/QUIZ_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/ROADMAP_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_opencv.md",
+            "path": "06_Tools/01_OpenCV/THEORY_01_opencv.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_opencv.txt",
+            "path": "06_Tools/01_OpenCV/requirements_01_opencv.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_TensorFlow_CV",
+        "path": "06_Tools/02_TensorFlow_CV",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/BEST_PRACTICES_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/CODE_EXAMPLES_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/02_TensorFlow_CV/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/IMPLEMENTATION_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/PROJECT_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/QUIZ_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/ROADMAP_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_tensorflow_cv.md",
+            "path": "06_Tools/02_TensorFlow_CV/THEORY_02_tensorflow_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_tensorflow_cv.txt",
+            "path": "06_Tools/02_TensorFlow_CV/requirements_02_tensorflow_cv.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_PyTorch_CV",
+        "path": "06_Tools/03_PyTorch_CV",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/BEST_PRACTICES_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/CODE_EXAMPLES_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/03_PyTorch_CV/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/IMPLEMENTATION_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/PROJECT_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/QUIZ_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/ROADMAP_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_pytorch_cv.md",
+            "path": "06_Tools/03_PyTorch_CV/THEORY_03_pytorch_cv.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_pytorch_cv.txt",
+            "path": "06_Tools/03_PyTorch_CV/requirements_03_pytorch_cv.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Detectron2",
+        "path": "06_Tools/04_Detectron2",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/BEST_PRACTICES_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/CODE_EXAMPLES_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/04_Detectron2/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/IMPLEMENTATION_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/PROJECT_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/QUIZ_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/ROADMAP_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_detectron2.md",
+            "path": "06_Tools/04_Detectron2/THEORY_04_detectron2.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_detectron2.txt",
+            "path": "06_Tools/04_Detectron2/requirements_04_detectron2.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_MMDetection",
+        "path": "06_Tools/05_MMDetection",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/BEST_PRACTICES_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/CODE_EXAMPLES_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/05_MMDetection/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/IMPLEMENTATION_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/PROJECT_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/QUIZ_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/ROADMAP_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_mmdetection.md",
+            "path": "06_Tools/05_MMDetection/THEORY_05_mmdetection.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_mmdetection.txt",
+            "path": "06_Tools/05_MMDetection/requirements_05_mmdetection.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_06_tools.md",
+        "path": "06_Tools/BEST_PRACTICES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_06_tools.md",
+        "path": "06_Tools/CODE_EXAMPLES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "06_Tools/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_06_tools.md",
+        "path": "06_Tools/IMPLEMENTATION_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_06_tools.md",
+        "path": "06_Tools/PROJECT_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_06_tools.md",
+        "path": "06_Tools/QUIZ_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_06_tools.md",
+        "path": "06_Tools/ROADMAP_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_06_tools.md",
+        "path": "06_Tools/THEORY_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_06_tools.txt",
+        "path": "06_Tools/requirements_06_tools.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "07_Applications",
+    "path": "07_Applications",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Face_Recognition",
+        "path": "07_Applications/01_Face_Recognition",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/BEST_PRACTICES_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/CODE_EXAMPLES_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/01_Face_Recognition/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/IMPLEMENTATION_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/PROJECT_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/QUIZ_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/ROADMAP_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_face_recognition.md",
+            "path": "07_Applications/01_Face_Recognition/THEORY_01_face_recognition.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_face_recognition.txt",
+            "path": "07_Applications/01_Face_Recognition/requirements_01_face_recognition.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Medical_Imaging",
+        "path": "07_Applications/02_Medical_Imaging",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/BEST_PRACTICES_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/CODE_EXAMPLES_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/02_Medical_Imaging/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/IMPLEMENTATION_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/PROJECT_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/QUIZ_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/ROADMAP_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_medical_imaging.md",
+            "path": "07_Applications/02_Medical_Imaging/THEORY_02_medical_imaging.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_medical_imaging.txt",
+            "path": "07_Applications/02_Medical_Imaging/requirements_02_medical_imaging.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Autonomous_Vehicles",
+        "path": "07_Applications/03_Autonomous_Vehicles",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/BEST_PRACTICES_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/CODE_EXAMPLES_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/IMPLEMENTATION_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/PROJECT_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/QUIZ_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/ROADMAP_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_autonomous_vehicles.md",
+            "path": "07_Applications/03_Autonomous_Vehicles/THEORY_03_autonomous_vehicles.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_autonomous_vehicles.txt",
+            "path": "07_Applications/03_Autonomous_Vehicles/requirements_03_autonomous_vehicles.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Surveillance",
+        "path": "07_Applications/04_Surveillance",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/BEST_PRACTICES_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/CODE_EXAMPLES_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/04_Surveillance/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/IMPLEMENTATION_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/PROJECT_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/QUIZ_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/ROADMAP_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_surveillance.md",
+            "path": "07_Applications/04_Surveillance/THEORY_04_surveillance.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_surveillance.txt",
+            "path": "07_Applications/04_Surveillance/requirements_04_surveillance.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Augmented_Reality",
+        "path": "07_Applications/05_Augmented_Reality",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/BEST_PRACTICES_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/CODE_EXAMPLES_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/05_Augmented_Reality/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/IMPLEMENTATION_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/PROJECT_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/QUIZ_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/ROADMAP_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_augmented_reality.md",
+            "path": "07_Applications/05_Augmented_Reality/THEORY_05_augmented_reality.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_augmented_reality.txt",
+            "path": "07_Applications/05_Augmented_Reality/requirements_05_augmented_reality.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_07_applications.md",
+        "path": "07_Applications/BEST_PRACTICES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_07_applications.md",
+        "path": "07_Applications/CODE_EXAMPLES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "COMPLEX_PROBLEMS.md",
+        "path": "07_Applications/COMPLEX_PROBLEMS.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_07_applications.md",
+        "path": "07_Applications/IMPLEMENTATION_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_07_applications.md",
+        "path": "07_Applications/PROJECT_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_07_applications.md",
+        "path": "07_Applications/QUIZ_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_07_applications.md",
+        "path": "07_Applications/ROADMAP_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_07_applications.md",
+        "path": "07_Applications/THEORY_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_07_applications.txt",
+        "path": "07_Applications/requirements_07_applications.txt"
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "name": "BEST_PRACTICES_05_computer_vision.md",
+    "path": "BEST_PRACTICES_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "CODE_EXAMPLES_05_computer_vision.md",
+    "path": "CODE_EXAMPLES_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "COMPLEX_PROBLEMS.md",
+    "path": "COMPLEX_PROBLEMS.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION.md",
+    "path": "IMPLEMENTATION.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION_05_computer_vision.md",
+    "path": "IMPLEMENTATION_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "PROJECT_05_computer_vision.md",
+    "path": "PROJECT_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "QUIZ_05_computer_vision.md",
+    "path": "QUIZ_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "ROADMAP_05_computer_vision.md",
+    "path": "ROADMAP_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY.md",
+    "path": "THEORY.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY_05_computer_vision.md",
+    "path": "THEORY_05_computer_vision.md"
+  },
+  {
+    "type": "file",
+    "name": "requirements.txt",
+    "path": "requirements.txt"
+  },
+  {
+    "type": "file",
+    "name": "requirements_05_computer_vision.txt",
+    "path": "requirements_05_computer_vision.txt"
+  }
+]

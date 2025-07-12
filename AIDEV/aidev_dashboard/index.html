@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDEV Project Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-project-diagram"></i>
+                <span>AIDEV Explorer</span>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search files/folders...">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav class="tree-view" id="tree-view">
+                <!-- Tree structure will be rendered here -->
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1 id="main-title">AIDEV Project Overview</h1>
+                <div class="stats" id="stats">
+                    <!-- Stats will be rendered here -->
+                </div>
+            </header>
+            <section class="file-viewer" id="file-viewer">
+                <div class="file-meta" id="file-meta"></div>
+                <pre class="file-content" id="file-content">Select a file to view its content.</pre>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

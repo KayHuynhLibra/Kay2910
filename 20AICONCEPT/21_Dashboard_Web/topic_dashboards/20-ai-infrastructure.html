@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Infrastructure - AI/ML Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .main-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background: #fff;
+            border-right: 1px solid #e0e0e0;
+            padding: 18px 10px 18px 18px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            font-size: 1.2rem;
+            color: #2d5e8c;
+            margin-bottom: 18px;
+        }
+        .tree-view {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .tree-folder {
+            font-weight: 600;
+            color: #2d5e8c;
+            cursor: pointer;
+            margin: 2px 0;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .tree-folder:hover {
+            background: #f0f0f0;
+        }
+        .tree-folder.collapsed > ul {
+            display: none;
+        }
+        .tree-file {
+            color: #222;
+            margin-left: 18px;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .tree-file:hover {
+            background: #f0f0f0;
+        }
+        .tree-file.selected {
+            background: #e0e0e0;
+            border-radius: 5px;
+        }
+        .content-area {
+            flex: 1;
+            padding: 32px;
+            background: #f7f7f7;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .content-area h1 {
+            color: #2d5e8c;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        .content-area h2 {
+            color: #2d5e8c;
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+        }
+        .content-area h3 {
+            color: #2d5e8c;
+            font-size: 1.1rem;
+            margin: 15px 0 8px 0;
+        }
+        .content-area pre {
+            background: #f3f3f3;
+            color: #222;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .content-area code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #2d5e8c;
+        }
+        .loading {
+            color: #888;
+            padding: 20px;
+        }
+        .error {
+            color: #c33;
+            background: #fee;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 18px;
+            background: #e0e0e0;
+            color: #222;
+            border: none;
+            padding: 7px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #d0d0d0;
+        }
+        @media (max-width: 900px) {
+            .main-layout { flex-direction: column; }
+            .sidebar { width: 100%; border-right: none; border-bottom: 1px solid #e0e0e0; }
+            .content-area { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← Quay lại Dashboard chính</a>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h2>📁 AI Infrastructure</h2>
+            <div id="tree-view" class="tree-view">
+                <div class="loading">Đang tải cấu trúc thư mục...</div>
+            </div>
+        </aside>
+        <section class="content-area" id="content-area">
+            <h1>Chọn file để xem nội dung</h1>
+            <p>Bạn có thể duyệt toàn bộ thư mục và file của chủ đề AI Infrastructure ở sidebar bên trái.</p>
+            <p>Click vào bất kỳ file nào để xem nội dung trực tiếp.</p>
+        </section>
+    </div>
+    <script>
+        // Load tree.json
+        let selectedFile = null;
+        
+        fetch('../../20_AI_Infrastructure/tree.json')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Không thể tải file tree.json');
+                }
+                return res.json();
+            })
+            .then(tree => {
+                renderTreeView(tree, document.getElementById('tree-view'));
+            })
+            .catch(err => {
+                document.getElementById('tree-view').innerHTML = 
+                    `<div class="error">Lỗi: ${err.message}<br>Hãy đảm bảo file tree.json đã được tạo.</div>`;
+            });
+
+        function renderTreeView(tree, container) {
+            container.innerHTML = '';
+            const ul = document.createElement('ul');
+            ul.style.listStyle = 'none';
+            ul.style.paddingLeft = '0';
+            tree.forEach(node => {
+                ul.appendChild(renderNode(node));
+            });
+            container.appendChild(ul);
+        }
+
+        function renderNode(node) {
+            const li = document.createElement('li');
+            if (node.type === 'folder') {
+                li.className = 'tree-folder';
+                li.textContent = '📂 ' + node.name;
+                li.onclick = function(e) {
+                    e.stopPropagation();
+                    li.classList.toggle('collapsed');
+                };
+                const childrenUl = document.createElement('ul');
+                childrenUl.style.listStyle = 'none';
+                childrenUl.style.paddingLeft = '18px';
+                node.children.forEach(child => {
+                    childrenUl.appendChild(renderNode(child));
+                });
+                li.appendChild(childrenUl);
+            } else {
+                li.className = 'tree-file';
+                li.textContent = '📄 ' + node.name;
+                li.onclick = function(e) {
+                    e.stopPropagation();
+                    document.querySelectorAll('.tree-file').forEach(f => f.classList.remove('selected'));
+                    li.classList.add('selected');
+                    loadFileContent(node.path, node.name);
+                };
+            }
+            return li;
+        }
+
+        async function loadFileContent(filePath, fileName) {
+            const contentArea = document.getElementById('content-area');
+            contentArea.innerHTML = `<div class="loading">Đang tải nội dung <b>${fileName}</b>...</div>`;
+            
+            try {
+                const res = await fetch('../../' + filePath);
+                if (!res.ok) {
+                    throw new Error(`HTTP ${res.status}: Không thể tải file ${filePath}`);
+                }
+                const text = await res.text();
+                contentArea.innerHTML = `<h1>${fileName}</h1>` + markdownToHtml(text);
+            } catch (err) {
+                contentArea.innerHTML = `
+                    <div class="error">
+                        <strong>Lỗi khi tải file:</strong> ${err.message}
+                        <br><br>
+                        <strong>Đường dẫn:</strong> ${filePath}
+                        <br><br>
+                        <button onclick="window.open('../../${filePath}', '_blank')" 
+                                style="background: #2d5e8c; color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">
+                            Mở file trực tiếp
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        // Chuyển đổi markdown sang HTML
+        function markdownToHtml(md) {
+            let html = md;
+            
+            // Headers
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+            
+            // Bold and italic
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            
+            // Code blocks
+            html = html.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+            html = html.replace(/`(.*?)`/g, '<code>$1</code>');
+            
+            // Lists
+            html = html.replace(/^\* (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^- (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^\d+\. (.*$)/gim, '<li>$1</li>');
+            
+            // Wrap lists
+            html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+            
+            // Links
+            html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            
+            // Paragraphs
+            html = html.replace(/\n\n/g, '</p><p>');
+            html = '<p>' + html + '</p>';
+            
+            return html;
+        }
+    </script>
+</body>
+</html>

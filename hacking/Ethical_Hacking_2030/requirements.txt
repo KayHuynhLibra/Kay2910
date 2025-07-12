@@ -1,0 +1,70 @@
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+scikit-learn>=0.24.0
+
+# Deep Learning
+tensorflow>=2.8.0
+torch>=1.10.0
+transformers>=4.15.0
+
+# Network Security
+scapy>=2.4.5
+paramiko>=2.8.0
+cryptography>=3.4.0
+pyOpenSSL>=20.0.0
+
+# Web Security
+requests>=2.26.0
+beautifulsoup4>=4.9.0
+selenium>=4.0.0
+aiohttp>=3.8.0
+
+# Blockchain
+web3>=5.24.0
+eth-account>=0.5.0
+eth-typing>=2.0.0
+eth-utils>=1.10.0
+
+# IoT
+paho-mqtt>=1.6.0
+pyserial>=3.5
+bluepy>=1.3.0
+zeroconf>=0.36.0
+
+# Testing
+pytest>=6.2.5
+pytest-cov>=2.12.0
+pytest-mock>=3.6.0
+hypothesis>=6.0.0
+
+# Development
+black>=21.5b2
+flake8>=3.9.0
+mypy>=0.910
+isort>=5.9.0
+pylint>=2.8.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+mkdocs>=1.2.0
+mkdocs-material>=7.0.0
+
+# Utilities
+python-dotenv>=0.19.0
+pyyaml>=5.4.0
+tqdm>=4.62.0
+rich>=10.0.0
+
+# Additional dependencies
+dpkt>=1.9.7
+pyshark>=0.6.0
+selenium-wire>=5.1.0
+mitmproxy>=10.1.5
+sqlmap>=1.7.2
+qiskit>=0.45.0
+cirq>=1.3.0
+pennylane>=0.32.0
+typing-extensions>=4.8.0 

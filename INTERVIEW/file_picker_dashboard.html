@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../shared/styles.css" as="style">
+    <link rel="preload" href="../shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/styles.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/components.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/animations.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/accessibility.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📁 File System Dashboard - File Picker API</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+            <a href="index.html" class="back-button">
+                ← Quay lại Navigation Hub
+            </a>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📁 File System Dashboard</h1>
+            <p>Đọc và quản lý cấu trúc thư mục dự án với File System Access API</p>
+        </div>
+
+        <!-- File Picker Section -->
+        <div class="file-picker-section">
+            <h2><i class="fas fa-folder-open"></i> Chọn thư mục dự án</h2>
+            <p>Chọn thư mục <code>interviewDataStructure</code> để bắt đầu</p>
+            
+            <button class="pick-button" id="pickFolderBtn">
+                <i class="fas fa-folder"></i> Chọn thư mục
+            </button>
+            
+            <button class="pick-button" id="pickFileBtn" disabled>
+                <i class="fas fa-file"></i> Chọn file
+            </button>
+
+            <div id="fileInfo" class="file-info" style="display: none;">
+                <h3>📂 Thông tin thư mục</h3>
+                <div id="folderInfo"></div>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-grid" id="statsGrid" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-number" id="totalFiles">0</div>
+                <div class="stat-label">Tổng số file</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalFolders">0</div>
+                <div class="stat-label">Tổng số thư mục</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="mdFiles">0</div>
+                <div class="stat-label">File Markdown</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="codeFiles">0</div>
+                <div class="stat-label">File Code</div>
+            </div>
+        </div>
+
+        <!-- File Tree -->
+        <div class="file-tree" id="fileTree" style="display: none;">
+            <div class="tree-header">
+                <div class="tree-title">
+                    <i class="fas fa-sitemap"></i> Cấu trúc thư mục
+                </div>
+                <div class="tree-controls">
+                    <button class="tree-control-btn btn-expand" onclick="expandAll()">
+                        <i class="fas fa-expand"></i> Mở rộng tất cả
+                    </button>
+                    <button class="tree-control-btn btn-collapse" onclick="collapseAll()">
+                        <i class="fas fa-compress"></i> Thu gọn tất cả
+                    </button>
+                    <button class="tree-control-btn btn-export" onclick="exportFileTree()">
+                        <i class="fas fa-download"></i> Xuất cấu trúc
+                    </button>
+                </div>
+            </div>
+            <div id="fileTreeContent"></div>
+        </div>
+
+        <!-- File Content Viewer -->
+        <div class="file-content" id="fileContent">
+            <div class="content-header">
+                <div class="content-title" id="contentTitle">Nội dung file</div>
+                <button class="content-close" onclick="closeFileContent()">
+                    <i class="fas fa-times"></i> Đóng
+                </button>
+            </div>
+            <div class="content-body" id="contentBody"></div>
+        </div>
+    </div>
+
+    <script defer>
+        let rootHandle = null;
+        let fileTreeData = [];
+
+        // Check if File System Access API is supported
+        if (!('showDirectoryPicker' in window)) {
+            document.getElementById('pickFolderBtn').disabled = true;
+            document.getElementById('pickFolderBtn').textContent = 'File System Access API không được hỗ trợ';
+            showError('Trình duyệt của bạn không hỗ trợ File System Access API. Vui lòng sử dụng Chrome, Edge, hoặc Opera.');
+        }
+
+        // Pick folder
+        document.getElementById('pickFolderBtn').addEventListener('click', async () => {
+            try {
+                rootHandle = await window.showDirectoryPicker();
+                await loadDirectoryStructure(rootHandle);
+                showSuccess('Đã chọn thư mục thành công!');
+            } catch (error) {
+                console.error('Error picking folder:', error);
+                showError('Không thể chọn thư mục: ' + error.message);
+            }
+        });
+
+        // Pick file
+        document.getElementById('pickFileBtn').addEventListener('click', async () => {
+            try {
+                const [fileHandle] = await window.showOpenFilePicker();
+                await displayFileContent(fileHandle);
+            } catch (error) {
+                console.error('Error picking file:', error);
+                showError('Không thể chọn file: ' + error.message);
+            }
+        });
+
+        // Load directory structure
+        async function loadDirectoryStructure(handle) {
+            showLoading();
+            
+            try {
+                fileTreeData = [];
+                await scanDirectory(handle, '', 0);
+                
+                // Update UI
+                updateFileInfo(handle);
+                updateStatistics();
+                renderFileTree();
+                
+                // Show sections
+                document.getElementById('fileInfo').style.display = 'block';
+                document.getElementById('statsGrid').style.display = 'grid';
+                document.getElementById('fileTree').style.display = 'block';
+                
+                hideLoading();
+            } catch (error) {
+                console.error('Error loading directory:', error);
+                showError('Lỗi khi tải cấu trúc thư mục: ' + error.message);
+                hideLoading();
+            }
+        }
+
+        // Scan directory recursively
+        async function scanDirectory(handle, path, level) {
+            const entries = [];
+            
+            for await (const entry of handle.values()) {
+                const entryPath = path + '/' + entry.name;
+                const entryData = {
+                    name: entry.name,
+                    path: entryPath,
+                    level: level,
+                    isFile: entry.kind === 'file',
+                    isDirectory: entry.kind === 'directory',
+                    handle: entry
+                };
+                
+                if (entry.kind === 'directory') {
+                    entryData.children = [];
+                    try {
+                        await scanDirectory(entry, entryPath, level + 1);
+                    } catch (error) {
+                        console.warn('Cannot access directory:', entryPath, error);
+                    }
+                }
+                
+                entries.push(entryData);
+            }
+            
+            fileTreeData.push(...entries);
+        }
+
+        // Update file information
+        function updateFileInfo(handle) {
+            const folderInfo = document.getElementById('folderInfo');
+            folderInfo.innerHTML = `
+                <p><strong>Tên thư mục:</strong> ${handle.name}</p>
+                <p><strong>Đường dẫn:</strong> ${handle.name}</p>
+                <p><strong>Loại:</strong> Thư mục</p>
+            `;
+        }
+
+        // Update statistics
+        function updateStatistics() {
+            const totalFiles = fileTreeData.filter(item => item.isFile).length;
+            const totalFolders = fileTreeData.filter(item => item.isDirectory).length;
+            const mdFiles = fileTreeData.filter(item => item.isFile && item.name.endsWith('.md')).length;
+            const codeFiles = fileTreeData.filter(item => 
+                item.isFile && 
+                (item.name.endsWith('.py') || item.name.endsWith('.cpp') || 
+                 item.name.endsWith('.c') || item.name.endsWith('.java'))
+            ).length;
+
+            document.getElementById('totalFiles').textContent = totalFiles;
+            document.getElementById('totalFolders').textContent = totalFolders;
+            document.getElementById('mdFiles').textContent = mdFiles;
+            document.getElementById('codeFiles').textContent = codeFiles;
+        }
+
+        // Render file tree
+        function renderFileTree() {
+            const container = document.getElementById('fileTreeContent');
+            container.innerHTML = '';
+
+            fileTreeData.forEach(item => {
+                const itemElement = createFileTreeItem(item);
+                container.appendChild(itemElement);
+            });
+        }
+
+        // Create file tree item
+        function createFileTreeItem(item) {
+            const div = document.createElement('div');
+            div.className = `file-item ${item.isDirectory ? 'folder' : 'file'}`;
+            div.style.paddingLeft = (item.level * 20 + 12) + 'px';
+
+            const icon = item.isDirectory ? 'fa-folder' : getFileIcon(item.name);
+            const size = item.isFile ? ' (file)' : ' (folder)';
+
+            div.innerHTML = `
+                <div class="file-icon">
+                    <i class="fas ${icon}"></i>
+                </div>
+                <div class="file-name">${item.name}</div>
+                <div class="file-size">${size}</div>
+            `;
+
+            if (item.isFile) {
+                div.addEventListener('click', () => displayFileContent(item.handle));
+            }
+
+            return div;
+        }
+
+        // Get file icon based on extension
+        function getFileIcon(filename) {
+            const ext = filename.split('.').pop().toLowerCase();
+            const iconMap = {
+                'md': 'fa-file-alt',
+                'py': 'fa-file-code',
+                'cpp': 'fa-file-code',
+                'c': 'fa-file-code',
+                'java': 'fa-file-code',
+                'html': 'fa-file-code',
+                'css': 'fa-file-code',
+                'js': 'fa-file-code',
+                'json': 'fa-file-code',
+                'txt': 'fa-file-text'
+            };
+            return iconMap[ext] || 'fa-file';
+        }
+
+        // Display file content
+        async function displayFileContent(fileHandle) {
+            try {
+                const file = await fileHandle.getFile();
+                const content = await file.text();
+                
+                document.getElementById('contentTitle').textContent = `📄 ${file.name}`;
+                document.getElementById('contentBody').textContent = content;
+                document.getElementById('fileContent').style.display = 'block';
+                
+                // Scroll to content
+                document.getElementById('fileContent').scrollIntoView({ behavior: 'smooth' });
+            } catch (error) {
+                console.error('Error reading file:', error);
+                showError('Không thể đọc file: ' + error.message);
+            }
+        }
+
+        // Close file content
+        function closeFileContent() {
+            document.getElementById('fileContent').style.display = 'none';
+        }
+
+        // Expand all folders
+        function expandAll() {
+            // Implementation for expanding all folders
+            showSuccess('Đã mở rộng tất cả thư mục');
+        }
+
+        // Collapse all folders
+        function collapseAll() {
+            // Implementation for collapsing all folders
+            showSuccess('Đã thu gọn tất cả thư mục');
+        }
+
+        // Export file tree
+        function exportFileTree() {
+            const data = {
+                timestamp: new Date().toISOString(),
+                totalFiles: fileTreeData.filter(item => item.isFile).length,
+                totalFolders: fileTreeData.filter(item => item.isDirectory).length,
+                structure: fileTreeData.map(item => ({
+                    name: item.name,
+                    path: item.path,
+                    type: item.isFile ? 'file' : 'directory',
+                    level: item.level
+                }))
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'file-structure.json';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showSuccess('Đã xuất cấu trúc thư mục thành công!');
+        }
+
+        // Utility functions
+        function showLoading() {
+            const loading = document.createElement('div');
+            loading.className = 'loading';
+            loading.id = 'loading';
+            loading.innerHTML = `
+                <i class="fas fa-spinner"></i>
+                <p>Đang tải cấu trúc thư mục...</p>
+            `;
+            document.querySelector('.container').appendChild(loading);
+        }
+
+        function hideLoading() {
+            const loading = document.getElementById('loading');
+            if (loading) {
+                loading.remove();
+            }
+        }
+
+        function showError(message) {
+            const error = document.createElement('div');
+            error.className = 'error';
+            error.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${message}`;
+            document.querySelector('.container').appendChild(error);
+            
+            setTimeout(() => error.remove(), 5000);
+        }
+
+        function showSuccess(message) {
+            const success = document.createElement('div');
+            success.className = 'success';
+            success.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
+            document.querySelector('.container').appendChild(success);
+            
+            setTimeout(() => success.remove(), 3000);
+        }
+    </script>
+
+    <!-- Shared JavaScript -->
+    <script defer src="../shared/scripts.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

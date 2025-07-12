@@ -1,0 +1,49 @@
+# Cấu hình Model
+
+model:
+  # Cấu hình kiến trúc model
+  architecture:
+    type: "xgboost"  # Loại model (có thể là: xgboost, lightgbm, pytorch, tensorflow)
+    params:  # Hyperparameters
+      max_depth: 6  # Độ sâu tối đa của cây
+      learning_rate: 0.1  # Tốc độ học
+      n_estimators: 100  # Số lượng cây
+      objective: "reg:squarederror"  # Hàm mục tiêu
+    
+  # Cấu hình training
+  training:
+    train_test_split: 0.2  # Tỷ lệ chia train/test
+    validation_split: 0.1  # Tỷ lệ validation
+    random_state: 42  # Seed cho reproducibility
+    early_stopping_rounds: 10  # Số round early stopping
+    max_epochs: 100  # Số epoch tối đa
+    batch_size: 32  # Kích thước batch
+    
+  # Cấu hình đánh giá model
+  evaluation:
+    metrics:  # Các metrics đánh giá
+      - "rmse"  # Root Mean Square Error
+      - "mae"   # Mean Absolute Error
+      - "r2"    # R-squared
+    cross_validation:  # Cấu hình cross validation
+      n_splits: 5  # Số fold
+      shuffle: true  # Có shuffle data không
+    
+  # Cấu hình versioning model
+  versioning:
+    enabled: true  # Bật versioning
+    storage: "mlflow"  # Sử dụng MLflow
+    experiment_name: "model_training"  # Tên experiment
+    
+  # Cấu hình monitoring model
+  monitoring:
+    performance_threshold: 0.8  # Ngưỡng performance
+    drift_threshold: 0.1  # Ngưỡng drift
+    retraining_threshold: 0.05  # Ngưỡng retraining
+    
+  # Cấu hình deployment model
+  deployment:
+    model_format: "onnx"  # Format model (có thể là: onnx, pickle, h5)
+    api_version: "v1"  # Phiên bản API
+    batch_size: 100  # Kích thước batch inference
+    timeout: 30  # Timeout cho inference 

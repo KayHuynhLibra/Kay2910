@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Code Learning - Algorithm Ecosystem</title>
+    <link rel="stylesheet" href="shared/styles.css">
+    <link rel="stylesheet" href="shared/animations.css">
+    <link rel="stylesheet" href="shared/utilities.css">
+    <style>
+        .clean-code-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .clean-code-header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .clean-code-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .clean-code-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .principle-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .principle-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .principle-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .principle-header h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        .principle-content {
+            padding: 20px;
+        }
+
+        .principle-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .code-example {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .bad-code {
+            border-left: 4px solid #dc3545;
+            background: #fff5f5;
+        }
+
+        .good-code {
+            border-left: 4px solid #28a745;
+            background: #f8fff9;
+        }
+
+        .interactive-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .code-editor {
+            background: #2d3748;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #e2e8f0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .code-line {
+            margin: 2px 0;
+            padding: 2px 0;
+        }
+
+        .code-line.highlight {
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 4px;
+        }
+
+        .code-line.comment {
+            color: #718096;
+            font-style: italic;
+        }
+
+        .code-line.keyword {
+            color: #f56565;
+        }
+
+        .code-line.string {
+            color: #68d391;
+        }
+
+        .code-line.number {
+            color: #f6ad55;
+        }
+
+        .practice-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .practice-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .practice-exercise {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background: #e0a800;
+            transform: translateY(-2px);
+        }
+
+        .test-results {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .test-pass {
+            color: #28a745;
+        }
+
+        .test-fail {
+            color: #dc3545;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clean-code-container">
+        <div class="clean-code-header">
+            <h1>🧹 Clean Code Learning</h1>
+            <p>Học cách viết code sạch, dễ đọc và dễ bảo trì</p>
+        </div>
+
+        <div class="principles-grid">
+            <!-- Meaningful Names -->
+            <div class="principle-card">
+                <div class="principle-header">
+                    <h3>📝 Meaningful Names</h3>
+                </div>
+                <div class="principle-content">
+                    <p>Tên biến, hàm và lớp phải có ý nghĩa rõ ràng, mô tả chính xác mục đích sử dụng.</p>
+                    
+                    <div class="code-example bad-code">
+                        <strong>❌ Bad:</strong><br>
+                        function ts(arr, t) {<br>
+                        &nbsp;&nbsp;let m = new Map();<br>
+                        &nbsp;&nbsp;for (let i = 0; i < arr.length; i++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;let n = arr[i];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;let c = t - n;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if (m.has(c)) return [m.get(c), i];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;m.set(n, i);<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;return [];<br>
+                        }
+                    </div>
+                    
+                    <div class="code-example good-code">
+                        <strong>✅ Good:</strong><br>
+                        function findTwoNumbersWithSum(numbers, targetSum) {<br>
+                        &nbsp;&nbsp;const numberToIndexMap = new Map();<br>
+                        &nbsp;&nbsp;for (let currentIndex = 0; currentIndex < numbers.length; currentIndex++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const currentNumber = numbers[currentIndex];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const complementNumber = targetSum - currentNumber;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if (numberToIndexMap.has(complementNumber)) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return [numberToIndexMap.get(complementNumber), currentIndex];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;numberToIndexMap.set(currentNumber, currentIndex);<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;return [];<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small Functions -->
+            <div class="principle-card">
+                <div class="principle-header">
+                    <h3>🔧 Small Functions</h3>
+                </div>
+                <div class="principle-content">
+                    <p>Hàm nên nhỏ, chỉ làm một việc và làm tốt việc đó. Mỗi hàm chỉ nên có một lý do để thay đổi.</p>
+                    
+                    <div class="code-example bad-code">
+                        <strong>❌ Bad:</strong><br>
+                        function processUserData(userData) {<br>
+                        &nbsp;&nbsp;// 50+ dòng code làm nhiều việc khác nhau<br>
+                        &nbsp;&nbsp;// Validate, transform, save, send email, etc.<br>
+                        }
+                    </div>
+                    
+                    <div class="code-example good-code">
+                        <strong>✅ Good:</strong><br>
+                        function validateUserData(userData) { ... }<br>
+                        function transformUserData(userData) { ... }<br>
+                        function saveUserData(userData) { ... }<br>
+                        function sendWelcomeEmail(userData) { ... }<br>
+                        <br>
+                        function processUserData(userData) {<br>
+                        &nbsp;&nbsp;validateUserData(userData);<br>
+                        &nbsp;&nbsp;const transformed = transformUserData(userData);<br>
+                        &nbsp;&nbsp;saveUserData(transformed);<br>
+                        &nbsp;&nbsp;sendWelcomeEmail(transformed);<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Responsibility -->
+            <div class="principle-card">
+                <div class="principle-header">
+                    <h3>🎯 Single Responsibility</h3>
+                </div>
+                <div class="principle-content">
+                    <p>Một lớp chỉ nên có một lý do để thay đổi. Mỗi lớp chỉ nên chịu trách nhiệm cho một phần của chức năng.</p>
+                    
+                    <div class="code-example bad-code">
+                        <strong>❌ Bad:</strong><br>
+                        class UserManager {<br>
+                        &nbsp;&nbsp;validateUser() { ... }<br>
+                        &nbsp;&nbsp;saveUser() { ... }<br>
+                        &nbsp;&nbsp;sendEmail() { ... }<br>
+                        &nbsp;&nbsp;generateReport() { ... }<br>
+                        }
+                    </div>
+                    
+                    <div class="code-example good-code">
+                        <strong>✅ Good:</strong><br>
+                        class UserValidator { ... }<br>
+                        class UserRepository { ... }<br>
+                        class EmailService { ... }<br>
+                        class ReportGenerator { ... }
+                    </div>
+                </div>
+            </div>
+
+            <!-- DRY Principle -->
+            <div class="principle-card">
+                <div class="principle-header">
+                    <h3>🔄 DRY Principle</h3>
+                </div>
+                <div class="principle-content">
+                    <p>Don't Repeat Yourself - Không lặp lại code. Tạo ra các hàm tiện ích để tái sử dụng.</p>
+                    
+                    <div class="code-example bad-code">
+                        <strong>❌ Bad:</strong><br>
+                        // Lặp lại code validation ở nhiều nơi<br>
+                        if (!Array.isArray(arr) || arr.length === 0) { ... }<br>
+                        if (!Array.isArray(data) || data.length === 0) { ... }<br>
+                        if (!Array.isArray(items) || items.length === 0) { ... }
+                    </div>
+                    
+                    <div class="code-example good-code">
+                        <strong>✅ Good:</strong><br>
+                        class ArrayValidator {<br>
+                        &nbsp;&nbsp;static isValidArray(array) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return Array.isArray(array) && array.length > 0;<br>
+                        &nbsp;&nbsp;}<br>
+                        }<br>
+                        <br>
+                        // Sử dụng ở mọi nơi<br>
+                        if (!ArrayValidator.isValidArray(arr)) { ... }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="interactive-section">
+            <h2>🎮 Interactive Code Examples</h2>
+            <p>Thử nghiệm với các ví dụ Clean Code thực tế:</p>
+            
+            <div class="code-editor">
+                <div class="code-line comment">// Clean Code Example: Binary Search</div>
+                <div class="code-line"><span class="keyword">class</span> <span class="string">BinarySearchCleanCode</span> {</div>
+                <div class="code-line">&nbsp;&nbsp;<span class="keyword">static</span> <span class="string">findElementInSortedArray</span>(sortedArray, targetValue) {</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (!<span class="string">this</span>.<span class="string">isValidInput</span>(sortedArray, targetValue)) {</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> -<span class="number">1</span>;</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">this</span>.<span class="string">performBinarySearch</span>(sortedArray, targetValue);</div>
+                <div class="code-line">&nbsp;&nbsp;}</div>
+                <div class="code-line">}</div>
+            </div>
+            
+            <button class="btn btn-primary" onclick="runCleanCodeExample()">🚀 Chạy ví dụ</button>
+            <button class="btn btn-success" onclick="showCleanCodeBenefits()">📊 Xem lợi ích</button>
+        </div>
+
+        <div class="practice-section">
+            <h3>💡 Practice Exercises</h3>
+            
+            <div class="practice-exercise">
+                <h4>Exercise 1: Refactor Bad Code</h4>
+                <p>Hãy refactor đoạn code sau theo nguyên tắc Clean Code:</p>
+                
+                <div class="code-example bad-code">
+                    function process(arr) {<br>
+                    &nbsp;&nbsp;let r = [];<br>
+                    &nbsp;&nbsp;for (let i = 0; i < arr.length; i++) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if (arr[i] > 0) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r.push(arr[i] * 2);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;return r;<br>
+                    }
+                </div>
+                
+                <button class="btn btn-warning" onclick="showRefactoredSolution()">🔍 Xem giải pháp</button>
+            </div>
+            
+            <div class="practice-exercise">
+                <h4>Exercise 2: Write Clean Functions</h4>
+                <p>Viết một hàm clean để tính tổng các số chẵn trong mảng:</p>
+                
+                <button class="btn btn-success" onclick="showCleanFunctionExample()">📝 Xem ví dụ</button>
+            </div>
+        </div>
+
+        <div class="interactive-section">
+            <h2>🧪 Test Your Clean Code</h2>
+            <p>Kiểm tra code của bạn với các test case:</p>
+            
+            <div id="testResults" class="test-results">
+                <div>Click "Run Tests" để bắt đầu kiểm tra...</div>
+            </div>
+            
+            <button class="btn btn-primary" onclick="runCleanCodeTests()">🧪 Chạy Tests</button>
+            <button class="btn btn-success" onclick="showTestCases()">📋 Xem Test Cases</button>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="algorithm_learning.html" class="btn btn-primary">🎓 Học thuật toán</a>
+            <a href="index.html" class="btn btn-secondary">🏠 Trang chủ</a>
+        </div>
+    </div>
+
+    <script src="shared/clean-code-principles.js"></script>
+    <script>
+        // Interactive functions for clean code learning
+        function runCleanCodeExample() {
+            const testArray = [1, 3, 5, 7, 9, 11, 13, 15];
+            const target = 7;
+            
+            const result = CleanCodePrinciples.BinarySearchCleanCode.findElementInSortedArray(testArray, target);
+            
+            alert(`Tìm kiếm số ${target} trong mảng [${testArray.join(', ')}]\nKết quả: Chỉ số ${result} (${result >= 0 ? 'Tìm thấy' : 'Không tìm thấy'})`);
+        }
+
+        function showCleanCodeBenefits() {
+            const benefits = `
+🧹 Lợi ích của Clean Code:
+
+✅ Dễ đọc và hiểu
+✅ Dễ bảo trì và mở rộng
+✅ Giảm lỗi (bugs)
+✅ Tăng hiệu suất làm việc
+✅ Dễ test và debug
+✅ Code review nhanh hơn
+✅ Onboarding developer mới dễ dàng
+            `;
+            alert(benefits);
+        }
+
+        function showRefactoredSolution() {
+            const solution = `
+✅ Giải pháp refactored:
+
+function getDoubledPositiveNumbers(numbers) {
+    return numbers
+        .filter(isPositiveNumber)
+        .map(doubleNumber);
+}
+
+function isPositiveNumber(number) {
+    return number > 0;
+}
+
+function doubleNumber(number) {
+    return number * 2;
+}
+
+🎯 Nguyên tắc áp dụng:
+- Meaningful names
+- Small functions
+- Single responsibility
+- Functional programming
+            `;
+            alert(solution);
+        }
+
+        function showCleanFunctionExample() {
+            const example = `
+✅ Ví dụ hàm clean:
+
+function calculateSumOfEvenNumbers(numbers) {
+    if (!isValidNumberArray(numbers)) {
+        throw new Error('Input must be a valid number array');
+    }
+    
+    return numbers
+        .filter(isEvenNumber)
+        .reduce(sumNumbers, 0);
+}
+
+function isValidNumberArray(array) {
+    return Array.isArray(array) && 
+           array.every(element => typeof element === 'number');
+}
+
+function isEvenNumber(number) {
+    return number % 2 === 0;
+}
+
+function sumNumbers(accumulator, currentNumber) {
+    return accumulator + currentNumber;
+}
+            `;
+            alert(example);
+        }
+
+        function runCleanCodeTests() {
+            const testResults = document.getElementById('testResults');
+            testResults.innerHTML = '<div>Đang chạy tests...</div>';
+            
+            setTimeout(() => {
+                const tests = [
+                    {
+                        name: 'Two Sum Clean Code',
+                        test: () => {
+                            const result = CleanCodePrinciples.TwoSumCleanCode.findTwoNumbersWithSum([2, 7, 11, 15], 9);
+                            return JSON.stringify(result) === '[0,1]';
+                        }
+                    },
+                    {
+                        name: 'Binary Search Clean Code',
+                        test: () => {
+                            const result = CleanCodePrinciples.BinarySearchCleanCode.findElementInSortedArray([1, 3, 5, 7, 9], 5);
+                            return result === 2;
+                        }
+                    },
+                    {
+                        name: 'Array Validator',
+                        test: () => {
+                            return CleanCodePrinciples.ArrayValidator.isValidArray([1, 2, 3]) === true &&
+                                   CleanCodePrinciples.ArrayValidator.isValidArray([]) === false;
+                        }
+                    }
+                ];
+                
+                let resultsHtml = '<h4>Test Results:</h4>';
+                let passed = 0;
+                
+                tests.forEach(test => {
+                    const passed = test.test();
+                    const status = passed ? '✅ PASS' : '❌ FAIL';
+                    const color = passed ? 'test-pass' : 'test-fail';
+                    
+                    resultsHtml += `<div class="${color}">${status}: ${test.name}</div>`;
+                    
+                    if (passed) passed++;
+                });
+                
+                resultsHtml += `<div><strong>Summary: ${passed}/${tests.length} tests passed</strong></div>`;
+                testResults.innerHTML = resultsHtml;
+            }, 1000);
+        }
+
+        function showTestCases() {
+            const testCases = `
+📋 Test Cases cho Clean Code:
+
+1. Two Sum Algorithm:
+   Input: [2, 7, 11, 15], target = 9
+   Expected: [0, 1]
+
+2. Binary Search:
+   Input: [1, 3, 5, 7, 9], target = 5
+   Expected: 2
+
+3. Array Validation:
+   Input: [1, 2, 3]
+   Expected: true
+
+4. Error Handling:
+   Input: null, undefined
+   Expected: Proper error messages
+
+5. Performance:
+   Input: Large arrays
+   Expected: Reasonable execution time
+            `;
+            alert(testCases);
+        }
+
+        // Initialize clean code learning
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🧹 Clean Code Learning initialized!');
+            console.log('Available clean code principles:', Object.keys(CleanCodePrinciples));
+        });
+    </script>
+</body>
+</html> 

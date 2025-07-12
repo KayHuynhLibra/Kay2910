@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="../icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="shared/styles.css" as="style">
+    <link rel="preload" href="shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" href="shared/styles.css">
+    <link rel="stylesheet" href="shared/components.css">
+    <link rel="stylesheet" href="shared/animations.css">
+    <link rel="stylesheet" href="shared/accessibility.css">
+    <link rel="stylesheet" href="shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Ecosystem Platform - Navigation Hub</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../index.html" class="back-button">
+                ← Quay lại thư mục gốc
+            </a>
+            <h1>🚀 Algorithm Ecosystem Platform</h1>
+            <p>Navigation Hub - Truy cập nhanh tất cả giao diện</p>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h2>⚡ Thao tác nhanh</h2>
+            <div class="action-buttons">
+                <a href="simple_learning.html" class="btn btn-primary">🎯 Học Code Đơn Giản</a>
+                <a href="analyzers/algorithm_analyzer.html" class="btn btn-success">🔍 Mở Algorithm Analyzer</a>
+                <a href="learning/learning_accelerator.html" class="btn btn-info">📚 Mở Learning Accelerator</a>
+                <a href="dashboards/progress_dashboard.html" class="btn btn-warning">📊 Progress Dashboard</a>
+                <a href="viewers/algorithm_viewer.html" class="btn btn-purple">👁️ Algorithm Viewer</a>
+            </div>
+        </div>
+
+        <!-- Navigation Grid -->
+        <div class="nav-grid">
+            <!-- Analyzers -->
+            <a href="analyzers/algorithm_analyzer.html" class="nav-card">
+                <span class="icon">🔍</span>
+                <h3>Algorithm Analyzer</h3>
+                <p>Phân tích và nâng cấp lý thuyết cho từng giải thuật. Sàng lọc, lọc theo độ khó, category và xem chi tiết code đa ngôn ngữ.</p>
+            </a>
+
+            <!-- Learning -->
+            <a href="learning/learning_accelerator.html" class="nav-card">
+                <span class="icon">📚</span>
+                <h3>Learning Accelerator</h3>
+                <p>Hệ thống học tập tối ưu với spaced repetition, progress tracking, flashcards và adaptive learning paths.</p>
+            </a>
+
+            <!-- Progress Dashboard -->
+            <a href="dashboards/progress_dashboard.html" class="nav-card">
+                <span class="icon">📊</span>
+                <h3>Progress Dashboard</h3>
+                <p>Theo dõi tiến độ học tập và thành tích chi tiết</p>
+                <div class="nav-card-actions">
+                    <span class="badge badge-primary">New</span>
+                </div>
+            </a>
+            
+            <!-- Algorithm Viewer -->
+            <a href="viewers/algorithm_viewer.html" class="nav-card">
+                <span class="icon">👁️</span>
+                <h3>Algorithm Viewer</h3>
+                <p>Xem và tương tác với các thuật toán</p>
+                <div class="nav-card-actions">
+                    <span class="badge badge-info">Interactive</span>
+                </div>
+            </a>
+            
+            <!-- UI Components -->
+            <a href="components/ui_components.html" class="nav-card">
+                <span class="icon">🧩</span>
+                <h3>UI Components</h3>
+                <p>Thư viện các thành phần UI có thể tái sử dụng</p>
+                <div class="nav-card-actions">
+                    <span class="badge badge-success">Library</span>
+                </div>
+            </a>
+
+            <!-- Shared -->
+            <div class="nav-card">
+                <span class="icon">🤝</span>
+                <h3>Shared Resources</h3>
+                <p>Tài nguyên chia sẻ: CSS, JavaScript, components và utilities được sử dụng chung cho toàn bộ platform.</p>
+                <div style="margin-top: 15px;">
+                    <button class="btn btn-secondary" onclick="alert('Shared resources đang được sử dụng!')">Xem Resources</button>
+                </div>
+            </div>
+
+            <!-- New Features -->
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Học thuật toán chi tiết</h3>
+                <p>Khám phá các thuật toán với hướng dẫn từng bước, code mẫu và phân tích độ phức tạp.</p>
+                <a href="algorithm_learning.html" class="btn btn-primary">Bắt đầu học</a>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Tổng quan thuật toán</h3>
+                <p>Xem tổng quan tất cả các thuật toán đã được phát triển và tiến độ hoàn thành.</p>
+                <a href="algorithm_overview.html" class="btn btn-secondary">Xem tổng quan</a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🧹</div>
+                <h3>Học Clean Code</h3>
+                <p>Khám phá các nguyên tắc viết code sạch với ví dụ thực tế và bài tập luyện tập.</p>
+                <a href="clean_code_learning.html" class="btn btn-warning">Học Clean Code</a>
+            </div>
+        </div>
+
+        <!-- Status Section -->
+        <div class="status-section">
+            <h2>📈 Trạng thái hệ thống</h2>
+            <div class="status-grid">
+                <div class="status-item">
+                    <div class="status-number">6</div>
+                    <div class="status-label">Giao diện chính</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-number">100+</div>
+                    <div class="status-label">Nhóm thuật toán</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-number">4</div>
+                    <div class="status-label">Ngôn ngữ lập trình</div>
+                </div>
+                <div class="status-item">
+                    <div class="status-number">100%</div>
+                    <div class="status-label">Responsive</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keyboard Shortcuts -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">⌨️ Phím tắt</h3>
+            </div>
+            <div class="card-body">
+                <div class="shortcuts-grid">
+                    <div class="shortcut-item">
+                        <kbd>H</kbd>
+                        <span>Về Navigation Hub</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>A</kbd>
+                        <span>Mở Algorithm Analyzer</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>L</kbd>
+                        <span>Mở Learning Accelerator</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Ctrl + F</kbd>
+                        <span>Focus tìm kiếm</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Ctrl + T</kbd>
+                        <span>Toggle theme</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>?</kbd>
+                        <span>Hiển thị phím tắt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared JavaScript -->
+    <script src="shared/scripts.js"></script>
+
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('shared/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

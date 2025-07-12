@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng quan thuật toán - Algorithm Ecosystem</title>
+    <link rel="stylesheet" href="shared/styles.css">
+    <link rel="stylesheet" href="shared/animations.css">
+    <link rel="stylesheet" href="shared/utilities.css">
+    <style>
+        .overview-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .overview-header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .overview-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .overview-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .categories-section {
+            margin-bottom: 40px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+
+        .category-content {
+            padding: 20px;
+        }
+
+        .algorithm-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s ease;
+        }
+
+        .algorithm-item:last-child {
+            border-bottom: none;
+        }
+
+        .algorithm-item:hover {
+            background: #f8f9fa;
+        }
+
+        .algorithm-info h4 {
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .algorithm-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .algorithm-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .status-complete {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .status-coming {
+            background: #FF9800;
+            color: white;
+        }
+
+        .difficulty-badge {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+
+        .difficulty-easy {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .difficulty-medium {
+            background: #FF9800;
+            color: white;
+        }
+
+        .difficulty-hard {
+            background: #F44336;
+            color: white;
+        }
+
+        .progress-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            transition: width 0.3s ease;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="overview-container">
+        <div class="overview-header">
+            <h1>📚 Tổng quan thuật toán</h1>
+            <p>Khám phá tất cả các thuật toán đã được phát triển trong hệ sinh thái</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Thuật toán hoàn thành</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Danh mục chính</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Mức độ khó</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Nội dung chi tiết</div>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <h2>📊 Tiến độ phát triển</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <p><strong>80% hoàn thành</strong> - 8/10 thuật toán cốt lõi đã được phát triển đầy đủ</p>
+        </div>
+
+        <div class="categories-section">
+            <h2>🎯 Danh mục thuật toán</h2>
+            <div class="category-grid">
+                <!-- Cơ bản -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <h3>🔰 Cơ bản</h3>
+                    </div>
+                    <div class="category-content">
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Two Sum</h4>
+                                <p>Tìm hai số có tổng bằng target</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-easy">Dễ</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Binary Search</h4>
+                                <p>Tìm kiếm nhị phân trong mảng đã sắp xếp</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-easy">Dễ</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sắp xếp -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <h3>📊 Sắp xếp</h3>
+                    </div>
+                    <div class="category-content">
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Bubble Sort</h4>
+                                <p>Sắp xếp nổi bọt - thuật toán sắp xếp đơn giản</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-easy">Dễ</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Quick Sort</h4>
+                                <p>Sắp xếp nhanh - chia để trị</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-medium">Trung bình</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Merge Sort</h4>
+                                <p>Sắp xếp trộn - hiệu suất ổn định</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-medium">Trung bình</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Đồ thị -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <h3>🕸️ Đồ thị</h3>
+                    </div>
+                    <div class="category-content">
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Depth First Search</h4>
+                                <p>Tìm kiếm theo chiều sâu</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-medium">Trung bình</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Breadth First Search</h4>
+                                <p>Tìm kiếm theo chiều rộng</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-medium">Trung bình</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Dijkstra's Algorithm</h4>
+                                <p>Tìm đường đi ngắn nhất</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-hard">Khó</span>
+                                <span class="status-badge status-complete">Hoàn thành</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sắp tới -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <h3>🚧 Sắp tới</h3>
+                    </div>
+                    <div class="category-content">
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Dynamic Programming</h4>
+                                <p>Quy hoạch động</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-hard">Khó</span>
+                                <span class="status-badge status-coming">Sắp tới</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Greedy Algorithms</h4>
+                                <p>Thuật toán tham lam</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-medium">Trung bình</span>
+                                <span class="status-badge status-coming">Sắp tới</span>
+                            </div>
+                        </div>
+                        <div class="algorithm-item">
+                            <div class="algorithm-info">
+                                <h4>Backtracking</h4>
+                                <p>Quay lui</p>
+                            </div>
+                            <div class="algorithm-status">
+                                <span class="difficulty-badge difficulty-hard">Khó</span>
+                                <span class="status-badge status-coming">Sắp tới</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="algorithm_learning.html" class="btn btn-primary">🎓 Học thuật toán</a>
+            <a href="simple_learning.html" class="btn btn-secondary">📖 Học đơn giản</a>
+            <a href="index.html" class="btn btn-success">🏠 Trang chủ</a>
+        </div>
+    </div>
+
+    <script src="shared/animations.js"></script>
+    <script>
+        // Animate progress bar on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressFill = document.querySelector('.progress-fill');
+            progressFill.style.width = '0%';
+            
+            setTimeout(() => {
+                progressFill.style.width = '80%';
+            }, 500);
+        });
+    </script>
+
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('shared/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

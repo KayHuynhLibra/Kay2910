@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .metric {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2196F3;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .warning {
+            color: #FFA500;
+        }
+        
+        .error {
+            color: #FF0000;
+        }
+        
+        .success {
+            color: #4CAF50;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .chart {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+        
+        .alert {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        .alert-warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+        }
+        
+        .alert-error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .alert-success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>System Monitor Report</h1>
+        <p>Generated on: <span id="report-date"></span></p>
+        
+        <div class="section">
+            <h2>System Overview</h2>
+            <div class="metric">
+                <div class="metric-value" id="cpu-usage">--</div>
+                <div class="metric-label">CPU Usage</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="memory-usage">--</div>
+                <div class="metric-label">Memory Usage</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="disk-usage">--</div>
+                <div class="metric-label">Disk Usage</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="uptime">--</div>
+                <div class="metric-label">System Uptime</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Resource Usage History</h2>
+            <div class="chart" id="resource-chart"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Top Processes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PID</th>
+                        <th>User</th>
+                        <th>CPU %</th>
+                        <th>Memory %</th>
+                        <th>Command</th>
+                    </tr>
+                </thead>
+                <tbody id="process-list">
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Recent Alerts</h2>
+            <div id="alerts-list">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>System Information</h2>
+            <table>
+                <tr>
+                    <td>Hostname</td>
+                    <td id="hostname">--</td>
+                </tr>
+                <tr>
+                    <td>Kernel Version</td>
+                    <td id="kernel-version">--</td>
+                </tr>
+                <tr>
+                    <td>OS Version</td>
+                    <td id="os-version">--</td>
+                </tr>
+                <tr>
+                    <td>CPU Model</td>
+                    <td id="cpu-model">--</td>
+                </tr>
+                <tr>
+                    <td>Total Memory</td>
+                    <td id="total-memory">--</td>
+                </tr>
+                <tr>
+                    <td>Total Disk Space</td>
+                    <td id="total-disk">--</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Network Status</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interface</th>
+                        <th>IP Address</th>
+                        <th>Status</th>
+                        <th>Speed</th>
+                    </tr>
+                </thead>
+                <tbody id="network-interfaces">
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>This report was automatically generated by the System Monitor tool.</p>
+            <p>For more information, please refer to the documentation.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Update report date
+        document.getElementById('report-date').textContent = new Date().toLocaleString();
+        
+        // Example data population (replace with actual data from your monitoring system)
+        function populateReport() {
+            // CPU Usage
+            document.getElementById('cpu-usage').textContent = '45%';
+            
+            // Memory Usage
+            document.getElementById('memory-usage').textContent = '60%';
+            
+            // Disk Usage
+            document.getElementById('disk-usage').textContent = '75%';
+            
+            // System Uptime
+            document.getElementById('uptime').textContent = '5 days, 3 hours';
+            
+            // System Information
+            document.getElementById('hostname').textContent = 'server-01';
+            document.getElementById('kernel-version').textContent = '5.4.0-42-generic';
+            document.getElementById('os-version').textContent = 'Ubuntu 20.04 LTS';
+            document.getElementById('cpu-model').textContent = 'Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz';
+            document.getElementById('total-memory').textContent = '32 GB';
+            document.getElementById('total-disk').textContent = '1 TB';
+            
+            // Add sample processes
+            const processList = document.getElementById('process-list');
+            const processes = [
+                ['1234', 'root', '25%', '10%', 'nginx'],
+                ['1235', 'www-data', '15%', '5%', 'php-fpm'],
+                ['1236', 'mysql', '10%', '20%', 'mysqld'],
+                ['1237', 'root', '5%', '2%', 'systemd'],
+                ['1238', 'user', '3%', '1%', 'bash']
+            ];
+            
+            processes.forEach(process => {
+                const row = document.createElement('tr');
+                process.forEach(cell => {
+                    const td = document.createElement('td');
+                    td.textContent = cell;
+                    row.appendChild(td);
+                });
+                processList.appendChild(row);
+            });
+            
+            // Add sample alerts
+            const alertsList = document.getElementById('alerts-list');
+            const alerts = [
+                { level: 'warning', message: 'High CPU usage detected' },
+                { level: 'error', message: 'Disk space running low' },
+                { level: 'success', message: 'Backup completed successfully' }
+            ];
+            
+            alerts.forEach(alert => {
+                const div = document.createElement('div');
+                div.className = `alert alert-${alert.level}`;
+                div.textContent = alert.message;
+                alertsList.appendChild(div);
+            });
+        }
+        
+        // Populate the report with sample data
+        populateReport();
+    </script>
+</body>
+</html> 

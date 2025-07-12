@@ -1,0 +1,2211 @@
+[
+  {
+    "type": "folder",
+    "name": "01_Word_Embeddings",
+    "path": "01_Word_Embeddings",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Word2Vec",
+        "path": "01_Word_Embeddings/01_Word2Vec",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/BEST_PRACTICES_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/CODE_EXAMPLES_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/IMPLEMENTATION_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/PROJECT_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/QUIZ_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/ROADMAP_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_word2vec.md",
+            "path": "01_Word_Embeddings/01_Word2Vec/THEORY_01_word2vec.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_word2vec.txt",
+            "path": "01_Word_Embeddings/01_Word2Vec/requirements_01_word2vec.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_GloVe",
+        "path": "01_Word_Embeddings/02_GloVe",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/BEST_PRACTICES_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/CODE_EXAMPLES_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Word_Embeddings/02_GloVe/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/IMPLEMENTATION_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/PROJECT_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/QUIZ_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/ROADMAP_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_glove.md",
+            "path": "01_Word_Embeddings/02_GloVe/THEORY_02_glove.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_glove.txt",
+            "path": "01_Word_Embeddings/02_GloVe/requirements_02_glove.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_FastText",
+        "path": "01_Word_Embeddings/03_FastText",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/BEST_PRACTICES_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/CODE_EXAMPLES_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Word_Embeddings/03_FastText/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/IMPLEMENTATION_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/PROJECT_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/QUIZ_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/ROADMAP_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_fasttext.md",
+            "path": "01_Word_Embeddings/03_FastText/THEORY_03_fasttext.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_fasttext.txt",
+            "path": "01_Word_Embeddings/03_FastText/requirements_03_fasttext.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Contextual_Embeddings",
+        "path": "01_Word_Embeddings/04_Contextual_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/BEST_PRACTICES_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/CODE_EXAMPLES_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/IMPLEMENTATION_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/PROJECT_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/QUIZ_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/ROADMAP_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_contextual_embeddings.md",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/THEORY_04_contextual_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_contextual_embeddings.txt",
+            "path": "01_Word_Embeddings/04_Contextual_Embeddings/requirements_04_contextual_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Subword_Embeddings",
+        "path": "01_Word_Embeddings/05_Subword_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/BEST_PRACTICES_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/CODE_EXAMPLES_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/IMPLEMENTATION_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/PROJECT_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/QUIZ_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/ROADMAP_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_subword_embeddings.md",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/THEORY_05_subword_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_subword_embeddings.txt",
+            "path": "01_Word_Embeddings/05_Subword_Embeddings/requirements_05_subword_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/BEST_PRACTICES_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/CODE_EXAMPLES_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/IMPLEMENTATION_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/PROJECT_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/QUIZ_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/ROADMAP_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_01_word_embeddings.md",
+        "path": "01_Word_Embeddings/THEORY_01_word_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_01_word_embeddings.txt",
+        "path": "01_Word_Embeddings/requirements_01_word_embeddings.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "02_Sentence_Embeddings",
+    "path": "02_Sentence_Embeddings",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Average_Embeddings",
+        "path": "02_Sentence_Embeddings/01_Average_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/BEST_PRACTICES_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/CODE_EXAMPLES_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/IMPLEMENTATION_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/PROJECT_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/QUIZ_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/ROADMAP_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_average_embeddings.md",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/THEORY_01_average_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_average_embeddings.txt",
+            "path": "02_Sentence_Embeddings/01_Average_Embeddings/requirements_01_average_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Transformer_Embeddings",
+        "path": "02_Sentence_Embeddings/02_Transformer_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/BEST_PRACTICES_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/CODE_EXAMPLES_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/IMPLEMENTATION_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/PROJECT_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/QUIZ_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/ROADMAP_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_transformer_embeddings.md",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/THEORY_02_transformer_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_transformer_embeddings.txt",
+            "path": "02_Sentence_Embeddings/02_Transformer_Embeddings/requirements_02_transformer_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Sentence_Transformers",
+        "path": "02_Sentence_Embeddings/03_Sentence_Transformers",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/BEST_PRACTICES_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/CODE_EXAMPLES_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/IMPLEMENTATION_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/PROJECT_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/QUIZ_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/ROADMAP_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_sentence_transformers.md",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/THEORY_03_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_sentence_transformers.txt",
+            "path": "02_Sentence_Embeddings/03_Sentence_Transformers/requirements_03_sentence_transformers.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Universal_Sentence_Encoder",
+        "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/BEST_PRACTICES_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/CODE_EXAMPLES_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/IMPLEMENTATION_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/PROJECT_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/QUIZ_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/ROADMAP_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_universal_sentence_encoder.md",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/THEORY_04_universal_sentence_encoder.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_universal_sentence_encoder.txt",
+            "path": "02_Sentence_Embeddings/04_Universal_Sentence_Encoder/requirements_04_universal_sentence_encoder.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Contrastive_Learning",
+        "path": "02_Sentence_Embeddings/05_Contrastive_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/BEST_PRACTICES_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/CODE_EXAMPLES_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/IMPLEMENTATION_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/PROJECT_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/QUIZ_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/ROADMAP_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_contrastive_learning.md",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/THEORY_05_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_contrastive_learning.txt",
+            "path": "02_Sentence_Embeddings/05_Contrastive_Learning/requirements_05_contrastive_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/BEST_PRACTICES_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/CODE_EXAMPLES_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/IMPLEMENTATION_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/PROJECT_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/QUIZ_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/ROADMAP_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_02_sentence_embeddings.md",
+        "path": "02_Sentence_Embeddings/THEORY_02_sentence_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_02_sentence_embeddings.txt",
+        "path": "02_Sentence_Embeddings/requirements_02_sentence_embeddings.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "03_Graph_Embeddings",
+    "path": "03_Graph_Embeddings",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Node_Embeddings",
+        "path": "03_Graph_Embeddings/01_Node_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/BEST_PRACTICES_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/CODE_EXAMPLES_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/IMPLEMENTATION_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/PROJECT_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/QUIZ_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/ROADMAP_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_node_embeddings.md",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/THEORY_01_node_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_node_embeddings.txt",
+            "path": "03_Graph_Embeddings/01_Node_Embeddings/requirements_01_node_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Edge_Embeddings",
+        "path": "03_Graph_Embeddings/02_Edge_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/BEST_PRACTICES_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/CODE_EXAMPLES_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/IMPLEMENTATION_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/PROJECT_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/QUIZ_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/ROADMAP_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_edge_embeddings.md",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/THEORY_02_edge_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_edge_embeddings.txt",
+            "path": "03_Graph_Embeddings/02_Edge_Embeddings/requirements_02_edge_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Graph_Neural_Networks",
+        "path": "03_Graph_Embeddings/03_Graph_Neural_Networks",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/BEST_PRACTICES_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/CODE_EXAMPLES_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/IMPLEMENTATION_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/PROJECT_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/QUIZ_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/ROADMAP_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_graph_neural_networks.md",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/THEORY_03_graph_neural_networks.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_graph_neural_networks.txt",
+            "path": "03_Graph_Embeddings/03_Graph_Neural_Networks/requirements_03_graph_neural_networks.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Knowledge_Graph_Embeddings",
+        "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/BEST_PRACTICES_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/CODE_EXAMPLES_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/IMPLEMENTATION_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/PROJECT_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/QUIZ_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/ROADMAP_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_knowledge_graph_embeddings.md",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/THEORY_04_knowledge_graph_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_knowledge_graph_embeddings.txt",
+            "path": "03_Graph_Embeddings/04_Knowledge_Graph_Embeddings/requirements_04_knowledge_graph_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Network_Embeddings",
+        "path": "03_Graph_Embeddings/05_Network_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/BEST_PRACTICES_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/CODE_EXAMPLES_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/IMPLEMENTATION_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/PROJECT_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/QUIZ_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/ROADMAP_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_network_embeddings.md",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/THEORY_05_network_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_network_embeddings.txt",
+            "path": "03_Graph_Embeddings/05_Network_Embeddings/requirements_05_network_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/BEST_PRACTICES_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/CODE_EXAMPLES_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/IMPLEMENTATION_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/PROJECT_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/QUIZ_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/ROADMAP_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_03_graph_embeddings.md",
+        "path": "03_Graph_Embeddings/THEORY_03_graph_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_03_graph_embeddings.txt",
+        "path": "03_Graph_Embeddings/requirements_03_graph_embeddings.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "04_Multimodal_Embeddings",
+    "path": "04_Multimodal_Embeddings",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Image_Embeddings",
+        "path": "04_Multimodal_Embeddings/01_Image_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/BEST_PRACTICES_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/CODE_EXAMPLES_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/IMPLEMENTATION_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/PROJECT_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/QUIZ_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/ROADMAP_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_image_embeddings.md",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/THEORY_01_image_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_image_embeddings.txt",
+            "path": "04_Multimodal_Embeddings/01_Image_Embeddings/requirements_01_image_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Audio_Embeddings",
+        "path": "04_Multimodal_Embeddings/02_Audio_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/BEST_PRACTICES_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/CODE_EXAMPLES_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/IMPLEMENTATION_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/PROJECT_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/QUIZ_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/ROADMAP_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_audio_embeddings.md",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/THEORY_02_audio_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_audio_embeddings.txt",
+            "path": "04_Multimodal_Embeddings/02_Audio_Embeddings/requirements_02_audio_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Video_Embeddings",
+        "path": "04_Multimodal_Embeddings/03_Video_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/BEST_PRACTICES_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/CODE_EXAMPLES_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/IMPLEMENTATION_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/PROJECT_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/QUIZ_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/ROADMAP_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_video_embeddings.md",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/THEORY_03_video_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_video_embeddings.txt",
+            "path": "04_Multimodal_Embeddings/03_Video_Embeddings/requirements_03_video_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Cross_Modal_Embeddings",
+        "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/BEST_PRACTICES_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/CODE_EXAMPLES_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/IMPLEMENTATION_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/PROJECT_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/QUIZ_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/ROADMAP_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_cross_modal_embeddings.md",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/THEORY_04_cross_modal_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_cross_modal_embeddings.txt",
+            "path": "04_Multimodal_Embeddings/04_Cross_Modal_Embeddings/requirements_04_cross_modal_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Unified_Embeddings",
+        "path": "04_Multimodal_Embeddings/05_Unified_Embeddings",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/BEST_PRACTICES_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/CODE_EXAMPLES_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/IMPLEMENTATION_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/PROJECT_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/QUIZ_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/ROADMAP_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_unified_embeddings.md",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/THEORY_05_unified_embeddings.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_unified_embeddings.txt",
+            "path": "04_Multimodal_Embeddings/05_Unified_Embeddings/requirements_05_unified_embeddings.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/BEST_PRACTICES_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/CODE_EXAMPLES_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/IMPLEMENTATION_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/PROJECT_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/QUIZ_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/ROADMAP_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_04_multimodal_embeddings.md",
+        "path": "04_Multimodal_Embeddings/THEORY_04_multimodal_embeddings.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_04_multimodal_embeddings.txt",
+        "path": "04_Multimodal_Embeddings/requirements_04_multimodal_embeddings.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "05_Learning_Methods",
+    "path": "05_Learning_Methods",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Supervised_Learning",
+        "path": "05_Learning_Methods/01_Supervised_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/BEST_PRACTICES_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/CODE_EXAMPLES_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/IMPLEMENTATION_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/PROJECT_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/QUIZ_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/ROADMAP_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_supervised_learning.md",
+            "path": "05_Learning_Methods/01_Supervised_Learning/THEORY_01_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_supervised_learning.txt",
+            "path": "05_Learning_Methods/01_Supervised_Learning/requirements_01_supervised_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Unsupervised_Learning",
+        "path": "05_Learning_Methods/02_Unsupervised_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/BEST_PRACTICES_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/CODE_EXAMPLES_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/IMPLEMENTATION_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/PROJECT_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/QUIZ_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/ROADMAP_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_unsupervised_learning.md",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/THEORY_02_unsupervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_unsupervised_learning.txt",
+            "path": "05_Learning_Methods/02_Unsupervised_Learning/requirements_02_unsupervised_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Self_Supervised_Learning",
+        "path": "05_Learning_Methods/03_Self_Supervised_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/BEST_PRACTICES_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/CODE_EXAMPLES_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/IMPLEMENTATION_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/PROJECT_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/QUIZ_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/ROADMAP_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_self_supervised_learning.md",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/THEORY_03_self_supervised_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_self_supervised_learning.txt",
+            "path": "05_Learning_Methods/03_Self_Supervised_Learning/requirements_03_self_supervised_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Contrastive_Learning",
+        "path": "05_Learning_Methods/04_Contrastive_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/BEST_PRACTICES_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/CODE_EXAMPLES_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/IMPLEMENTATION_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/PROJECT_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/QUIZ_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/ROADMAP_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_contrastive_learning.md",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/THEORY_04_contrastive_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_contrastive_learning.txt",
+            "path": "05_Learning_Methods/04_Contrastive_Learning/requirements_04_contrastive_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Meta_Learning",
+        "path": "05_Learning_Methods/05_Meta_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/BEST_PRACTICES_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/CODE_EXAMPLES_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/IMPLEMENTATION_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/PROJECT_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/QUIZ_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/ROADMAP_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_meta_learning.md",
+            "path": "05_Learning_Methods/05_Meta_Learning/THEORY_05_meta_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_meta_learning.txt",
+            "path": "05_Learning_Methods/05_Meta_Learning/requirements_05_meta_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_05_learning_methods.md",
+        "path": "05_Learning_Methods/BEST_PRACTICES_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_05_learning_methods.md",
+        "path": "05_Learning_Methods/CODE_EXAMPLES_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_05_learning_methods.md",
+        "path": "05_Learning_Methods/IMPLEMENTATION_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_05_learning_methods.md",
+        "path": "05_Learning_Methods/PROJECT_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_05_learning_methods.md",
+        "path": "05_Learning_Methods/QUIZ_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_05_learning_methods.md",
+        "path": "05_Learning_Methods/ROADMAP_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_05_learning_methods.md",
+        "path": "05_Learning_Methods/THEORY_05_learning_methods.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_05_learning_methods.txt",
+        "path": "05_Learning_Methods/requirements_05_learning_methods.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "06_Tools",
+    "path": "06_Tools",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Gensim",
+        "path": "06_Tools/01_Gensim",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_gensim.md",
+            "path": "06_Tools/01_Gensim/BEST_PRACTICES_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_gensim.md",
+            "path": "06_Tools/01_Gensim/CODE_EXAMPLES_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/01_Gensim/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_gensim.md",
+            "path": "06_Tools/01_Gensim/IMPLEMENTATION_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_gensim.md",
+            "path": "06_Tools/01_Gensim/PROJECT_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_gensim.md",
+            "path": "06_Tools/01_Gensim/QUIZ_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_gensim.md",
+            "path": "06_Tools/01_Gensim/ROADMAP_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_gensim.md",
+            "path": "06_Tools/01_Gensim/THEORY_01_gensim.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_gensim.txt",
+            "path": "06_Tools/01_Gensim/requirements_01_gensim.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Sentence_Transformers",
+        "path": "06_Tools/02_Sentence_Transformers",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/BEST_PRACTICES_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/CODE_EXAMPLES_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/02_Sentence_Transformers/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/IMPLEMENTATION_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/PROJECT_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/QUIZ_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/ROADMAP_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_sentence_transformers.md",
+            "path": "06_Tools/02_Sentence_Transformers/THEORY_02_sentence_transformers.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_sentence_transformers.txt",
+            "path": "06_Tools/02_Sentence_Transformers/requirements_02_sentence_transformers.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_TensorFlow_Hub",
+        "path": "06_Tools/03_TensorFlow_Hub",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/BEST_PRACTICES_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/CODE_EXAMPLES_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/03_TensorFlow_Hub/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/IMPLEMENTATION_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/PROJECT_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/QUIZ_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/ROADMAP_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_tensorflow_hub.md",
+            "path": "06_Tools/03_TensorFlow_Hub/THEORY_03_tensorflow_hub.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_tensorflow_hub.txt",
+            "path": "06_Tools/03_TensorFlow_Hub/requirements_03_tensorflow_hub.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_PyTorch_Geometric",
+        "path": "06_Tools/04_PyTorch_Geometric",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/BEST_PRACTICES_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/CODE_EXAMPLES_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/04_PyTorch_Geometric/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/IMPLEMENTATION_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/PROJECT_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/QUIZ_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/ROADMAP_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_pytorch_geometric.md",
+            "path": "06_Tools/04_PyTorch_Geometric/THEORY_04_pytorch_geometric.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_pytorch_geometric.txt",
+            "path": "06_Tools/04_PyTorch_Geometric/requirements_04_pytorch_geometric.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_DGL",
+        "path": "06_Tools/05_DGL",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_dgl.md",
+            "path": "06_Tools/05_DGL/BEST_PRACTICES_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_dgl.md",
+            "path": "06_Tools/05_DGL/CODE_EXAMPLES_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Tools/05_DGL/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_dgl.md",
+            "path": "06_Tools/05_DGL/IMPLEMENTATION_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_dgl.md",
+            "path": "06_Tools/05_DGL/PROJECT_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_dgl.md",
+            "path": "06_Tools/05_DGL/QUIZ_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_dgl.md",
+            "path": "06_Tools/05_DGL/ROADMAP_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_dgl.md",
+            "path": "06_Tools/05_DGL/THEORY_05_dgl.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_dgl.txt",
+            "path": "06_Tools/05_DGL/requirements_05_dgl.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_06_tools.md",
+        "path": "06_Tools/BEST_PRACTICES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_06_tools.md",
+        "path": "06_Tools/CODE_EXAMPLES_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_06_tools.md",
+        "path": "06_Tools/IMPLEMENTATION_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_06_tools.md",
+        "path": "06_Tools/PROJECT_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_06_tools.md",
+        "path": "06_Tools/QUIZ_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_06_tools.md",
+        "path": "06_Tools/ROADMAP_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_06_tools.md",
+        "path": "06_Tools/THEORY_06_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_06_tools.txt",
+        "path": "06_Tools/requirements_06_tools.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "07_Applications",
+    "path": "07_Applications",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Semantic_Search",
+        "path": "07_Applications/01_Semantic_Search",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/BEST_PRACTICES_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/CODE_EXAMPLES_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/01_Semantic_Search/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/IMPLEMENTATION_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/PROJECT_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/QUIZ_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/ROADMAP_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_semantic_search.md",
+            "path": "07_Applications/01_Semantic_Search/THEORY_01_semantic_search.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_semantic_search.txt",
+            "path": "07_Applications/01_Semantic_Search/requirements_01_semantic_search.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Recommendation_Systems",
+        "path": "07_Applications/02_Recommendation_Systems",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/BEST_PRACTICES_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/CODE_EXAMPLES_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/02_Recommendation_Systems/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/IMPLEMENTATION_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/PROJECT_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/QUIZ_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/ROADMAP_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_recommendation_systems.md",
+            "path": "07_Applications/02_Recommendation_Systems/THEORY_02_recommendation_systems.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_recommendation_systems.txt",
+            "path": "07_Applications/02_Recommendation_Systems/requirements_02_recommendation_systems.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Information_Retrieval",
+        "path": "07_Applications/03_Information_Retrieval",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/BEST_PRACTICES_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/CODE_EXAMPLES_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/03_Information_Retrieval/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/IMPLEMENTATION_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/PROJECT_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/QUIZ_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/ROADMAP_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_information_retrieval.md",
+            "path": "07_Applications/03_Information_Retrieval/THEORY_03_information_retrieval.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_information_retrieval.txt",
+            "path": "07_Applications/03_Information_Retrieval/requirements_03_information_retrieval.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Clustering",
+        "path": "07_Applications/04_Clustering",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_clustering.md",
+            "path": "07_Applications/04_Clustering/BEST_PRACTICES_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_clustering.md",
+            "path": "07_Applications/04_Clustering/CODE_EXAMPLES_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/04_Clustering/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_clustering.md",
+            "path": "07_Applications/04_Clustering/IMPLEMENTATION_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_clustering.md",
+            "path": "07_Applications/04_Clustering/PROJECT_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_clustering.md",
+            "path": "07_Applications/04_Clustering/QUIZ_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_clustering.md",
+            "path": "07_Applications/04_Clustering/ROADMAP_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_clustering.md",
+            "path": "07_Applications/04_Clustering/THEORY_04_clustering.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_clustering.txt",
+            "path": "07_Applications/04_Clustering/requirements_04_clustering.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Similarity_Computing",
+        "path": "07_Applications/05_Similarity_Computing",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/BEST_PRACTICES_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/CODE_EXAMPLES_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Applications/05_Similarity_Computing/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/IMPLEMENTATION_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/PROJECT_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/QUIZ_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/ROADMAP_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_similarity_computing.md",
+            "path": "07_Applications/05_Similarity_Computing/THEORY_05_similarity_computing.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_similarity_computing.txt",
+            "path": "07_Applications/05_Similarity_Computing/requirements_05_similarity_computing.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_07_applications.md",
+        "path": "07_Applications/BEST_PRACTICES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_07_applications.md",
+        "path": "07_Applications/CODE_EXAMPLES_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_07_applications.md",
+        "path": "07_Applications/IMPLEMENTATION_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_07_applications.md",
+        "path": "07_Applications/PROJECT_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_07_applications.md",
+        "path": "07_Applications/QUIZ_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_07_applications.md",
+        "path": "07_Applications/ROADMAP_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_07_applications.md",
+        "path": "07_Applications/THEORY_07_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_07_applications.txt",
+        "path": "07_Applications/requirements_07_applications.txt"
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "name": "BEST_PRACTICES_17_embeddings.md",
+    "path": "BEST_PRACTICES_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "CODE_EXAMPLES_17_embeddings.md",
+    "path": "CODE_EXAMPLES_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "COMPLEX_PROBLEMS.md",
+    "path": "COMPLEX_PROBLEMS.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION.md",
+    "path": "IMPLEMENTATION.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION_17_embeddings.md",
+    "path": "IMPLEMENTATION_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "PROJECT_17_embeddings.md",
+    "path": "PROJECT_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "QUIZ_17_embeddings.md",
+    "path": "QUIZ_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "ROADMAP_17_embeddings.md",
+    "path": "ROADMAP_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY.md",
+    "path": "THEORY.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY_17_embeddings.md",
+    "path": "THEORY_17_embeddings.md"
+  },
+  {
+    "type": "file",
+    "name": "requirements.txt",
+    "path": "requirements.txt"
+  },
+  {
+    "type": "file",
+    "name": "requirements_17_embeddings.txt",
+    "path": "requirements_17_embeddings.txt"
+  }
+]

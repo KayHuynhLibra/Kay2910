@@ -1,0 +1,112 @@
+# Security Configuration cho MLOps System
+
+# Authentication & Authorization
+auth:
+  jwt:
+    secret_key: ${JWT_SECRET_KEY}  # Secret key cho JWT (được set qua environment variable)
+    algorithm: "HS256"  # Algorithm cho JWT
+    access_token_expire_minutes: 30  # Thời gian hết hạn của access token
+    refresh_token_expire_days: 7  # Thời gian hết hạn của refresh token
+
+  oauth2:
+    enabled: true  # Bật OAuth2 authentication
+    providers:  # Các OAuth2 providers
+      google:
+        client_id: ${GOOGLE_CLIENT_ID}
+        client_secret: ${GOOGLE_CLIENT_SECRET}
+        redirect_uri: "https://api.example.com/auth/google/callback"
+      github:
+        client_id: ${GITHUB_CLIENT_ID}
+        client_secret: ${GITHUB_CLIENT_SECRET}
+        redirect_uri: "https://api.example.com/auth/github/callback"
+
+# API Security
+api:
+  rate_limit:  # Rate limiting
+    enabled: true
+    requests_per_minute: 100
+    burst_size: 50
+
+  cors:  # CORS configuration
+    enabled: true
+    allowed_origins:
+      - "https://example.com"
+      - "https://app.example.com"
+    allowed_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+    allowed_headers:
+      - "Authorization"
+      - "Content-Type"
+    max_age: 3600
+
+# Data Security
+data:
+  encryption:
+    enabled: true
+    algorithm: "AES-256-GCM"  # Algorithm cho data encryption
+    key_rotation_days: 30  # Số ngày rotation encryption key
+
+  masking:  # Data masking rules
+    enabled: true
+    rules:
+      - field: "email"
+        type: "email"
+        mask_char: "*"
+      - field: "phone"
+        type: "phone"
+        mask_char: "#"
+      - field: "credit_card"
+        type: "credit_card"
+        mask_char: "X"
+
+# Model Security
+model:
+  input_validation:  # Input validation rules
+    enabled: true
+    max_input_size: 1048576  # 1MB
+    allowed_file_types:
+      - "csv"
+      - "json"
+      - "parquet"
+
+  output_sanitization:  # Output sanitization rules
+    enabled: true
+    max_output_size: 10485760  # 10MB
+    remove_sensitive_fields: true
+
+# Monitoring & Logging
+monitoring:
+  audit_logging:  # Audit logging configuration
+    enabled: true
+    log_level: "INFO"
+    sensitive_operations:
+      - "model_deployment"
+      - "data_access"
+      - "user_management"
+
+  security_alerts:  # Security alerting rules
+    enabled: true
+    alert_channels:
+      - "email"
+      - "slack"
+    alert_thresholds:
+      failed_login_attempts: 5
+      suspicious_api_calls: 10
+      data_access_violations: 1
+
+# Compliance
+compliance:
+  gdpr:
+    enabled: true
+    data_retention_days: 365
+    right_to_forget: true
+    data_portability: true
+
+  hipaa:
+    enabled: true
+    phi_detection: true
+    encryption_required: true
+    audit_trail: true 

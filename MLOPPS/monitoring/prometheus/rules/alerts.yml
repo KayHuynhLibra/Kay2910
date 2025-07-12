@@ -1,0 +1,80 @@
+# Alert Rules cho MLOps System
+
+groups:
+- name: mlops_alerts
+  rules:
+  # API Alerts
+  - alert: APIHighLatency
+    expr: http_request_duration_seconds{quantile="0.9"} > 1
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "API latency cao"
+      description: "API endpoint {{ $labels.endpoint }} có latency cao hơn 1s trong 5 phút"
+
+  - alert: APIHighErrorRate
+    expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Tỷ lệ lỗi API cao"
+      description: "Tỷ lệ lỗi 5xx cao hơn 5% trong 5 phút"
+
+  # Model Performance Alerts
+  - alert: ModelPredictionLatencyHigh
+    expr: model_prediction_latency_seconds > 0.5
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Model prediction latency cao"
+      description: "Model {{ $labels.model_name }} có prediction latency cao hơn 0.5s"
+
+  - alert: ModelAccuracyLow
+    expr: model_accuracy < 0.8
+    for: 1h
+    labels:
+      severity: warning
+    annotations:
+      summary: "Model accuracy thấp"
+      description: "Model {{ $labels.model_name }} có accuracy thấp hơn 80%"
+
+  # Resource Alerts
+  - alert: HighCPUUsage
+    expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "CPU usage cao"
+      description: "CPU usage trên instance {{ $labels.instance }} cao hơn 80% trong 10 phút"
+
+  - alert: HighMemoryUsage
+    expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 > 85
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Memory usage cao"
+      description: "Memory usage trên instance {{ $labels.instance }} cao hơn 85% trong 10 phút"
+
+  # Data Pipeline Alerts
+  - alert: DataPipelineFailure
+    expr: data_pipeline_status == 0
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Data pipeline thất bại"
+      description: "Data pipeline {{ $labels.pipeline_name }} thất bại"
+
+  - alert: DataDriftDetected
+    expr: data_drift_score > 0.3
+    for: 1h
+    labels:
+      severity: warning
+    annotations:
+      summary: "Phát hiện data drift"
+      description: "Data drift score cao hơn 0.3 cho feature {{ $labels.feature_name }}" 

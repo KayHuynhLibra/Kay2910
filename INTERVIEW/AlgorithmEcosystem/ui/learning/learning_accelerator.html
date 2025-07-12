@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="../icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../../shared/styles.css" as="style">
+    <link rel="preload" href="../../shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/styles.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/components.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/animations.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/accessibility.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Accelerator & Spaced Repetition</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../index.html" class="back-button">
+                ← Quay lại Navigation Hub
+            </a>
+            <h1>📚 Learning Accelerator & Spaced Repetition</h1>
+            <p>Hệ thống học tập tối ưu với spaced repetition và progress tracking</p>
+        </div>
+
+        <div class="flashcard">
+            <div class="flashcard-question">
+                Thuật toán Two Sum có độ phức tạp thời gian là gì?
+            </div>
+            <div class="flashcard-answer">
+                O(n) - Sử dụng Hash Table để lưu trữ các số đã xem qua, chỉ cần duyệt mảng một lần.
+            </div>
+            <div class="flashcard-controls">
+                <button class="btn btn-primary" onclick="this.parentElement.parentElement.classList.toggle('show-answer')">
+                    Hiển thị đáp án
+                </button>
+                <button class="btn btn-success">Đã biết</button>
+                <button class="btn btn-warning">Cần ôn lại</button>
+            </div>
+        </div>
+
+        <div class="progress-card">
+            <div class="progress-card-title">Tiến độ học tập</div>
+            <div class="progress-card-value" data-progress-type="percentage">75%</div>
+            <div class="progress-card-subtitle">24/32 algorithms completed</div>
+        </div>
+    </div>
+
+    <script src="../../shared/scripts.js"></script>
+
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('shared/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

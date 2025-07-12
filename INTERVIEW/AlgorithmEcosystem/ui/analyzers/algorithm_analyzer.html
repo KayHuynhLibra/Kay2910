@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="../icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../../shared/styles.css" as="style">
+    <link rel="preload" href="../../shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/styles.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/components.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/animations.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/accessibility.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../../shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Analyzer & Theory Enhancer</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../index.html" class="back-button">
+                ← Quay lại Navigation Hub
+            </a>
+            <h1>🔍 Algorithm Analyzer & Theory Enhancer</h1>
+            <p>Sàng lọc và nâng cấp lý thuyết cho từng giải thuật</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Sidebar with filters and algorithm list -->
+            <div class="sidebar">
+                <div class="filter-section">
+                    <h3>🔍 Bộ lọc</h3>
+                    <input type="text" class="search-box" placeholder="Tìm kiếm algorithm..." id="searchBox">
+                    
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterEasy" checked>
+                            <label for="filterEasy">Easy</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterMedium" checked>
+                            <label for="filterMedium">Medium</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterHard" checked>
+                            <label for="filterHard">Hard</label>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 15px;">📚 Categories</h4>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterArrays" checked>
+                            <label for="filterArrays">Arrays</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterStrings" checked>
+                            <label for="filterStrings">Strings</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterTrees" checked>
+                            <label for="filterTrees">Trees</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterGraphs" checked>
+                            <label for="filterGraphs">Graphs</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filterDP" checked>
+                            <label for="filterDP">Dynamic Programming</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="algorithm-list" id="algorithmList">
+                    <!-- Algorithm items will be populated here -->
+                </div>
+            </div>
+
+            <!-- Main content area -->
+            <div class="algorithm-detail" id="algorithmDetail">
+                <h2>Chọn một algorithm để phân tích</h2>
+                <p>Vui lòng chọn một algorithm từ danh sách bên trái để xem chi tiết phân tích và lý thuyết nâng cao.</p>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        // Enhanced algorithm database with detailed analysis
+        const algorithms = [
+            {
+                id: 1,
+                name: "Two Sum",
+                category: "Arrays",
+                difficulty: "Easy",
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(n)",
+                concept: "Tìm hai số trong mảng có tổng bằng target",
+                description: "Sử dụng HashMap để lưu trữ các số đã duyệt qua, kiểm tra complement của mỗi số với target.",
+                keyInsights: [
+                    "HashMap giúp tìm kiếm O(1) thay vì O(n)",
+                    "Chỉ cần duyệt mảng một lần",
+                    "Lưu index thay vì chỉ value để trả về đúng vị trí"
+                ],
+                commonMistakes: [
+                    "Quên kiểm tra complement trước khi thêm vào map",
+                    "Trả về sai thứ tự index",
+                    "Không xử lý trường hợp duplicate values"
+                ],
+                optimizationTips: [
+                    "Có thể sử dụng Set nếu chỉ cần kiểm tra tồn tại",
+                    "Two pointers approach cho mảng đã sort (O(n log n))",
+                    "Binary search cho mảng đã sort (O(n log n))"
+                ],
+                realWorldApplications: [
+                    "Tìm kiếm sản phẩm trong e-commerce",
+                    "Matching users trong dating apps",
+                    "Financial portfolio balancing"
+                ],
+                learningPath: [
+                    {
+                        step: 1,
+                        title: "Hiểu vấn đề",
+                        description: "Xác định input, output và constraints"
+                    },
+                    {
+                        step: 2,
+                        title: "Brute Force",
+                        description: "Giải bằng 2 vòng lặp lồng nhau O(n²)"
+                    },
+                    {
+                        step: 3,
+                        title: "Tối ưu hóa",
+                        description: "Sử dụng HashMap để giảm thời gian tìm kiếm"
+                    },
+                    {
+                        step: 4,
+                        title: "Edge Cases",
+                        description: "Xử lý duplicate values và empty array"
+                    }
+                ],
+                codeExamples: {
+                    python: `def two_sum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+    return []
+
+# Test cases
+print(two_sum([2, 7, 11, 15], 9))  # [0, 1]
+print(two_sum([3, 2, 4], 6))       # [1, 2]
+print(two_sum([3, 3], 6))          # [0, 1]`,
+                    javascript: `function twoSum(nums, target) {
+    const map = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        if (map.has(complement)) {
+            return [map.get(complement), i];
+        }
+        map.set(nums[i], i);
+    }
+    return [];
+}
+
+// Test cases
+console.log(twoSum([2, 7, 11, 15], 9));  // [0, 1]
+console.log(twoSum([3, 2, 4], 6));       // [1, 2]
+console.log(twoSum([3, 3], 6));          // [0, 1]`,
+                    java: `import java.util.*;
+
+public class TwoSum {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[]{map.get(complement), i};
+            }
+            map.put(nums[i], i);
+        }
+        return new int[]{};
+    }
+}`
+                },
+                theoryEnhancements: [
+                    {
+                        type: "Mathematical Foundation",
+                        content: "Dựa trên nguyên lý: nếu a + b = target, thì target - a = b. Đây là ứng dụng của phép toán đại số cơ bản."
+                    },
+                    {
+                        type: "Data Structure Choice",
+                        content: "HashMap được chọn vì: 1) Average case O(1) lookup, 2) Lưu trữ key-value pairs, 3) Không cần sort như array."
+                    },
+                    {
+                        type: "Algorithm Pattern",
+                        content: "Đây là ví dụ điển hình của 'Hash Table Pattern' - sử dụng hash table để tối ưu hóa tìm kiếm."
+                    },
+                    {
+                        type: "Space-Time Tradeoff",
+                        content: "Đánh đổi O(n) space để đạt được O(n) time thay vì O(n²) time. Đây là tradeoff phổ biến trong algorithm design."
+                    }
+                ]
+            },
+            {
+                id: 2,
+                name: "Binary Search",
+                category: "Search",
+                difficulty: "Easy",
+                timeComplexity: "O(log n)",
+                spaceComplexity: "O(1)",
+                concept: "Tìm kiếm trong mảng đã sắp xếp bằng cách chia đôi không gian tìm kiếm",
+                description: "Thuật toán tìm kiếm hiệu quả trên mảng đã sort, giảm một nửa không gian tìm kiếm sau mỗi lần so sánh.",
+                keyInsights: [
+                    "Chỉ hoạt động trên mảng đã sort",
+                    "Giảm không gian tìm kiếm một nửa mỗi bước",
+                    "Cần xử lý cẩn thận boundary conditions"
+                ],
+                commonMistakes: [
+                    "Infinite loop do không cập nhật left/right đúng cách",
+                    "Integer overflow khi tính mid",
+                    "Không xử lý trường hợp target không tồn tại"
+                ],
+                optimizationTips: [
+                    "Sử dụng left + (right - left) / 2 để tránh overflow",
+                    "Có thể sử dụng left < right thay vì left <= right",
+                    "Template patterns cho các biến thể khác nhau"
+                ],
+                realWorldApplications: [
+                    "Tìm kiếm trong database indexes",
+                    "Game development (collision detection)",
+                    "File system directory lookup"
+                ],
+                learningPath: [
+                    {
+                        step: 1,
+                        title: "Linear Search",
+                        description: "Hiểu cách tìm kiếm tuần tự O(n)"
+                    },
+                    {
+                        step: 2,
+                        title: "Binary Search Concept",
+                        description: "Hiểu nguyên lý chia đôi không gian tìm kiếm"
+                    },
+                    {
+                        step: 3,
+                        title: "Implementation",
+                        description: "Viết code với boundary conditions"
+                    },
+                    {
+                        step: 4,
+                        title: "Variations",
+                        description: "Tìm first/last occurrence, insertion point"
+                    }
+                ],
+                codeExamples: {
+                    python: `def binary_search(nums, target):
+    left, right = 0, len(nums) - 1
+    
+    while left <= right:
+        mid = left + (right - left) // 2  # Avoid overflow
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    
+    return -1
+
+# Test cases
+arr = [1, 3, 5, 7, 9, 11, 13, 15]
+print(binary_search(arr, 7))   # 3
+print(binary_search(arr, 10))  # -1`,
+                    javascript: `function binarySearch(nums, target) {
+    let left = 0, right = nums.length - 1;
+    
+    while (left <= right) {
+        const mid = Math.floor(left + (right - left) / 2);
+        if (nums[mid] === target) {
+            return mid;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    
+    return -1;
+}
+
+// Test cases
+const arr = [1, 3, 5, 7, 9, 11, 13, 15];
+console.log(binarySearch(arr, 7));   // 3
+console.log(binarySearch(arr, 10));  // -1`,
+                    java: `public class BinarySearch {
+    public int binarySearch(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+        
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        
+        return -1;
+    }
+}`
+                },
+                theoryEnhancements: [
+                    {
+                        type: "Mathematical Foundation",
+                        content: "Dựa trên nguyên lý 'Divide and Conquer' - chia bài toán thành các phần nhỏ hơn. Số bước tối đa = log₂(n)."
+                    },
+                    {
+                        type: "Complexity Analysis",
+                        content: "Mỗi bước giảm không gian tìm kiếm một nửa: n → n/2 → n/4 → ... → 1. Tổng số bước = log₂(n)."
+                    },
+                    {
+                        type: "Invariant Principle",
+                        content: "Luôn duy trì invariant: target nằm trong khoảng [left, right] nếu tồn tại. Điều này đảm bảo tính đúng đắn của thuật toán."
+                    },
+                    {
+                        type: "Template Patterns",
+                        content: "Có thể tạo template cho các biến thể: tìm first occurrence, last occurrence, insertion point, với slight modifications."
+                    }
+                ]
+            },
+            {
+                id: 3,
+                name: "Quick Sort",
+                category: "Sorting",
+                difficulty: "Medium",
+                timeComplexity: "O(n log n) average, O(n²) worst",
+                spaceComplexity: "O(log n)",
+                concept: "Sắp xếp bằng phương pháp chia để trị với pivot selection",
+                description: "Thuật toán sắp xếp hiệu quả sử dụng pivot để phân vùng mảng thành các phần nhỏ hơn.",
+                keyInsights: [
+                    "Pivot selection ảnh hưởng lớn đến performance",
+                    "In-place sorting với O(log n) space",
+                    "Unstable sort nhưng hiệu quả trong practice"
+                ],
+                commonMistakes: [
+                    "Chọn pivot không tốt (first/last element)",
+                    "Không xử lý duplicate elements",
+                    "Stack overflow với mảng đã sort"
+                ],
+                optimizationTips: [
+                    "Sử dụng median-of-three pivot selection",
+                    "Switch to insertion sort cho small subarrays",
+                    "Random pivot selection để tránh worst case"
+                ],
+                realWorldApplications: [
+                    "Database sorting",
+                    "Programming language sort functions",
+                    "File system organization"
+                ],
+                learningPath: [
+                    {
+                        step: 1,
+                        title: "Partition Concept",
+                        description: "Hiểu cách phân vùng mảng quanh pivot"
+                    },
+                    {
+                        step: 2,
+                        title: "Pivot Selection",
+                        description: "Học các cách chọn pivot hiệu quả"
+                    },
+                    {
+                        step: 3,
+                        title: "Recursive Structure",
+                        description: "Áp dụng divide and conquer"
+                    },
+                    {
+                        step: 4,
+                        title: "Optimization",
+                        description: "Cải thiện performance với various techniques"
+                    }
+                ],
+                codeExamples: {
+                    python: `def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    
+    return quick_sort(left) + middle + quick_sort(right)
+
+# In-place version
+def partition(arr, low, high):
+    pivot = arr[high]
+    i = low - 1
+    
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return i + 1
+
+def quick_sort_inplace(arr, low, high):
+    if low < high:
+        pi = partition(arr, low, high)
+        quick_sort_inplace(arr, low, pi - 1)
+        quick_sort_inplace(arr, pi + 1, high)`,
+                    javascript: `function quickSort(arr) {
+    if (arr.length <= 1) return arr;
+    
+    const pivot = arr[Math.floor(arr.length / 2)];
+    const left = arr.filter(x => x < pivot);
+    const middle = arr.filter(x => x === pivot);
+    const right = arr.filter(x => x > pivot);
+    
+    return [...quickSort(left), ...middle, ...quickSort(right)];
+}
+
+// In-place version
+function partition(arr, low, high) {
+    const pivot = arr[high];
+    let i = low - 1;
+    
+    for (let j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+    }
+    
+    [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
+    return i + 1;
+}
+
+function quickSortInPlace(arr, low = 0, high = arr.length - 1) {
+    if (low < high) {
+        const pi = partition(arr, low, high);
+        quickSortInPlace(arr, low, pi - 1);
+        quickSortInPlace(arr, pi + 1, high);
+    }
+}`,
+                    java: `public class QuickSort {
+    public void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+    
+    private int partition(int[] arr, int low, int high) {
+        int pivot = arr[high];
+        int i = low - 1;
+        
+        for (int j = low; j < high; j++) {
+            if (arr[j] <= pivot) {
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        
+        return i + 1;
+    }
+}`
+                },
+                theoryEnhancements: [
+                    {
+                        type: "Mathematical Foundation",
+                        content: "Dựa trên 'Divide and Conquer' principle. Recurrence relation: T(n) = T(k) + T(n-k-1) + O(n), với k là size của left partition."
+                    },
+                    {
+                        type: "Average Case Analysis",
+                        content: "Với random pivot, expected partition size = n/2. Recurrence: T(n) = 2T(n/2) + O(n) → O(n log n)."
+                    },
+                    {
+                        type: "Worst Case Analysis",
+                        content: "Khi pivot luôn là min/max: T(n) = T(n-1) + O(n) → O(n²). Xảy ra với sorted arrays và bad pivot selection."
+                    },
+                    {
+                        type: "Space Complexity",
+                        content: "Stack space = depth of recursion tree. Best case: O(log n), Worst case: O(n). In-place partitioning giúp tiết kiệm space."
+                    }
+                ]
+            }
+        ];
+
+        let selectedAlgorithm = null;
+        let filteredAlgorithms = [...algorithms];
+
+        // Initialize the app
+        function init() {
+            renderAlgorithmList();
+            setupEventListeners();
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            document.getElementById('searchBox').addEventListener('input', filterAlgorithms);
+            
+            // Filter checkboxes
+            const filterCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', filterAlgorithms);
+            });
+        }
+
+        // Filter algorithms based on search and filters
+        function filterAlgorithms() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const difficultyFilters = {
+                easy: document.getElementById('filterEasy').checked,
+                medium: document.getElementById('filterMedium').checked,
+                hard: document.getElementById('filterHard').checked
+            };
+            const categoryFilters = {
+                arrays: document.getElementById('filterArrays').checked,
+                strings: document.getElementById('filterStrings').checked,
+                trees: document.getElementById('filterTrees').checked,
+                graphs: document.getElementById('filterGraphs').checked,
+                dp: document.getElementById('filterDP').checked
+            };
+
+            filteredAlgorithms = algorithms.filter(algo => {
+                // Search filter
+                const matchesSearch = algo.name.toLowerCase().includes(searchTerm) ||
+                                    algo.concept.toLowerCase().includes(searchTerm) ||
+                                    algo.category.toLowerCase().includes(searchTerm);
+                
+                // Difficulty filter
+                const matchesDifficulty = difficultyFilters[algo.difficulty.toLowerCase()];
+                
+                // Category filter
+                const matchesCategory = categoryFilters[algo.category.toLowerCase()] ||
+                                      (algo.category === 'Search' && categoryFilters.arrays) ||
+                                      (algo.category === 'Sorting' && categoryFilters.arrays);
+
+                return matchesSearch && matchesDifficulty && matchesCategory;
+            });
+
+            renderAlgorithmList();
+        }
+
+        // Render algorithm list
+        function renderAlgorithmList() {
+            const container = document.getElementById('algorithmList');
+            container.innerHTML = '';
+
+            filteredAlgorithms.forEach(algo => {
+                const item = document.createElement('div');
+                item.className = 'algorithm-item';
+                item.onclick = () => selectAlgorithm(algo);
+
+                item.innerHTML = `
+                    <div class="algorithm-name">${algo.name}</div>
+                    <div class="algorithm-meta">
+                        ${algo.category} • ${algo.difficulty} • ${algo.timeComplexity}
+                    </div>
+                `;
+
+                container.appendChild(item);
+            });
+        }
+
+        // Select algorithm and show details
+        function selectAlgorithm(algo) {
+            selectedAlgorithm = algo;
+            
+            // Update selected state
+            document.querySelectorAll('.algorithm-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            event.target.closest('.algorithm-item').classList.add('selected');
+
+            renderAlgorithmDetail(algo);
+        }
+
+        // Render algorithm detail
+        function renderAlgorithmDetail(algo) {
+            const container = document.getElementById('algorithmDetail');
+            
+            container.innerHTML = `
+                <h2>${algo.name}</h2>
+                <p><strong>Category:</strong> ${algo.category} | <strong>Difficulty:</strong> ${algo.difficulty}</p>
+                <p><strong>Concept:</strong> ${algo.concept}</p>
+                <p>${algo.description}</p>
+
+                <div class="theory-section">
+                    <h3>📊 Complexity Analysis</h3>
+                    <div class="complexity-grid">
+                        <div class="complexity-card">
+                            <div class="complexity-title">Time Complexity</div>
+                            <div class="complexity-value">${algo.timeComplexity}</div>
+                        </div>
+                        <div class="complexity-card">
+                            <div class="complexity-title">Space Complexity</div>
+                            <div class="complexity-value">${algo.spaceComplexity}</div>
+                        </div>
+                        <div class="complexity-card">
+                            <div class="complexity-title">Stability</div>
+                            <div class="complexity-value">${algo.category === 'Sorting' ? 'Unstable' : 'N/A'}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-section">
+                    <h3>🎯 Key Insights</h3>
+                    <ul>
+                        ${algo.keyInsights.map(insight => `<li>${insight}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="theory-section">
+                    <h3>⚠️ Common Mistakes</h3>
+                    <ul>
+                        ${algo.commonMistakes.map(mistake => `<li>${mistake}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="theory-section">
+                    <h3>💡 Optimization Tips</h3>
+                    <ul>
+                        ${algo.optimizationTips.map(tip => `<li>${tip}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="theory-section">
+                    <h3>🌍 Real-World Applications</h3>
+                    <ul>
+                        ${algo.realWorldApplications.map(app => `<li>${app}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="learning-path">
+                    <h3>📚 Learning Path</h3>
+                    ${algo.learningPath.map(step => `
+                        <div class="path-step">
+                            <div class="step-number">${step.step}</div>
+                            <div class="step-content">
+                                <div class="step-title">${step.title}</div>
+                                <div class="step-description">${step.description}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="code-section">
+                    <h3>💻 Code Examples</h3>
+                    <div class="code-tabs">
+                        <button class="code-tab active" onclick="showCodeTab('python')">Python</button>
+                        <button class="code-tab" onclick="showCodeTab('javascript')">JavaScript</button>
+                        <button class="code-tab" onclick="showCodeTab('java')">Java</button>
+                    </div>
+                    <div class="code-content" id="codeContent">
+                        ${algo.codeExamples.python}
+                    </div>
+                </div>
+
+                <div class="enhancement-section">
+                    <h3 class="enhancement-title">🧠 Theory Enhancements</h3>
+                    ${algo.theoryEnhancements.map(enhancement => `
+                        <div class="enhancement-item">
+                            <div class="enhancement-type">${enhancement.type}</div>
+                            <div class="enhancement-content">${enhancement.content}</div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="generatePracticeProblems()">🎯 Generate Practice Problems</button>
+                    <button class="btn btn-success" onclick="showVisualization()">📊 Show Visualization</button>
+                    <button class="btn btn-warning" onclick="createStudyPlan()">📋 Create Study Plan</button>
+                    <button class="btn btn-info" onclick="exportNotes()">📝 Export Notes</button>
+                </div>
+            `;
+        }
+
+        // Show different code tabs
+        function showCodeTab(language) {
+            if (!selectedAlgorithm) return;
+
+            // Update active tab
+            document.querySelectorAll('.code-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update code content
+            document.getElementById('codeContent').textContent = selectedAlgorithm.codeExamples[language];
+        }
+
+        // Generate practice problems
+        function generatePracticeProblems() {
+            if (!selectedAlgorithm) return;
+            
+            const problems = [
+                `1. Implement ${selectedAlgorithm.name} with different approach`,
+                `2. Solve ${selectedAlgorithm.name} with edge cases`,
+                `3. Optimize ${selectedAlgorithm.name} for specific constraints`,
+                `4. Compare ${selectedAlgorithm.name} with alternative algorithms`,
+                `5. Apply ${selectedAlgorithm.name} to real-world scenario`
+            ];
+            
+            alert(`Practice Problems for ${selectedAlgorithm.name}:\n\n${problems.join('\n')}`);
+        }
+
+        // Show visualization
+        function showVisualization() {
+            if (!selectedAlgorithm) return;
+            alert(`Visualization for ${selectedAlgorithm.name} would show step-by-step execution with animations.`);
+        }
+
+        // Create study plan
+        function createStudyPlan() {
+            if (!selectedAlgorithm) return;
+            
+            const plan = `
+Study Plan for ${selectedAlgorithm.name}:
+
+Day 1: Understand concept and theory
+Day 2: Implement basic version
+Day 3: Handle edge cases and optimization
+Day 4: Practice with variations
+Day 5: Review and master
+            `;
+            
+            alert(plan);
+        }
+
+        // Export notes
+        function exportNotes() {
+            if (!selectedAlgorithm) return;
+            
+            const notes = `
+# ${selectedAlgorithm.name} - Study Notes
+
+## Concept
+${selectedAlgorithm.concept}
+
+## Key Insights
+${selectedAlgorithm.keyInsights.map(insight => `- ${insight}`).join('\n')}
+
+## Common Mistakes
+${selectedAlgorithm.commonMistakes.map(mistake => `- ${mistake}`).join('\n')}
+
+## Optimization Tips
+${selectedAlgorithm.optimizationTips.map(tip => `- ${tip}`).join('\n')}
+
+## Code Example (Python)
+${selectedAlgorithm.codeExamples.python}
+            `;
+            
+            // Create download link
+            const blob = new Blob([notes], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${selectedAlgorithm.name.toLowerCase().replace(' ', '_')}_notes.md`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize when page loads
+        window.onload = init;
+    </script>
+
+    <!-- Shared JavaScript -->
+    <script defer src="../../shared/scripts.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+
+    <script>
+        // Register service worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('shared/service-worker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../shared/styles.css" as="style">
+    <link rel="preload" href="../shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/styles.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/components.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/animations.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/accessibility.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Algorithm Master Dashboard</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-tachometer-alt"></i> Dashboard</h2>
+                <p>Algorithm Master Control</p>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="🔍 Search algorithms..." id="searchInput">
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-section">
+                <div class="filter-title">Status Filter</div>
+                <div class="filter-options">
+                    <div class="filter-option active" data-status="all">
+                        <i class="fas fa-list"></i> All Algorithms
+                    </div>
+                    <div class="filter-option" data-status="completed">
+                        <i class="fas fa-check-circle"></i> Completed
+                    </div>
+                    <div class="filter-option" data-status="in-progress">
+                        <i class="fas fa-clock"></i> In Progress
+                    </div>
+                    <div class="filter-option" data-status="not-started">
+                        <i class="fas fa-circle"></i> Not Started
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Language Filter</div>
+                <div class="filter-options">
+                    <div class="filter-option active" data-language="all">
+                        <i class="fas fa-globe"></i> All Languages
+                    </div>
+                    <div class="filter-option" data-language="python">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                    <div class="filter-option" data-language="cpp">
+                        <i class="fas fa-code"></i> C++
+                    </div>
+                    <div class="filter-option" data-language="c">
+                        <i class="fas fa-microchip"></i> C
+                    </div>
+                    <div class="filter-option" data-language="java">
+                        <i class="fab fa-java"></i> Java
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Difficulty Filter</div>
+                <div class="filter-options">
+                    <div class="filter-option active" data-difficulty="all">
+                        <i class="fas fa-star"></i> All Levels
+                    </div>
+                    <div class="filter-option" data-difficulty="easy">
+                        <i class="fas fa-star"></i> Easy (1-5)
+                    </div>
+                    <div class="filter-option" data-difficulty="medium">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i> Medium (6-10)
+                    </div>
+                    <div class="filter-option" data-difficulty="hard">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Hard (11-15)
+                    </div>
+                    <div class="filter-option" data-difficulty="expert">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Expert (16-20)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-section">
+                <div class="filter-title">Overall Progress</div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Completed</span>
+                        <span id="completedCount">0/100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="completedProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>In Progress</span>
+                        <span id="inProgressCount">0/100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="inProgressProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Not Started</span>
+                        <span id="notStartedCount">100/100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="notStartedProgress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back
+                </a>
+                <div class="header-title">
+                    <h1>🚀 Algorithm Master Dashboard</h1>
+                    <p>Comprehensive management system for 100 algorithm groups</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalAlgorithms">100</div>
+                        <div class="stat-label">Total Algorithms</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="completedAlgorithms">0</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="inProgressAlgorithms">0</div>
+                        <div class="stat-label">In Progress</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="notStartedAlgorithms">100</div>
+                        <div class="stat-label">Not Started</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Progress Overview -->
+                <div class="dashboard-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="card-title">Progress Overview</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Language Distribution -->
+                <div class="dashboard-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="card-title">Language Distribution</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="languageChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Difficulty Distribution -->
+                <div class="dashboard-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-title">Difficulty Distribution</div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="difficultyChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="dashboard-card fade-in-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="card-title">Recent Activity</div>
+                    </div>
+                    <div id="recentActivity">
+                        <div style="text-align: center; color: #666; padding: 20px;">
+                            <i class="fas fa-info-circle" style="font-size: 2em; margin-bottom: 10px;"></i>
+                            <p>No recent activity</p>
+                            <p>Start working on algorithms to see your progress!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Algorithm Grid -->
+            <div class="algorithm-grid" id="algorithmGrid">
+                <!-- Algorithm cards will be generated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Algorithm Detail Modal -->
+    <div id="algorithmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">Algorithm Details</div>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modalContent">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        // Algorithm data structure
+        const algorithms = [
+            {
+                id: 1,
+                name: "Sliding Window",
+                description: "Technique for solving problems involving arrays/strings with a window that slides through the data",
+                status: "not-started",
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: "medium",
+                levels: 20,
+                completedLevels: 0,
+                category: "Array/String",
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(1)",
+                applications: ["Subarray problems", "String matching", "Window optimization"]
+            },
+            {
+                id: 2,
+                name: "Two Pointers",
+                description: "Using two pointers to traverse data structures efficiently",
+                status: "not-started",
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: "medium",
+                levels: 20,
+                completedLevels: 0,
+                category: "Array/Linked List",
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(1)",
+                applications: ["Array manipulation", "Linked list problems", "Search optimization"]
+            },
+            {
+                id: 3,
+                name: "Fast and Slow Pointers",
+                description: "Using two pointers moving at different speeds to detect cycles and find middle elements",
+                status: "not-started",
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: "medium",
+                levels: 20,
+                completedLevels: 0,
+                category: "Linked List",
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(1)",
+                applications: ["Cycle detection", "Middle element finding", "Palindrome checking"]
+            },
+            {
+                id: 4,
+                name: "Merge Intervals",
+                description: "Combining overlapping intervals and solving interval-related problems",
+                status: "not-started",
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: "medium",
+                levels: 20,
+                completedLevels: 0,
+                category: "Intervals",
+                timeComplexity: "O(n log n)",
+                spaceComplexity: "O(n)",
+                applications: ["Scheduling problems", "Time management", "Resource allocation"]
+            },
+            {
+                id: 5,
+                name: "Cyclic Sort",
+                description: "Sorting arrays with elements in a specific range using cyclic swapping",
+                status: "not-started",
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: "medium",
+                levels: 20,
+                completedLevels: 0,
+                category: "Array",
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(1)",
+                applications: ["Missing numbers", "Duplicate detection", "Array sorting"]
+            }
+            // Add more algorithms here...
+        ];
+
+        // Generate remaining algorithms
+        for (let i = 6; i <= 100; i++) {
+            const categories = ["Array", "String", "Tree", "Graph", "Dynamic Programming", "Greedy", "Backtracking", "Math", "Bit Manipulation", "Advanced"];
+            const difficulties = ["easy", "medium", "hard", "expert"];
+            const statuses = ["not-started", "in-progress", "completed"];
+            
+            algorithms.push({
+                id: i,
+                name: `Algorithm ${i}`,
+                description: `Advanced algorithm technique for solving complex computational problems`,
+                status: statuses[Math.floor(Math.random() * statuses.length)],
+                languages: ["python", "cpp", "c", "java"],
+                difficulty: difficulties[Math.floor(Math.random() * difficulties.length)],
+                levels: 20,
+                completedLevels: Math.floor(Math.random() * 21),
+                category: categories[Math.floor(Math.random() * categories.length)],
+                timeComplexity: "O(n)",
+                spaceComplexity: "O(1)",
+                applications: ["Problem solving", "Optimization", "Data processing"]
+            });
+        }
+
+        // Dashboard state
+        let currentFilters = {
+            status: 'all',
+            language: 'all',
+            difficulty: 'all',
+            search: ''
+        };
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+            renderAlgorithms();
+            setupEventListeners();
+            updateProgress();
+        });
+
+        // Initialize charts
+        function initializeCharts() {
+            // Progress Chart
+            const progressCtx = document.getElementById('progressChart').getContext('2d');
+            new Chart(progressCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Completed', 'In Progress', 'Not Started'],
+                    datasets: [{
+                        data: [0, 0, 100],
+                        backgroundColor: ['#28a745', '#ffc107', '#6c757d'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // Language Chart
+            const languageCtx = document.getElementById('languageChart').getContext('2d');
+            new Chart(languageCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Python', 'C++', 'C', 'Java'],
+                    datasets: [{
+                        label: 'Implementations',
+                        data: [100, 100, 100, 100],
+                        backgroundColor: ['#3776ab', '#f34b7d', '#555555', '#ed8b00']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Difficulty Chart
+            const difficultyCtx = document.getElementById('difficultyChart').getContext('2d');
+            new Chart(difficultyCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Easy', 'Medium', 'Hard', 'Expert'],
+                    datasets: [{
+                        label: 'Algorithm Count',
+                        data: [25, 25, 25, 25],
+                        backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                        borderColor: '#667eea',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Render algorithms
+        function renderAlgorithms() {
+            const grid = document.getElementById('algorithmGrid');
+            const filteredAlgorithms = filterAlgorithms();
+            
+            grid.innerHTML = '';
+            
+            filteredAlgorithms.forEach(algorithm => {
+                const card = createAlgorithmCard(algorithm);
+                grid.appendChild(card);
+            });
+        }
+
+        // Create algorithm card
+        function createAlgorithmCard(algorithm) {
+            const card = document.createElement('div');
+            card.className = `algorithm-card ${algorithm.status}`;
+            card.onclick = () => openAlgorithmModal(algorithm);
+            
+            const progressPercentage = (algorithm.completedLevels / algorithm.levels) * 100;
+            
+            card.innerHTML = `
+                <div class="algorithm-header">
+                    <div class="algorithm-name">${algorithm.name}</div>
+                    <div class="algorithm-status status-${algorithm.status}">
+                        ${algorithm.status.replace('-', ' ').toUpperCase()}
+                    </div>
+                </div>
+                <div class="algorithm-info">
+                    <div class="algorithm-description">${algorithm.description}</div>
+                    <div class="algorithm-languages">
+                        ${algorithm.languages.map(lang => 
+                            `<span class="language-badge language-${lang}">${lang.toUpperCase()}</span>`
+                        ).join('')}
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <small>Progress: ${algorithm.completedLevels}/${algorithm.levels} levels (${progressPercentage.toFixed(1)}%)</small>
+                        <div class="progress-bar" style="margin-top: 5px;">
+                            <div class="progress-fill" style="width: ${progressPercentage}%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="algorithm-actions">
+                    <button class="action-btn btn-primary" onclick="event.stopPropagation(); startAlgorithm(${algorithm.id})">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="action-btn btn-secondary" onclick="event.stopPropagation(); viewDetails(${algorithm.id})">
+                        <i class="fas fa-eye"></i> Details
+                    </button>
+                    ${algorithm.status === 'completed' ? 
+                        `<button class="action-btn btn-success" onclick="event.stopPropagation(); reviewAlgorithm(${algorithm.id})">
+                            <i class="fas fa-check"></i> Review
+                        </button>` : ''
+                    }
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Filter algorithms
+        function filterAlgorithms() {
+            return algorithms.filter(algorithm => {
+                const matchesStatus = currentFilters.status === 'all' || algorithm.status === currentFilters.status;
+                const matchesLanguage = currentFilters.language === 'all' || algorithm.languages.includes(currentFilters.language);
+                const matchesDifficulty = currentFilters.difficulty === 'all' || algorithm.difficulty === currentFilters.difficulty;
+                const matchesSearch = currentFilters.search === '' || 
+                    algorithm.name.toLowerCase().includes(currentFilters.search.toLowerCase()) ||
+                    algorithm.description.toLowerCase().includes(currentFilters.search.toLowerCase());
+                
+                return matchesStatus && matchesLanguage && matchesDifficulty && matchesSearch;
+            });
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Search input
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                currentFilters.search = e.target.value;
+                renderAlgorithms();
+            });
+
+            // Filter options
+            document.querySelectorAll('.filter-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove active class from siblings
+                    this.parentElement.querySelectorAll('.filter-option').forEach(sib => {
+                        sib.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked option
+                    this.classList.add('active');
+                    
+                    // Update filter
+                    const filterType = this.parentElement.previousElementSibling.textContent.toLowerCase().replace(' filter', '');
+                    const filterValue = this.dataset[filterType];
+                    currentFilters[filterType] = filterValue;
+                    
+                    renderAlgorithms();
+                });
+            });
+        }
+
+        // Update progress
+        function updateProgress() {
+            const completed = algorithms.filter(a => a.status === 'completed').length;
+            const inProgress = algorithms.filter(a => a.status === 'in-progress').length;
+            const notStarted = algorithms.filter(a => a.status === 'not-started').length;
+            
+            // Update counts
+            document.getElementById('completedCount').textContent = `${completed}/100`;
+            document.getElementById('inProgressCount').textContent = `${inProgress}/100`;
+            document.getElementById('notStartedCount').textContent = `${notStarted}/100`;
+            
+            // Update progress bars
+            document.getElementById('completedProgress').style.width = `${completed}%`;
+            document.getElementById('inProgressProgress').style.width = `${inProgress}%`;
+            document.getElementById('notStartedProgress').style.width = `${notStarted}%`;
+            
+            // Update header stats
+            document.getElementById('totalAlgorithms').textContent = '100';
+            document.getElementById('completedAlgorithms').textContent = completed;
+            document.getElementById('inProgressAlgorithms').textContent = inProgress;
+            document.getElementById('notStartedAlgorithms').textContent = notStarted;
+        }
+
+        // Algorithm actions
+        function startAlgorithm(id) {
+            const algorithm = algorithms.find(a => a.id === id);
+            if (algorithm) {
+                algorithm.status = 'in-progress';
+                renderAlgorithms();
+                updateProgress();
+                addActivity(`Started working on ${algorithm.name}`);
+            }
+        }
+
+        function viewDetails(id) {
+            const algorithm = algorithms.find(a => a.id === id);
+            if (algorithm) {
+                openAlgorithmModal(algorithm);
+            }
+        }
+
+        function reviewAlgorithm(id) {
+            const algorithm = algorithms.find(a => a.id === id);
+            if (algorithm) {
+                addActivity(`Reviewed ${algorithm.name}`);
+                alert(`Reviewing ${algorithm.name} - All implementations completed!`);
+            }
+        }
+
+        // Modal functions
+        function openAlgorithmModal(algorithm) {
+            const modal = document.getElementById('algorithmModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalTitle.textContent = algorithm.name;
+            modalContent.innerHTML = `
+                <div style="margin-bottom: 20px;">
+                    <h3>Description</h3>
+                    <p>${algorithm.description}</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <h3>Details</h3>
+                        <p><strong>Category:</strong> ${algorithm.category}</p>
+                        <p><strong>Difficulty:</strong> ${algorithm.difficulty}</p>
+                        <p><strong>Levels:</strong> ${algorithm.levels}</p>
+                        <p><strong>Completed:</strong> ${algorithm.completedLevels}/${algorithm.levels}</p>
+                    </div>
+                    <div>
+                        <h3>Complexity</h3>
+                        <p><strong>Time:</strong> ${algorithm.timeComplexity}</p>
+                        <p><strong>Space:</strong> ${algorithm.spaceComplexity}</p>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <h3>Applications</h3>
+                    <ul>
+                        ${algorithm.applications.map(app => `<li>${app}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <h3>Languages</h3>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        ${algorithm.languages.map(lang => 
+                            `<span class="language-badge language-${lang}">${lang.toUpperCase()}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="action-btn btn-primary" onclick="startAlgorithm(${algorithm.id}); closeModal();">
+                        <i class="fas fa-play"></i> Start Learning
+                    </button>
+                    <button class="action-btn btn-secondary" onclick="closeModal()">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('algorithmModal').style.display = 'none';
+        }
+
+        // Activity tracking
+        function addActivity(message) {
+            const activityContainer = document.getElementById('recentActivity');
+            const timestamp = new Date().toLocaleTimeString();
+            
+            const activityItem = document.createElement('div');
+            activityItem.style.cssText = `
+                padding: 10px;
+                border-bottom: 1px solid #f0f0f0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            `;
+            activityItem.innerHTML = `
+                <div>
+                    <i class="fas fa-circle" style="color: #28a745; font-size: 0.5em;"></i>
+                    ${message}
+                </div>
+                <small style="color: #666;">${timestamp}</small>
+            `;
+            
+            activityContainer.insertBefore(activityItem, activityContainer.firstChild);
+            
+            // Keep only last 5 activities
+            const activities = activityContainer.children;
+            if (activities.length > 5) {
+                activityContainer.removeChild(activities[activities.length - 1]);
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('algorithmModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+    <!-- Shared JavaScript -->
+    <script defer src="../shared/scripts.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

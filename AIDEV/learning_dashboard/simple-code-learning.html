@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Code - Giao Diện Đơn Giản</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header đơn giản */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Progress đơn giản */
+        .progress-simple {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .progress-bar-simple {
+            width: 100%;
+            height: 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill-simple {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2980b9);
+            width: 35%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text-simple {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Lesson grid đơn giản */
+        .lessons-simple {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .lesson-simple {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+            border-left: 4px solid #ecf0f1;
+        }
+
+        .lesson-simple:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .lesson-simple.completed {
+            border-left-color: #27ae60;
+        }
+
+        .lesson-simple.active {
+            border-left-color: #3498db;
+        }
+
+        .lesson-simple.locked {
+            border-left-color: #95a5a6;
+            opacity: 0.7;
+        }
+
+        .lesson-header-simple {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .lesson-icon-simple {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .lesson-icon-simple.completed { background: #27ae60; }
+        .lesson-icon-simple.active { background: #3498db; }
+        .lesson-icon-simple.locked { background: #95a5a6; }
+
+        .lesson-title-simple {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .lesson-desc-simple {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .lesson-meta-simple {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .lesson-duration-simple {
+            color: #7f8c8d;
+        }
+
+        .lesson-status-simple {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .lesson-status-simple.completed {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+
+        .lesson-status-simple.active {
+            background: #d6eaf8;
+            color: #3498db;
+        }
+
+        .lesson-status-simple.locked {
+            background: #f4f6f6;
+            color: #95a5a6;
+        }
+
+        /* Code Editor Modal */
+        .code-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+        }
+
+        .code-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .code-content {
+            background: white;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 80vh;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .code-header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .code-header h3 {
+            font-size: 1.3rem;
+        }
+
+        .close-btn-simple {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+
+        .close-btn-simple:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .code-body {
+            padding: 30px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .code-section {
+            margin-bottom: 30px;
+        }
+
+        .code-section h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .code-block-simple {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        .code-block-simple pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #2c3e50;
+        }
+
+        .explanation {
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .exercise-simple {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .exercise-simple h5 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .exercise-simple p {
+            color: #856404;
+            margin-bottom: 8px;
+        }
+
+        .code-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .btn-simple {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary-simple {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-primary-simple:hover {
+            background: #2980b9;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary-simple {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        .btn-secondary-simple:hover {
+            background: #d5dbdb;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .lessons-simple {
+                grid-template-columns: 1fr;
+            }
+            
+            .code-content {
+                width: 95%;
+                margin: 20px;
+            }
+            
+            .code-body {
+                padding: 20px;
+            }
+            
+            .code-actions {
+                flex-direction: column;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header đơn giản -->
+        <div class="header">
+            <h1><i class="fas fa-code"></i> Học Code</h1>
+            <p>Giao diện đơn giản, tập trung vào việc học</p>
+        </div>
+
+        <!-- Progress đơn giản -->
+        <div class="progress-simple">
+            <div class="progress-bar-simple">
+                <div class="progress-fill-simple" id="progress-fill"></div>
+            </div>
+            <div class="progress-text-simple">
+                <span id="progress-text">35% hoàn thành</span> • <span id="lesson-count">3/8 bài học</span>
+            </div>
+        </div>
+
+        <!-- Lessons Grid -->
+        <div class="lessons-simple">
+            <div class="lesson-simple completed" onclick="openLesson('variables')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lesson-title-simple">Biến và Kiểu Dữ Liệu</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học về các kiểu dữ liệu cơ bản trong Python và cách sử dụng biến.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">45 phút</span>
+                    <span class="lesson-status-simple completed">Hoàn thành</span>
+                </div>
+            </div>
+
+            <div class="lesson-simple completed" onclick="openLesson('control')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lesson-title-simple">Cấu Trúc Điều Khiển</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học về if-else, loops và các cấu trúc điều khiển trong Python.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">60 phút</span>
+                    <span class="lesson-status-simple completed">Hoàn thành</span>
+                </div>
+            </div>
+
+            <div class="lesson-simple active" onclick="openLesson('functions')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple active">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="lesson-title-simple">Hàm và Module</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học cách tạo và sử dụng hàm, tổ chức code với modules.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">75 phút</span>
+                    <span class="lesson-status-simple active">Đang học</span>
+                </div>
+            </div>
+
+            <div class="lesson-simple locked" onclick="openLesson('files')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple locked">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="lesson-title-simple">Xử Lý File</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học cách đọc và ghi file trong Python.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">50 phút</span>
+                    <span class="lesson-status-simple locked">Chưa mở khóa</span>
+                </div>
+            </div>
+
+            <div class="lesson-simple locked" onclick="openLesson('oop')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple locked">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="lesson-title-simple">Lập Trình Hướng Đối Tượng</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học về classes, objects, inheritance và polymorphism.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">90 phút</span>
+                    <span class="lesson-status-simple locked">Chưa mở khóa</span>
+                </div>
+            </div>
+
+            <div class="lesson-simple locked" onclick="openLesson('exceptions')">
+                <div class="lesson-header-simple">
+                    <div class="lesson-icon-simple locked">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="lesson-title-simple">Xử Lý Ngoại Lệ</div>
+                </div>
+                <div class="lesson-desc-simple">
+                    Học cách xử lý lỗi và exceptions trong Python.
+                </div>
+                <div class="lesson-meta-simple">
+                    <span class="lesson-duration-simple">40 phút</span>
+                    <span class="lesson-status-simple locked">Chưa mở khóa</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Learning Modal -->
+    <div class="code-modal" id="codeModal">
+        <div class="code-content">
+            <div class="code-header">
+                <h3 id="modalTitle">Bài Học</h3>
+                <button class="close-btn-simple" onclick="closeLesson()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="code-body" id="modalBody">
+                <!-- Nội dung sẽ được load động -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dữ liệu bài học
+        const lessons = {
+            'variables': {
+                title: 'Biến và Kiểu Dữ Liệu trong Python',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Trong bài học này, bạn sẽ học về các kiểu dữ liệu cơ bản trong Python và cách sử dụng biến.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># Integer (Số nguyên)
+age = 25
+print(f"Tuổi: {age}, Kiểu: {type(age)}")
+
+# Float (Số thực)
+height = 1.75
+print(f"Chiều cao: {height}, Kiểu: {type(height)}")
+
+# String (Chuỗi)
+name = "John Doe"
+print(f"Tên: {name}, Kiểu: {type(name)}")
+
+# Boolean (Luận lý)
+is_student = True
+print(f"Là sinh viên: {is_student}, Kiểu: {type(is_student)}")
+
+# List (Danh sách)
+fruits = ["apple", "banana", "orange"]
+print(f"Trái cây: {fruits}, Kiểu: {type(fruits)}")
+
+# Dictionary (Từ điển)
+person = {
+    "name": "John",
+    "age": 25,
+    "city": "New York"
+}
+print(f"Thông tin: {person}, Kiểu: {type(person)}")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-lightbulb"></i> Giải thích</h4>
+                        <div class="explanation">
+                            <p><strong>Biến</strong> là tên gọi cho một vùng nhớ chứa dữ liệu.</p>
+                            <p><strong>Kiểu dữ liệu</strong> xác định loại dữ liệu mà biến có thể chứa.</p>
+                            <p>Python tự động xác định kiểu dữ liệu khi bạn gán giá trị.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-tasks"></i> Bài tập</h4>
+                        <div class="exercise-simple">
+                            <h5>Bài tập 1: Tạo biến</h5>
+                            <p>Tạo các biến với các kiểu dữ liệu khác nhau:</p>
+                            <ul>
+                                <li>Một biến chứa tuổi của bạn (số nguyên)</li>
+                                <li>Một biến chứa chiều cao (số thực)</li>
+                                <li>Một biến chứa tên của bạn (chuỗi)</li>
+                                <li>Một biến chứa danh sách các môn học yêu thích</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-primary-simple" onclick="markComplete('variables')">
+                            <i class="fas fa-check"></i> Đánh dấu hoàn thành
+                        </button>
+                        <button class="btn-simple btn-secondary-simple" onclick="copyCode()">
+                            <i class="fas fa-copy"></i> Copy code
+                        </button>
+                    </div>
+                `
+            },
+            'control': {
+                title: 'Cấu Trúc Điều Khiển trong Python',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Học về các cấu trúc điều khiển cơ bản trong Python: if-else, loops, và control flow.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># If-else statement
+age = 18
+if age >= 18:
+    print("Bạn đã trưởng thành")
+else:
+    print("Bạn chưa trưởng thành")
+
+# For loop
+for i in range(5):
+    print(f"Số: {i}")
+
+# While loop
+count = 0
+while count < 3:
+    print(f"Đếm: {count}")
+    count += 1</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-lightbulb"></i> Giải thích</h4>
+                        <div class="explanation">
+                            <p><strong>if-else</strong> dùng để thực hiện các hành động khác nhau dựa trên điều kiện.</p>
+                            <p><strong>for loop</strong> lặp qua một dãy các phần tử.</p>
+                            <p><strong>while loop</strong> lặp khi điều kiện còn đúng.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-primary-simple" onclick="markComplete('control')">
+                            <i class="fas fa-check"></i> Đánh dấu hoàn thành
+                        </button>
+                        <button class="btn-simple btn-secondary-simple" onclick="copyCode()">
+                            <i class="fas fa-copy"></i> Copy code
+                        </button>
+                    </div>
+                `
+            },
+            'functions': {
+                title: 'Hàm và Module trong Python',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Học cách tạo và sử dụng hàm, cũng như cách tổ chức code với modules.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># Định nghĩa hàm
+def greet(name):
+    return f"Xin chào, {name}!"
+
+# Sử dụng hàm
+message = greet("An")
+print(message)
+
+# Hàm với tham số mặc định
+def calculate_area(length, width=10):
+    return length * width
+
+# Hàm với nhiều tham số
+def calculate_rectangle_area(length, width):
+    area = length * width
+    perimeter = 2 * (length + width)
+    return area, perimeter
+
+# Sử dụng hàm trả về nhiều giá trị
+area, perimeter = calculate_rectangle_area(5, 3)
+print(f"Diện tích: {area}, Chu vi: {perimeter}")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-lightbulb"></i> Giải thích</h4>
+                        <div class="explanation">
+                            <p><strong>Hàm</strong> là một khối code có thể tái sử dụng.</p>
+                            <p><strong>def</strong> là từ khóa để định nghĩa hàm.</p>
+                            <p><strong>return</strong> trả về giá trị từ hàm.</p>
+                            <p>Hàm có thể trả về nhiều giá trị cùng lúc.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-primary-simple" onclick="markComplete('functions')">
+                            <i class="fas fa-check"></i> Đánh dấu hoàn thành
+                        </button>
+                        <button class="btn-simple btn-secondary-simple" onclick="copyCode()">
+                            <i class="fas fa-copy"></i> Copy code
+                        </button>
+                    </div>
+                `
+            },
+            'files': {
+                title: 'Xử Lý File trong Python',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Học cách đọc và ghi file trong Python.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># Ghi file
+with open('example.txt', 'w', encoding='utf-8') as file:
+    file.write("Xin chào thế giới!\n")
+    file.write("Đây là dòng thứ hai\n")
+
+# Đọc file
+with open('example.txt', 'r', encoding='utf-8') as file:
+    content = file.read()
+    print(content)
+
+# Đọc từng dòng
+with open('example.txt', 'r', encoding='utf-8') as file:
+    for line in file:
+        print(f"Dòng: {line.strip()}")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-lightbulb"></i> Giải thích</h4>
+                        <div class="explanation">
+                            <p><strong>with</strong> đảm bảo file được đóng tự động sau khi sử dụng.</p>
+                            <p><strong>'w'</strong> để ghi file (sẽ ghi đè nếu file đã tồn tại).</p>
+                            <p><strong>'r'</strong> để đọc file.</p>
+                            <p><strong>encoding='utf-8'</strong> để hỗ trợ tiếng Việt.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-secondary-simple" onclick="closeLesson()">
+                            <i class="fas fa-times"></i> Đóng
+                        </button>
+                    </div>
+                `
+            },
+            'oop': {
+                title: 'Lập Trình Hướng Đối Tượng',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Học về classes, objects, inheritance và polymorphism.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># Định nghĩa class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def introduce(self):
+        return f"Tôi là {self.name}, {self.age} tuổi"
+
+# Tạo object
+person1 = Person("An", 25)
+print(person1.introduce())
+
+# Inheritance
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+    
+    def study(self):
+        return f"{self.name} đang học bài"</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-secondary-simple" onclick="closeLesson()">
+                            <i class="fas fa-times"></i> Đóng
+                        </button>
+                    </div>
+                `
+            },
+            'exceptions': {
+                title: 'Xử Lý Ngoại Lệ',
+                content: `
+                    <div class="code-section">
+                        <h4><i class="fas fa-info-circle"></i> Tổng quan</h4>
+                        <p>Học cách xử lý lỗi và exceptions trong Python.</p>
+                    </div>
+
+                    <div class="code-section">
+                        <h4><i class="fas fa-code"></i> Ví dụ code</h4>
+                        <div class="code-block-simple">
+                            <pre><code># Try-except cơ bản
+try:
+    number = int(input("Nhập một số: "))
+    result = 10 / number
+    print(f"Kết quả: {result}")
+except ValueError:
+    print("Lỗi: Vui lòng nhập một số hợp lệ")
+except ZeroDivisionError:
+    print("Lỗi: Không thể chia cho 0")
+except Exception as e:
+    print(f"Lỗi khác: {e}")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="code-actions">
+                        <button class="btn-simple btn-secondary-simple" onclick="closeLesson()">
+                            <i class="fas fa-times"></i> Đóng
+                        </button>
+                    </div>
+                `
+            }
+        };
+
+        // Functions
+        function openLesson(lessonId) {
+            const lesson = lessons[lessonId];
+            if (!lesson) {
+                alert('Bài học chưa có sẵn!');
+                return;
+            }
+
+            document.getElementById('modalTitle').textContent = lesson.title;
+            document.getElementById('modalBody').innerHTML = lesson.content;
+            document.getElementById('codeModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLesson() {
+            document.getElementById('codeModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function markComplete(lessonId) {
+            const lessonElement = document.querySelector(`[onclick="openLesson('${lessonId}')"]`);
+            if (lessonElement) {
+                lessonElement.classList.remove('active');
+                lessonElement.classList.add('completed');
+                
+                // Update progress
+                updateProgress();
+                
+                // Show success message
+                alert('Chúc mừng! Bạn đã hoàn thành bài học này.');
+                closeLesson();
+            }
+        }
+
+        function updateProgress() {
+            const completedLessons = document.querySelectorAll('.lesson-simple.completed').length;
+            const totalLessons = document.querySelectorAll('.lesson-simple').length;
+            const progress = Math.round((completedLessons / totalLessons) * 100);
+            
+            document.getElementById('progress-fill').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress + '% hoàn thành';
+            document.getElementById('lesson-count').textContent = completedLessons + '/' + totalLessons + ' bài học';
+        }
+
+        function copyCode() {
+            const codeBlocks = document.querySelectorAll('.code-block-simple pre code');
+            let allCode = '';
+            
+            codeBlocks.forEach(block => {
+                allCode += block.textContent + '\n\n';
+            });
+            
+            navigator.clipboard.writeText(allCode).then(() => {
+                alert('Đã copy code vào clipboard!');
+            }).catch(() => {
+                alert('Không thể copy code. Vui lòng copy thủ công.');
+            });
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('codeModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLesson();
+            }
+        });
+
+        // Initialize
+        updateProgress();
+    </script>
+</body>
+</html> 

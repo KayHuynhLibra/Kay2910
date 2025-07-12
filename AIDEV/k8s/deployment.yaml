@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-system
+  labels:
+    app: ai-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-system
+  template:
+    metadata:
+      labels:
+        app: ai-system
+    spec:
+      containers:
+      - name: ai-system
+        image: ai-system:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: SECURITY_DIR
+          value: "/app/security"
+        - name: DATA_DIR
+          value: "/app/data"
+        - name: MODEL_DIR
+          value: "/app/models"
+        volumeMounts:
+        - name: data-volume
+          mountPath: /app/data
+        - name: models-volume
+          mountPath: /app/models
+        - name: security-volume
+          mountPath: /app/security
+        - name: logs-volume
+          mountPath: /app/logs
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:
+      - name: data-volume
+        persistentVolumeClaim:
+          claimName: data-pvc
+      - name: models-volume
+        persistentVolumeClaim:
+          claimName: models-pvc
+      - name: security-volume
+        persistentVolumeClaim:
+          claimName: security-pvc
+      - name: logs-volume
+        persistentVolumeClaim:
+          claimName: logs-pvc 

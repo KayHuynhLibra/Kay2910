@@ -1,0 +1,37 @@
+[Unit]
+Description=System Monitoring Service
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/system-monitor
+ExecStart=/opt/system-monitor/bin/monitor.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=system-monitor
+
+# Security settings
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=yes
+PrivateTmp=yes
+CapabilityBoundingSet=CAP_NET_RAW
+
+# Resource limits
+LimitNOFILE=65535
+LimitNPROC=4096
+MemoryLimit=512M
+CPUQuota=20%
+
+# Environment
+Environment=MONITOR_CONFIG=/opt/system-monitor/etc/thresholds.conf
+Environment=MONITOR_LOG_DIR=/opt/system-monitor/var/log
+Environment=MONITOR_REPORT_DIR=/opt/system-monitor/var/reports
+
+[Install]
+WantedBy=multi-user.target 

@@ -1,0 +1,48 @@
+# Cấu hình xử lý dữ liệu
+data:
+  # Đường dẫn dữ liệu
+  raw_data_path: "data/raw"        # Thư mục chứa dữ liệu thô
+  processed_data_path: "data/processed"  # Thư mục chứa dữ liệu đã xử lý
+  external_data_path: "data/external"    # Thư mục chứa dữ liệu bên ngoài
+  
+  # Cấu hình validation dữ liệu
+  validation:
+    min_rows: 1000  # Số lượng dòng tối thiểu trong dataset
+    required_columns:  # Danh sách các cột bắt buộc
+      - id          # ID của mẫu
+      - timestamp   # Thời gian
+      - target      # Biến mục tiêu
+    data_types:  # Kiểu dữ liệu của các cột
+      id: "int64"  # ID là số nguyên
+      timestamp: "datetime64[ns]"  # Timestamp là datetime
+      target: "float64"  # Target là số thực
+    
+  # Cấu hình feature engineering
+  features:
+    categorical_columns:  # Các cột categorical
+      - category_1
+      - category_2
+    numerical_columns:  # Các cột numerical
+      - feature_1
+      - feature_2
+    datetime_columns:  # Các cột datetime
+      - timestamp
+    target_column: "target"  # Tên cột target
+    
+  # Cấu hình kiểm tra chất lượng dữ liệu
+  quality:
+    missing_threshold: 0.1  # Ngưỡng cho phép missing values
+    outlier_threshold: 3.0  # Ngưỡng phát hiện outliers
+    correlation_threshold: 0.8  # Ngưỡng tương quan
+    
+  # Cấu hình versioning dữ liệu
+  versioning:
+    enabled: true  # Bật versioning
+    storage: "dvc"  # Sử dụng DVC để quản lý version
+    remote: "s3://mlops-data"  # Remote storage cho DVC
+    
+  # Cấu hình pipeline xử lý dữ liệu
+  pipeline:
+    batch_size: 1000  # Kích thước batch xử lý
+    num_workers: 4    # Số lượng workers
+    cache_size: "2GB" # Kích thước cache 

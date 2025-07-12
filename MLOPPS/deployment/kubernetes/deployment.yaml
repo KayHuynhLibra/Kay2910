@@ -1,0 +1,104 @@
+# Kubernetes Deployment Configuration
+
+# Deployment cho API
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlops-api  # Tên deployment
+  namespace: mlops  # Kubernetes namespace
+spec:
+  replicas: 3  # Số lượng replicas
+  selector:
+    matchLabels:
+      app: mlops-api  # Label selector
+  template:
+    metadata:
+      labels:
+        app: mlops-api  # Pod labels
+    spec:
+      containers:
+      - name: mlops-api  # Tên container
+        image: mlops-api:latest  # Docker image
+        ports:
+        - containerPort: 8000  # Port API
+        resources:  # Giới hạn tài nguyên
+          requests:  # Tài nguyên tối thiểu
+            cpu: "500m"  # 0.5 CPU cores
+            memory: "1Gi"  # 1GB memory
+          limits:  # Tài nguyên tối đa
+            cpu: "1000m"  # 1 CPU core
+            memory: "2Gi"  # 2GB memory
+        env:  # Environment variables
+        - name: MODEL_PATH
+          value: "/app/models/production"
+        - name: DATA_PATH
+          value: "/app/data"
+        - name: CONFIG_PATH
+          value: "/app/configs"
+        volumeMounts:  # Mount volumes
+        - name: model-storage
+          mountPath: /app/models
+        - name: data-storage
+          mountPath: /app/data
+        livenessProbe:  # Health check
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:  # Readiness check
+          httpGet:
+            path: /ready
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:  # Volume definitions
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: model-pvc
+      - name: data-storage
+        persistentVolumeClaim:
+          claimName: data-pvc
+
+---
+# Service cho API
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlops-api-service
+  namespace: mlops
+spec:
+  selector:
+    app: mlops-api
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: LoadBalancer
+
+---
+# Persistent Volume Claim cho model storage
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: model-pvc
+  namespace: mlops
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+# Persistent Volume Claim cho data storage
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data-pvc
+  namespace: mlops
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 20Gi 

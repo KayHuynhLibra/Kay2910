@@ -1,0 +1,2263 @@
+[
+  {
+    "type": "folder",
+    "name": "01_Fundamentals",
+    "path": "01_Fundamentals",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Prompt_Structure",
+        "path": "01_Fundamentals/01_Prompt_Structure",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/BEST_PRACTICES_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/CODE_EXAMPLES_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/IMPLEMENTATION_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/PROJECT_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/QUIZ_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/ROADMAP_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_prompt_structure.md",
+            "path": "01_Fundamentals/01_Prompt_Structure/THEORY_01_prompt_structure.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_prompt_structure.txt",
+            "path": "01_Fundamentals/01_Prompt_Structure/requirements_01_prompt_structure.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Context_Management",
+        "path": "01_Fundamentals/02_Context_Management",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/BEST_PRACTICES_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/CODE_EXAMPLES_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/02_Context_Management/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/IMPLEMENTATION_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/PROJECT_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/QUIZ_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/ROADMAP_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_context_management.md",
+            "path": "01_Fundamentals/02_Context_Management/THEORY_02_context_management.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_context_management.txt",
+            "path": "01_Fundamentals/02_Context_Management/requirements_02_context_management.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Output_Formatting",
+        "path": "01_Fundamentals/03_Output_Formatting",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/BEST_PRACTICES_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/CODE_EXAMPLES_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/03_Output_Formatting/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/IMPLEMENTATION_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/PROJECT_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/QUIZ_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/ROADMAP_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_output_formatting.md",
+            "path": "01_Fundamentals/03_Output_Formatting/THEORY_03_output_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_output_formatting.txt",
+            "path": "01_Fundamentals/03_Output_Formatting/requirements_03_output_formatting.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Temperature_Control",
+        "path": "01_Fundamentals/04_Temperature_Control",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/BEST_PRACTICES_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/CODE_EXAMPLES_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/04_Temperature_Control/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/IMPLEMENTATION_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/PROJECT_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/QUIZ_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/ROADMAP_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_temperature_control.md",
+            "path": "01_Fundamentals/04_Temperature_Control/THEORY_04_temperature_control.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_temperature_control.txt",
+            "path": "01_Fundamentals/04_Temperature_Control/requirements_04_temperature_control.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Token_Limits",
+        "path": "01_Fundamentals/05_Token_Limits",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/BEST_PRACTICES_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/CODE_EXAMPLES_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "01_Fundamentals/05_Token_Limits/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/IMPLEMENTATION_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/PROJECT_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/QUIZ_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/ROADMAP_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_token_limits.md",
+            "path": "01_Fundamentals/05_Token_Limits/THEORY_05_token_limits.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_token_limits.txt",
+            "path": "01_Fundamentals/05_Token_Limits/requirements_05_token_limits.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_01_fundamentals.md",
+        "path": "01_Fundamentals/BEST_PRACTICES_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_01_fundamentals.md",
+        "path": "01_Fundamentals/CODE_EXAMPLES_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_01_fundamentals.md",
+        "path": "01_Fundamentals/IMPLEMENTATION_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_01_fundamentals.md",
+        "path": "01_Fundamentals/PROJECT_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_01_fundamentals.md",
+        "path": "01_Fundamentals/QUIZ_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_01_fundamentals.md",
+        "path": "01_Fundamentals/ROADMAP_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_01_fundamentals.md",
+        "path": "01_Fundamentals/THEORY_01_fundamentals.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_01_fundamentals.txt",
+        "path": "01_Fundamentals/requirements_01_fundamentals.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "02_Techniques",
+    "path": "02_Techniques",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Role_Prompting",
+        "path": "02_Techniques/01_Role_Prompting",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/BEST_PRACTICES_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/CODE_EXAMPLES_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Techniques/01_Role_Prompting/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/IMPLEMENTATION_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/PROJECT_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/QUIZ_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/ROADMAP_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_role_prompting.md",
+            "path": "02_Techniques/01_Role_Prompting/THEORY_01_role_prompting.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_role_prompting.txt",
+            "path": "02_Techniques/01_Role_Prompting/requirements_01_role_prompting.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Template_Engineering",
+        "path": "02_Techniques/02_Template_Engineering",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/BEST_PRACTICES_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/CODE_EXAMPLES_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Techniques/02_Template_Engineering/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/IMPLEMENTATION_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/PROJECT_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/QUIZ_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/ROADMAP_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_template_engineering.md",
+            "path": "02_Techniques/02_Template_Engineering/THEORY_02_template_engineering.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_template_engineering.txt",
+            "path": "02_Techniques/02_Template_Engineering/requirements_02_template_engineering.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Context_Enhancement",
+        "path": "02_Techniques/03_Context_Enhancement",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/BEST_PRACTICES_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/CODE_EXAMPLES_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Techniques/03_Context_Enhancement/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/IMPLEMENTATION_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/PROJECT_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/QUIZ_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/ROADMAP_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_context_enhancement.md",
+            "path": "02_Techniques/03_Context_Enhancement/THEORY_03_context_enhancement.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_context_enhancement.txt",
+            "path": "02_Techniques/03_Context_Enhancement/requirements_03_context_enhancement.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Output_Constraints",
+        "path": "02_Techniques/04_Output_Constraints",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/BEST_PRACTICES_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/CODE_EXAMPLES_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Techniques/04_Output_Constraints/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/IMPLEMENTATION_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/PROJECT_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/QUIZ_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/ROADMAP_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_output_constraints.md",
+            "path": "02_Techniques/04_Output_Constraints/THEORY_04_output_constraints.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_output_constraints.txt",
+            "path": "02_Techniques/04_Output_Constraints/requirements_04_output_constraints.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Iterative_Refinement",
+        "path": "02_Techniques/05_Iterative_Refinement",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/BEST_PRACTICES_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/CODE_EXAMPLES_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "02_Techniques/05_Iterative_Refinement/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/IMPLEMENTATION_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/PROJECT_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/QUIZ_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/ROADMAP_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_iterative_refinement.md",
+            "path": "02_Techniques/05_Iterative_Refinement/THEORY_05_iterative_refinement.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_iterative_refinement.txt",
+            "path": "02_Techniques/05_Iterative_Refinement/requirements_05_iterative_refinement.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_02_techniques.md",
+        "path": "02_Techniques/BEST_PRACTICES_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_02_techniques.md",
+        "path": "02_Techniques/CODE_EXAMPLES_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_02_techniques.md",
+        "path": "02_Techniques/IMPLEMENTATION_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_02_techniques.md",
+        "path": "02_Techniques/PROJECT_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_02_techniques.md",
+        "path": "02_Techniques/QUIZ_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_02_techniques.md",
+        "path": "02_Techniques/ROADMAP_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_02_techniques.md",
+        "path": "02_Techniques/THEORY_02_techniques.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_02_techniques.txt",
+        "path": "02_Techniques/requirements_02_techniques.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "03_Chain_of_Thought",
+    "path": "03_Chain_of_Thought",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Step_by_Step_Reasoning",
+        "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/BEST_PRACTICES_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/CODE_EXAMPLES_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/IMPLEMENTATION_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/PROJECT_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/QUIZ_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/ROADMAP_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_step_by_step_reasoning.md",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/THEORY_01_step_by_step_reasoning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_step_by_step_reasoning.txt",
+            "path": "03_Chain_of_Thought/01_Step_by_Step_Reasoning/requirements_01_step_by_step_reasoning.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Intermediate_Steps",
+        "path": "03_Chain_of_Thought/02_Intermediate_Steps",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/BEST_PRACTICES_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/CODE_EXAMPLES_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/IMPLEMENTATION_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/PROJECT_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/QUIZ_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/ROADMAP_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_intermediate_steps.md",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/THEORY_02_intermediate_steps.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_intermediate_steps.txt",
+            "path": "03_Chain_of_Thought/02_Intermediate_Steps/requirements_02_intermediate_steps.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Logical_Flow",
+        "path": "03_Chain_of_Thought/03_Logical_Flow",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/BEST_PRACTICES_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/CODE_EXAMPLES_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/IMPLEMENTATION_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/PROJECT_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/QUIZ_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/ROADMAP_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_logical_flow.md",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/THEORY_03_logical_flow.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_logical_flow.txt",
+            "path": "03_Chain_of_Thought/03_Logical_Flow/requirements_03_logical_flow.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Verification",
+        "path": "03_Chain_of_Thought/04_Verification",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/BEST_PRACTICES_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/CODE_EXAMPLES_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Chain_of_Thought/04_Verification/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/IMPLEMENTATION_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/PROJECT_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/QUIZ_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/ROADMAP_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_verification.md",
+            "path": "03_Chain_of_Thought/04_Verification/THEORY_04_verification.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_verification.txt",
+            "path": "03_Chain_of_Thought/04_Verification/requirements_04_verification.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Error_Correction",
+        "path": "03_Chain_of_Thought/05_Error_Correction",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/BEST_PRACTICES_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/CODE_EXAMPLES_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/IMPLEMENTATION_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/PROJECT_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/QUIZ_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/ROADMAP_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_error_correction.md",
+            "path": "03_Chain_of_Thought/05_Error_Correction/THEORY_05_error_correction.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_error_correction.txt",
+            "path": "03_Chain_of_Thought/05_Error_Correction/requirements_05_error_correction.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/BEST_PRACTICES_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/CODE_EXAMPLES_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/IMPLEMENTATION_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/PROJECT_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/QUIZ_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/ROADMAP_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_03_chain_of_thought.md",
+        "path": "03_Chain_of_Thought/THEORY_03_chain_of_thought.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_03_chain_of_thought.txt",
+        "path": "03_Chain_of_Thought/requirements_03_chain_of_thought.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "04_Few_Shot_Learning",
+    "path": "04_Few_Shot_Learning",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Example_Selection",
+        "path": "04_Few_Shot_Learning/01_Example_Selection",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/BEST_PRACTICES_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/CODE_EXAMPLES_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/IMPLEMENTATION_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/PROJECT_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/QUIZ_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/ROADMAP_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_example_selection.md",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/THEORY_01_example_selection.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_example_selection.txt",
+            "path": "04_Few_Shot_Learning/01_Example_Selection/requirements_01_example_selection.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Example_Formatting",
+        "path": "04_Few_Shot_Learning/02_Example_Formatting",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/BEST_PRACTICES_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/CODE_EXAMPLES_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/IMPLEMENTATION_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/PROJECT_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/QUIZ_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/ROADMAP_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_example_formatting.md",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/THEORY_02_example_formatting.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_example_formatting.txt",
+            "path": "04_Few_Shot_Learning/02_Example_Formatting/requirements_02_example_formatting.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Shot_Count_Optimization",
+        "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/BEST_PRACTICES_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/CODE_EXAMPLES_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/IMPLEMENTATION_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/PROJECT_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/QUIZ_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/ROADMAP_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_shot_count_optimization.md",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/THEORY_03_shot_count_optimization.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_shot_count_optimization.txt",
+            "path": "04_Few_Shot_Learning/03_Shot_Count_Optimization/requirements_03_shot_count_optimization.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Domain_Adaptation",
+        "path": "04_Few_Shot_Learning/04_Domain_Adaptation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/BEST_PRACTICES_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/CODE_EXAMPLES_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/IMPLEMENTATION_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/PROJECT_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/QUIZ_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/ROADMAP_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_domain_adaptation.md",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/THEORY_04_domain_adaptation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_domain_adaptation.txt",
+            "path": "04_Few_Shot_Learning/04_Domain_Adaptation/requirements_04_domain_adaptation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Cross_Task_Learning",
+        "path": "04_Few_Shot_Learning/05_Cross_Task_Learning",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/BEST_PRACTICES_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/CODE_EXAMPLES_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/IMPLEMENTATION_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/PROJECT_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/QUIZ_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/ROADMAP_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_cross_task_learning.md",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/THEORY_05_cross_task_learning.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_cross_task_learning.txt",
+            "path": "04_Few_Shot_Learning/05_Cross_Task_Learning/requirements_05_cross_task_learning.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/BEST_PRACTICES_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/CODE_EXAMPLES_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/IMPLEMENTATION_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/PROJECT_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/QUIZ_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/ROADMAP_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_04_few_shot_learning.md",
+        "path": "04_Few_Shot_Learning/THEORY_04_few_shot_learning.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_04_few_shot_learning.txt",
+        "path": "04_Few_Shot_Learning/requirements_04_few_shot_learning.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "05_Tools",
+    "path": "05_Tools",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_OpenAI_Playground",
+        "path": "05_Tools/01_OpenAI_Playground",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/BEST_PRACTICES_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/CODE_EXAMPLES_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Tools/01_OpenAI_Playground/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/IMPLEMENTATION_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/PROJECT_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/QUIZ_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/ROADMAP_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_openai_playground.md",
+            "path": "05_Tools/01_OpenAI_Playground/THEORY_01_openai_playground.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_openai_playground.txt",
+            "path": "05_Tools/01_OpenAI_Playground/requirements_01_openai_playground.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_LangChain",
+        "path": "05_Tools/02_LangChain",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_langchain.md",
+            "path": "05_Tools/02_LangChain/BEST_PRACTICES_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_langchain.md",
+            "path": "05_Tools/02_LangChain/CODE_EXAMPLES_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Tools/02_LangChain/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_langchain.md",
+            "path": "05_Tools/02_LangChain/IMPLEMENTATION_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_langchain.md",
+            "path": "05_Tools/02_LangChain/PROJECT_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_langchain.md",
+            "path": "05_Tools/02_LangChain/QUIZ_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_langchain.md",
+            "path": "05_Tools/02_LangChain/ROADMAP_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_langchain.md",
+            "path": "05_Tools/02_LangChain/THEORY_02_langchain.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_langchain.txt",
+            "path": "05_Tools/02_LangChain/requirements_02_langchain.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Prompt_Optimizer",
+        "path": "05_Tools/03_Prompt_Optimizer",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/BEST_PRACTICES_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/CODE_EXAMPLES_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Tools/03_Prompt_Optimizer/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/IMPLEMENTATION_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/PROJECT_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/QUIZ_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/ROADMAP_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_prompt_optimizer.md",
+            "path": "05_Tools/03_Prompt_Optimizer/THEORY_03_prompt_optimizer.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_prompt_optimizer.txt",
+            "path": "05_Tools/03_Prompt_Optimizer/requirements_03_prompt_optimizer.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_A",
+        "path": "05_Tools/04_A",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_a.md",
+            "path": "05_Tools/04_A/BEST_PRACTICES_04_a.md"
+          },
+          {
+            "type": "folder",
+            "name": "B_Testing",
+            "path": "05_Tools/04_A/B_Testing",
+            "children": [
+              {
+                "type": "file",
+                "name": "BEST_PRACTICES_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/BEST_PRACTICES_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "CODE_EXAMPLES_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/CODE_EXAMPLES_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "COMPLEX_PROBLEMS.md",
+                "path": "05_Tools/04_A/B_Testing/COMPLEX_PROBLEMS.md"
+              },
+              {
+                "type": "file",
+                "name": "IMPLEMENTATION_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/IMPLEMENTATION_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "PROJECT_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/PROJECT_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "QUIZ_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/QUIZ_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "ROADMAP_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/ROADMAP_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "THEORY_b_testing.md",
+                "path": "05_Tools/04_A/B_Testing/THEORY_b_testing.md"
+              },
+              {
+                "type": "file",
+                "name": "requirements_b_testing.txt",
+                "path": "05_Tools/04_A/B_Testing/requirements_b_testing.txt"
+              }
+            ]
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_a.md",
+            "path": "05_Tools/04_A/CODE_EXAMPLES_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Tools/04_A/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_a.md",
+            "path": "05_Tools/04_A/IMPLEMENTATION_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_a.md",
+            "path": "05_Tools/04_A/PROJECT_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_a.md",
+            "path": "05_Tools/04_A/QUIZ_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_a.md",
+            "path": "05_Tools/04_A/ROADMAP_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_a.md",
+            "path": "05_Tools/04_A/THEORY_04_a.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_a.txt",
+            "path": "05_Tools/04_A/requirements_04_a.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Prompt_Libraries",
+        "path": "05_Tools/05_Prompt_Libraries",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/BEST_PRACTICES_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/CODE_EXAMPLES_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "05_Tools/05_Prompt_Libraries/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/IMPLEMENTATION_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/PROJECT_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/QUIZ_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/ROADMAP_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_prompt_libraries.md",
+            "path": "05_Tools/05_Prompt_Libraries/THEORY_05_prompt_libraries.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_prompt_libraries.txt",
+            "path": "05_Tools/05_Prompt_Libraries/requirements_05_prompt_libraries.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_05_tools.md",
+        "path": "05_Tools/BEST_PRACTICES_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_05_tools.md",
+        "path": "05_Tools/CODE_EXAMPLES_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_05_tools.md",
+        "path": "05_Tools/IMPLEMENTATION_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_05_tools.md",
+        "path": "05_Tools/PROJECT_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_05_tools.md",
+        "path": "05_Tools/QUIZ_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_05_tools.md",
+        "path": "05_Tools/ROADMAP_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_05_tools.md",
+        "path": "05_Tools/THEORY_05_tools.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_05_tools.txt",
+        "path": "05_Tools/requirements_05_tools.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "06_Applications",
+    "path": "06_Applications",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Content_Generation",
+        "path": "06_Applications/01_Content_Generation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/BEST_PRACTICES_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/CODE_EXAMPLES_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Applications/01_Content_Generation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/IMPLEMENTATION_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/PROJECT_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/QUIZ_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/ROADMAP_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_content_generation.md",
+            "path": "06_Applications/01_Content_Generation/THEORY_01_content_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_content_generation.txt",
+            "path": "06_Applications/01_Content_Generation/requirements_01_content_generation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Code_Generation",
+        "path": "06_Applications/02_Code_Generation",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/BEST_PRACTICES_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/CODE_EXAMPLES_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Applications/02_Code_Generation/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/IMPLEMENTATION_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/PROJECT_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/QUIZ_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/ROADMAP_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_code_generation.md",
+            "path": "06_Applications/02_Code_Generation/THEORY_02_code_generation.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_code_generation.txt",
+            "path": "06_Applications/02_Code_Generation/requirements_02_code_generation.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Data_Analysis",
+        "path": "06_Applications/03_Data_Analysis",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/BEST_PRACTICES_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/CODE_EXAMPLES_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Applications/03_Data_Analysis/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/IMPLEMENTATION_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/PROJECT_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/QUIZ_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/ROADMAP_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_data_analysis.md",
+            "path": "06_Applications/03_Data_Analysis/THEORY_03_data_analysis.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_data_analysis.txt",
+            "path": "06_Applications/03_Data_Analysis/requirements_03_data_analysis.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Creative_Writing",
+        "path": "06_Applications/04_Creative_Writing",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/BEST_PRACTICES_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/CODE_EXAMPLES_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Applications/04_Creative_Writing/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/IMPLEMENTATION_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/PROJECT_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/QUIZ_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/ROADMAP_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_creative_writing.md",
+            "path": "06_Applications/04_Creative_Writing/THEORY_04_creative_writing.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_creative_writing.txt",
+            "path": "06_Applications/04_Creative_Writing/requirements_04_creative_writing.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Problem_Solving",
+        "path": "06_Applications/05_Problem_Solving",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/BEST_PRACTICES_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/CODE_EXAMPLES_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "06_Applications/05_Problem_Solving/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/IMPLEMENTATION_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/PROJECT_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/QUIZ_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/ROADMAP_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_problem_solving.md",
+            "path": "06_Applications/05_Problem_Solving/THEORY_05_problem_solving.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_problem_solving.txt",
+            "path": "06_Applications/05_Problem_Solving/requirements_05_problem_solving.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_06_applications.md",
+        "path": "06_Applications/BEST_PRACTICES_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_06_applications.md",
+        "path": "06_Applications/CODE_EXAMPLES_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_06_applications.md",
+        "path": "06_Applications/IMPLEMENTATION_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_06_applications.md",
+        "path": "06_Applications/PROJECT_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_06_applications.md",
+        "path": "06_Applications/QUIZ_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_06_applications.md",
+        "path": "06_Applications/ROADMAP_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_06_applications.md",
+        "path": "06_Applications/THEORY_06_applications.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_06_applications.txt",
+        "path": "06_Applications/requirements_06_applications.txt"
+      }
+    ]
+  },
+  {
+    "type": "folder",
+    "name": "07_Best_Practices",
+    "path": "07_Best_Practices",
+    "children": [
+      {
+        "type": "folder",
+        "name": "01_Clarity",
+        "path": "07_Best_Practices/01_Clarity",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/BEST_PRACTICES_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/CODE_EXAMPLES_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Best_Practices/01_Clarity/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/IMPLEMENTATION_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/PROJECT_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/QUIZ_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/ROADMAP_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_01_clarity.md",
+            "path": "07_Best_Practices/01_Clarity/THEORY_01_clarity.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_01_clarity.txt",
+            "path": "07_Best_Practices/01_Clarity/requirements_01_clarity.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "02_Specificity",
+        "path": "07_Best_Practices/02_Specificity",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/BEST_PRACTICES_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/CODE_EXAMPLES_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Best_Practices/02_Specificity/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/IMPLEMENTATION_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/PROJECT_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/QUIZ_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/ROADMAP_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_02_specificity.md",
+            "path": "07_Best_Practices/02_Specificity/THEORY_02_specificity.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_02_specificity.txt",
+            "path": "07_Best_Practices/02_Specificity/requirements_02_specificity.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "03_Context",
+        "path": "07_Best_Practices/03_Context",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_03_context.md",
+            "path": "07_Best_Practices/03_Context/BEST_PRACTICES_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_03_context.md",
+            "path": "07_Best_Practices/03_Context/CODE_EXAMPLES_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Best_Practices/03_Context/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_03_context.md",
+            "path": "07_Best_Practices/03_Context/IMPLEMENTATION_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_03_context.md",
+            "path": "07_Best_Practices/03_Context/PROJECT_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_03_context.md",
+            "path": "07_Best_Practices/03_Context/QUIZ_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_03_context.md",
+            "path": "07_Best_Practices/03_Context/ROADMAP_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_03_context.md",
+            "path": "07_Best_Practices/03_Context/THEORY_03_context.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_03_context.txt",
+            "path": "07_Best_Practices/03_Context/requirements_03_context.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "04_Examples",
+        "path": "07_Best_Practices/04_Examples",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/BEST_PRACTICES_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/CODE_EXAMPLES_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Best_Practices/04_Examples/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/IMPLEMENTATION_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/PROJECT_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/QUIZ_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/ROADMAP_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_04_examples.md",
+            "path": "07_Best_Practices/04_Examples/THEORY_04_examples.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_04_examples.txt",
+            "path": "07_Best_Practices/04_Examples/requirements_04_examples.txt"
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "name": "05_Iteration",
+        "path": "07_Best_Practices/05_Iteration",
+        "children": [
+          {
+            "type": "file",
+            "name": "BEST_PRACTICES_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/BEST_PRACTICES_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "CODE_EXAMPLES_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/CODE_EXAMPLES_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "COMPLEX_PROBLEMS.md",
+            "path": "07_Best_Practices/05_Iteration/COMPLEX_PROBLEMS.md"
+          },
+          {
+            "type": "file",
+            "name": "IMPLEMENTATION_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/IMPLEMENTATION_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "PROJECT_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/PROJECT_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "QUIZ_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/QUIZ_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "ROADMAP_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/ROADMAP_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "THEORY_05_iteration.md",
+            "path": "07_Best_Practices/05_Iteration/THEORY_05_iteration.md"
+          },
+          {
+            "type": "file",
+            "name": "requirements_05_iteration.txt",
+            "path": "07_Best_Practices/05_Iteration/requirements_05_iteration.txt"
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "BEST_PRACTICES_07_best_practices.md",
+        "path": "07_Best_Practices/BEST_PRACTICES_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "CODE_EXAMPLES_07_best_practices.md",
+        "path": "07_Best_Practices/CODE_EXAMPLES_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "IMPLEMENTATION_07_best_practices.md",
+        "path": "07_Best_Practices/IMPLEMENTATION_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "PROJECT_07_best_practices.md",
+        "path": "07_Best_Practices/PROJECT_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "QUIZ_07_best_practices.md",
+        "path": "07_Best_Practices/QUIZ_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "ROADMAP_07_best_practices.md",
+        "path": "07_Best_Practices/ROADMAP_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "THEORY_07_best_practices.md",
+        "path": "07_Best_Practices/THEORY_07_best_practices.md"
+      },
+      {
+        "type": "file",
+        "name": "requirements_07_best_practices.txt",
+        "path": "07_Best_Practices/requirements_07_best_practices.txt"
+      }
+    ]
+  },
+  {
+    "type": "file",
+    "name": "BEST_PRACTICES_13_prompt_engineering.md",
+    "path": "BEST_PRACTICES_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "CODE_EXAMPLES_13_prompt_engineering.md",
+    "path": "CODE_EXAMPLES_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "COMPLEX_PROBLEMS.md",
+    "path": "COMPLEX_PROBLEMS.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION.md",
+    "path": "IMPLEMENTATION.md"
+  },
+  {
+    "type": "file",
+    "name": "IMPLEMENTATION_13_prompt_engineering.md",
+    "path": "IMPLEMENTATION_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "PROJECT_13_prompt_engineering.md",
+    "path": "PROJECT_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "QUIZ_13_prompt_engineering.md",
+    "path": "QUIZ_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "ROADMAP_13_prompt_engineering.md",
+    "path": "ROADMAP_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY.md",
+    "path": "THEORY.md"
+  },
+  {
+    "type": "file",
+    "name": "THEORY_13_prompt_engineering.md",
+    "path": "THEORY_13_prompt_engineering.md"
+  },
+  {
+    "type": "file",
+    "name": "requirements.txt",
+    "path": "requirements.txt"
+  },
+  {
+    "type": "file",
+    "name": "requirements_13_prompt_engineering.txt",
+    "path": "requirements_13_prompt_engineering.txt"
+  }
+]

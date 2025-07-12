@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDEV Learning - Học Lập Trình Từ Cơ Bản</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #f8f9fa;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+        }
+
+        .nav-tab {
+            background: none;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #6c757d;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-tab:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .nav-tab.active {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Home Section */
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .welcome-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+
+        .stat-card i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .stat-card h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            color: #6c757d;
+        }
+
+        /* Learning Paths */
+        .learning-paths {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .path-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .path-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .path-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .path-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .path-icon.python { background: #3776ab; }
+        .path-icon.web { background: #f7df1e; }
+        .path-icon.data { background: #ff6b6b; }
+        .path-icon.ml { background: #4ecdc4; }
+
+        .path-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .path-desc {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .path-progress {
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .path-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #e9ecef;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        /* Lessons Grid */
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .lesson-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #e9ecef;
+            transition: background 0.3s ease;
+        }
+
+        .lesson-card.completed::before {
+            background: #28a745;
+        }
+
+        .lesson-card.active::before {
+            background: #667eea;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .lesson-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .lesson-header i {
+            font-size: 1.2rem;
+        }
+
+        .lesson-card.completed .lesson-header i {
+            color: #28a745;
+        }
+
+        .lesson-card.active .lesson-header i {
+            color: #667eea;
+        }
+
+        .lesson-card .lesson-header i {
+            color: #6c757d;
+        }
+
+        .lesson-title {
+            flex: 1;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .lesson-duration {
+            font-size: 0.9rem;
+            color: #6c757d;
+            background: #f8f9fa;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+        }
+
+        .lesson-desc {
+            color: #6c757d;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .lesson-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .difficulty {
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .difficulty.easy {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .difficulty.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .difficulty.hard {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .lesson-status {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 80vh;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .modal-header h3 {
+            font-size: 1.3rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-tabs {
+                padding: 0.5rem 0;
+            }
+            
+            .nav-tab {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .main-content {
+                padding: 1rem;
+            }
+            
+            .learning-paths {
+                grid-template-columns: 1fr;
+            }
+            
+            .lessons-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+            
+            .modal-header {
+                padding: 1rem 1.5rem;
+            }
+            
+            .modal-body {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Back button */
+        .back-btn {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-graduation-cap"></i> AIDEV Learning</h1>
+            <p>Học lập trình từ cơ bản đến nâng cao</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="home">
+                    <i class="fas fa-home"></i> Trang chủ
+                </button>
+                <button class="nav-tab" data-section="python">
+                    <i class="fab fa-python"></i> Python
+                </button>
+                <button class="nav-tab" data-section="web">
+                    <i class="fas fa-globe"></i> Web Development
+                </button>
+                <button class="nav-tab" data-section="data">
+                    <i class="fas fa-chart-bar"></i> Data Science
+                </button>
+                <button class="nav-tab" data-section="ml">
+                    <i class="fas fa-brain"></i> Machine Learning
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="welcome-section">
+                    <h2>Chào mừng đến với AIDEV Learning!</h2>
+                    <p>Khám phá các khóa học lập trình được thiết kế để giúp bạn từ người mới bắt đầu trở thành developer chuyên nghiệp.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>50+</h3>
+                        <p>Bài học</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>1000+</h3>
+                        <p>Học viên</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>100+</h3>
+                        <p>Giờ học</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>15+</h3>
+                        <p>Chứng chỉ</p>
+                    </div>
+                </div>
+
+                <div class="learning-paths">
+                    <div class="path-card" onclick="switchSection('python')">
+                        <div class="path-header">
+                            <div class="path-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="path-title">Python Programming</div>
+                        </div>
+                        <div class="path-desc">
+                            Học lập trình Python từ cơ bản đến nâng cao. Từ biến, hàm đến OOP và web development.
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 35%"></div>
+                            </div>
+                            <div class="progress-text">35% hoàn thành</div>
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Tiếp tục học
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('web')">
+                        <div class="path-header">
+                            <div class="path-icon web">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="path-title">Web Development</div>
+                        </div>
+                        <div class="path-desc">
+                            Xây dựng website với HTML, CSS, JavaScript và các framework hiện đại.
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="progress-text">20% hoàn thành</div>
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('data')">
+                        <div class="path-header">
+                            <div class="path-icon data">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="path-title">Data Science</div>
+                        </div>
+                        <div class="path-desc">
+                            Khám phá khoa học dữ liệu với Python, pandas, matplotlib và machine learning.
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 10%"></div>
+                            </div>
+                            <div class="progress-text">10% hoàn thành</div>
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('ml')">
+                        <div class="path-header">
+                            <div class="path-icon ml">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="path-title">Machine Learning</div>
+                        </div>
+                        <div class="path-desc">
+                            Học machine learning và AI với scikit-learn, TensorFlow và các thuật toán cơ bản.
+                        </div>
+                        <div class="path-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 5%"></div>
+                            </div>
+                            <div class="progress-text">5% hoàn thành</div>
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Python Section -->
+            <section id="python" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fab fa-python"></i> Python Programming</h2>
+                    <p>Học lập trình Python từ cơ bản đến nâng cao</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card completed" onclick="openLesson('python', 'variables')">
+                        <div class="lesson-header">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="lesson-title">Biến và Kiểu Dữ Liệu</div>
+                            <span class="lesson-duration">45 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về các kiểu dữ liệu cơ bản trong Python và cách sử dụng biến.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span class="lesson-status">Hoàn thành</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card completed" onclick="openLesson('python', 'control')">
+                        <div class="lesson-header">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="lesson-title">Cấu Trúc Điều Khiển</div>
+                            <span class="lesson-duration">60 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về if-else, loops và các cấu trúc điều khiển trong Python.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span class="lesson-status">Hoàn thành</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card active" onclick="openLesson('python', 'functions')">
+                        <div class="lesson-header">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="lesson-title">Hàm và Module</div>
+                            <span class="lesson-duration">75 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học cách tạo và sử dụng hàm, tổ chức code với modules.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span class="lesson-status">Đang học</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('python', 'files')">
+                        <div class="lesson-header">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="lesson-title">Xử Lý File</div>
+                            <span class="lesson-duration">50 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học cách đọc và ghi file trong Python.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span class="lesson-status">Chưa học</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('python', 'oop')">
+                        <div class="lesson-header">
+                            <i class="fas fa-cube"></i>
+                            <div class="lesson-title">Lập Trình Hướng Đối Tượng</div>
+                            <span class="lesson-duration">90 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về classes, objects, inheritance và polymorphism.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span class="lesson-status">Chưa học</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="openLesson('python', 'exceptions')">
+                        <div class="lesson-header">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="lesson-title">Xử Lý Ngoại Lệ</div>
+                            <span class="lesson-duration">40 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học cách xử lý lỗi và exceptions trong Python.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span class="lesson-status">Chưa học</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Development Section -->
+            <section id="web" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-globe"></i> Web Development</h2>
+                    <p>Học phát triển web từ cơ bản đến nâng cao</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card completed" onclick="openLesson('web', 'html-css')">
+                        <div class="lesson-header">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="lesson-title">HTML & CSS Cơ Bản</div>
+                            <span class="lesson-duration">90 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học cấu trúc HTML và styling với CSS.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span class="lesson-status">Hoàn thành</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card active" onclick="openLesson('web', 'javascript')">
+                        <div class="lesson-header">
+                            <i class="fas fa-play-circle"></i>
+                            <div class="lesson-title">JavaScript Cơ Bản</div>
+                            <span class="lesson-duration">120 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Học lập trình JavaScript cho web.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span class="lesson-status">Đang học</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Science Section -->
+            <section id="data" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-chart-bar"></i> Data Science</h2>
+                    <p>Khám phá khoa học dữ liệu và phân tích</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card completed" onclick="openLesson('data', 'intro')">
+                        <div class="lesson-header">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="lesson-title">Giới Thiệu Data Science</div>
+                            <span class="lesson-duration">60 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Tổng quan về khoa học dữ liệu.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span class="lesson-status">Hoàn thành</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Machine Learning Section -->
+            <section id="ml" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-brain"></i> Machine Learning</h2>
+                    <p>Học machine learning và AI</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="openLesson('ml', 'intro')">
+                        <div class="lesson-header">
+                            <i class="fas fa-lock"></i>
+                            <div class="lesson-title">Giới Thiệu Machine Learning</div>
+                            <span class="lesson-duration">90 phút</span>
+                        </div>
+                        <div class="lesson-desc">
+                            Khái niệm cơ bản về machine learning.
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span class="lesson-status">Chưa mở khóa</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Lesson Modal -->
+        <div id="lessonModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Chi Tiết Bài Học</h3>
+                    <button class="close-btn" onclick="closeModal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Lesson content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 

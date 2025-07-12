@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Structured Data -->
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Algorithm Ecosystem Platform",
+        "description": "Interactive platform for learning algorithms and data structures",
+        "url": "",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="../shared/styles.css" as="style">
+    <link rel="preload" href="../shared/scripts.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="description" content="Algorithm Ecosystem Platform - Học thuật toán hiệu quả với công cụ tương tác">
+    <meta name="keywords" content="algorithms, data structures, programming, learning, interactive">
+    <meta name="author" content="Algorithm Ecosystem Platform">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Algorithm Ecosystem Platform">
+    <meta property="og:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Algorithm Ecosystem Platform">
+    <meta name="twitter:description" content="Học thuật toán hiệu quả với công cụ tương tác">
+    
+    <!-- Performance Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Algorithm Ecosystem">
+
+    <!-- Shared CSS Files -->
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/styles.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/components.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/animations.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/accessibility.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="../shared/utilities.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Algorithm System Diagrams - Enhanced View</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+            <a href="index.html" class="back-button">
+                ← Quay lại Navigation Hub
+            </a>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-globe"></i> Algorithm System Diagrams</h1>
+            <p>Interactive visualization of 100 algorithm groups across 4 programming languages</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100</div>
+                    <div class="stat-label">Algorithm Groups</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Programming Languages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8,000</div>
+                    <div class="stat-label">Code Examples</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">400</div>
+                    <div class="stat-label">Language Files</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation Tabs -->
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="showDiagram('overview')">
+                    <i class="fas fa-chart-pie"></i> System Overview
+                </button>
+                <button class="nav-tab" onclick="showDiagram('structure')">
+                    <i class="fas fa-folder-tree"></i> File Structure
+                </button>
+                <button class="nav-tab" onclick="showDiagram('learning')">
+                    <i class="fas fa-graduation-cap"></i> Learning Path
+                </button>
+                <button class="nav-tab" onclick="showDiagram('comparison')">
+                    <i class="fas fa-code-branch"></i> Code Comparison
+                </button>
+                <button class="nav-tab" onclick="showDiagram('stats')">
+                    <i class="fas fa-chart-bar"></i> Statistics
+                </button>
+                <button class="nav-tab" onclick="showDiagram('workflow')">
+                    <i class="fas fa-project-diagram"></i> Usage Workflow
+                </button>
+                <button class="nav-tab" onclick="showDiagram('benefits')">
+                    <i class="fas fa-star"></i> Benefits
+                </button>
+            </div>
+
+            <!-- System Overview Diagram -->
+            <div id="overview" class="diagram-section active">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-chart-pie"></i> System Overview Architecture
+                    </div>
+                    <div class="diagram-description">
+                        Complete visualization of the 100 algorithm groups and their implementations across 4 programming languages
+                    </div>
+                    
+                    <div class="info-panel">
+                        <div class="info-title"><i class="fas fa-info-circle"></i> What you're seeing:</div>
+                        <div class="info-content">
+                            This diagram shows the complete system architecture with all 100 algorithm groups connected to their respective language implementations. 
+                            Each group contains 20 levels of difficulty, and each language has its own dedicated file with 2,000 code examples.
+                        </div>
+                    </div>
+
+                    <div class="mermaid">
+graph TB
+    subgraph "🌍 100 ALGORITHM GROUPS"
+        A1[01-SlidingWindow]
+        A2[02-TwoPointers]
+        A3[03-FastSlowPointers]
+        A4[04-MergeIntervals]
+        A5[05-CyclicSort]
+        A6[06-InPlaceReversal]
+        A7[07-TreeBFS]
+        A8[08-TreeDFS]
+        A9[09-TwoHeaps]
+        A10[10-Subsets]
+        A11[11-ModifiedBinarySearch]
+        A12[12-TopKElements]
+        A13[13-KWayMerge]
+        A14[14-TopologicalSort]
+        A15[15-DynamicProgramming]
+        A16[16-GraphAlgorithms]
+        A17[17-StringAlgorithms]
+        A18[18-GreedyAlgorithms]
+        A19[19-Backtracking]
+        A20[20-AdvancedDataStructures]
+        A21[21-ArrayManipulation]
+        A22[22-MatrixOperations]
+        A23[23-StackAlgorithms]
+        A24[24-QueueAlgorithms]
+        A25[25-DequeAlgorithms]
+        A26[26-HashTableAlgorithms]
+        A27[27-SetAlgorithms]
+        A28[28-MapAlgorithms]
+        A29[29-PriorityQueueAlgorithms]
+        A30[30-HeapAlgorithms]
+        A31[31-BinarySearchTree]
+        A32[32-AVLTree]
+        A33[33-RedBlackTree]
+        A34[34-BTree]
+        A35[35-TrieAlgorithms]
+        A36[36-SuffixTree]
+        A37[37-SegmentTree]
+        A38[38-FenwickTree]
+        A39[39-DisjointSet]
+        A40[40-UnionFind]
+        A41[41-BitManipulation]
+        A42[42-BitwiseAlgorithms]
+        A43[43-MathAlgorithms]
+        A44[44-NumberTheory]
+        A45[45-Combinatorics]
+        A46[46-Probability]
+        A47[47-Statistics]
+        A48[48-Geometry]
+        A49[49-ComputationalGeometry]
+        A50[50-LinearAlgebra]
+        A51[51-MatrixAlgorithms]
+        A52[52-GraphTheory]
+        A53[53-NetworkFlow]
+        A54[54-MatchingAlgorithms]
+        A55[55-Connectivity]
+        A56[56-Planarity]
+        A57[57-Coloring]
+        A58[58-Clique]
+        A59[59-IndependentSet]
+        A60[60-VertexCover]
+        A61[61-EdgeCover]
+        A62[62-DominatingSet]
+        A63[63-FeedbackVertexSet]
+        A64[64-FeedbackEdgeSet]
+        A65[65-SteinerTree]
+        A66[66-TravelingSalesman]
+        A67[67-VehicleRouting]
+        A68[68-FacilityLocation]
+        A69[69-Scheduling]
+        A70[70-Assignment]
+        A71[71-Packing]
+        A72[72-Covering]
+        A73[73-Partitioning]
+        A74[74-Clustering]
+        A75[75-Classification]
+        A76[76-Regression]
+        A77[77-Optimization]
+        A78[78-LinearProgramming]
+        A79[79-IntegerProgramming]
+        A80[80-NonlinearProgramming]
+        A81[81-ConvexOptimization]
+        A82[82-NonConvexOptimization]
+        A83[83-Metaheuristics]
+        A84[84-GeneticAlgorithms]
+        A85[85-SimulatedAnnealing]
+        A86[86-TabuSearch]
+        A87[87-ParticleSwarm]
+        A88[88-AntColony]
+        A89[89-BeeColony]
+        A90[90-FireflyAlgorithm]
+        A91[91-CuckooSearch]
+        A92[92-BatAlgorithm]
+        A93[93-WolfAlgorithm]
+        A94[94-DragonflyAlgorithm]
+        A95[95-ButterflyAlgorithm]
+        A96[96-WhaleAlgorithm]
+        A97[97-MothAlgorithm]
+        A98[98-GrasshopperAlgorithm]
+        A99[99-SalpAlgorithm]
+        A100[100-HybridAlgorithms]
+    end
+
+    subgraph "🐍 PYTHON IMPLEMENTATIONS"
+        P1[Python_LEVELS.md]
+        P2[20 Levels per Group]
+        P3[2,000 Total Examples]
+        P4[Beginner Friendly]
+        P5[Easy to Read]
+    end
+
+    subgraph "⚡ C++ IMPLEMENTATIONS"
+        C1[C++_LEVELS.md]
+        C2[20 Levels per Group]
+        C3[2,000 Total Examples]
+        C4[High Performance]
+        C5[Competitive Programming]
+    end
+
+    subgraph "🔧 C IMPLEMENTATIONS"
+        C6[C_LEVELS.md]
+        C7[20 Levels per Group]
+        C8[2,000 Total Examples]
+        C9[Low Level Control]
+        C10[Memory Management]
+    end
+
+    subgraph "☕ JAVA IMPLEMENTATIONS"
+        J1[Java_LEVELS.md]
+        J2[20 Levels per Group]
+        J3[2,000 Total Examples]
+        J4[Enterprise Ready]
+        J5[OOP Principles]
+    end
+
+    %% Connect groups to language implementations
+    A1 --> P1
+    A1 --> C1
+    A1 --> C6
+    A1 --> J1
+
+    A21 --> P1
+    A21 --> C1
+    A21 --> C6
+    A21 --> J1
+
+    A100 --> P1
+    A100 --> C1
+    A100 --> C6
+    A100 --> J1
+
+    %% Connect language files to their characteristics
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    C4 --> C5
+
+    C6 --> C7
+    C7 --> C8
+    C8 --> C9
+    C9 --> C10
+
+    J1 --> J2
+    J2 --> J3
+    J3 --> J4
+    J4 --> J5
+
+    style A1 fill:#e1f5fe
+    style A21 fill:#e1f5fe
+    style A100 fill:#e1f5fe
+    style P1 fill:#c8e6c9
+    style C1 fill:#ffcdd2
+    style C6 fill:#fff3e0
+    style J1 fill:#f3e5f5
+                    </div>
+
+                    <div class="controls">
+                        <button class="control-btn" onclick="zoomIn()">
+                            <i class="fas fa-search-plus"></i> Zoom In
+                        </button>
+                        <button class="control-btn" onclick="zoomOut()">
+                            <i class="fas fa-search-minus"></i> Zoom Out
+                        </button>
+                        <button class="control-btn" onclick="resetZoom()">
+                            <i class="fas fa-expand-arrows-alt"></i> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Structure Diagram -->
+            <div id="structure" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-folder-tree"></i> Directory Structure
+                    </div>
+                    <div class="diagram-description">
+                        Detailed view of how files are organized in each algorithm group
+                    </div>
+                    
+                    <div class="mermaid">
+graph TD
+    subgraph "📁 INTERVIEW DATA STRUCTURE"
+        subgraph "📁 01-SlidingWindow"
+            SW1[LEVELS.md]
+            SW2[Python_LEVELS.md]
+            SW3[C++_LEVELS.md]
+            SW4[C_LEVELS.md]
+            SW5[Java_LEVELS.md]
+            SW6[README.md]
+        end
+
+        subgraph "📁 21-ArrayManipulation"
+            AM1[LEVELS.md]
+            AM2[Python_LEVELS.md]
+            AM3[C++_LEVELS.md]
+            AM4[C_LEVELS.md]
+            AM5[Java_LEVELS.md]
+            AM6[README.md]
+        end
+
+        subgraph "📁 100-HybridAlgorithms"
+            HA1[LEVELS.md]
+            HA2[Python_LEVELS.md]
+            HA3[C++_LEVELS.md]
+            HA4[C_LEVELS.md]
+            HA5[Java_LEVELS.md]
+            HA6[README.md]
+        end
+    end
+
+    subgraph "📄 ROOT FILES"
+        RF1[100_ALGORITHMS_SUMMARY.md]
+        RF2[LANGUAGE_FILES_OVERVIEW.md]
+        RF3[FINAL_MULTILINGUAL_SEPARATION_SUMMARY.md]
+        RF4[MULTILINGUAL_CODE_UPDATE_SUMMARY.md]
+        RF5[ALGORITHM_SYSTEM_DIAGRAM.md]
+    end
+
+    style SW1 fill:#e3f2fd
+    style AM1 fill:#e3f2fd
+    style HA1 fill:#e3f2fd
+    style SW2 fill:#c8e6c9
+    style AM2 fill:#c8e6c9
+    style HA2 fill:#c8e6c9
+    style SW3 fill:#ffcdd2
+    style AM3 fill:#ffcdd2
+    style HA3 fill:#ffcdd2
+    style SW4 fill:#fff3e0
+    style AM4 fill:#fff3e0
+    style HA4 fill:#fff3e0
+    style SW5 fill:#f3e5f5
+    style AM5 fill:#f3e5f5
+    style HA5 fill:#f3e5f5
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path Diagram -->
+            <div id="learning" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-graduation-cap"></i> Learning Journey
+                    </div>
+                    <div class="diagram-description">
+                        Step-by-step learning path from beginner to expert level
+                    </div>
+                    
+                    <div class="mermaid">
+flowchart TD
+    Start([🎯 Start Learning]) --> ChooseLang{Choose Language}
+    
+    ChooseLang -->|Beginner| Python[🐍 Python]
+    ChooseLang -->|Intermediate| Cpp[⚡ C++]
+    ChooseLang -->|Advanced| C[🔧 C]
+    ChooseLang -->|Enterprise| Java[☕ Java]
+    
+    Python --> PythonLevels[📄 Python_LEVELS.md]
+    Cpp --> CppLevels[📄 C++_LEVELS.md]
+    C --> CLevels[📄 C_LEVELS.md]
+    Java --> JavaLevels[📄 Java_LEVELS.md]
+    
+    PythonLevels --> PythonGroups[📁 Study All 100 Groups]
+    CppLevels --> CppGroups[📁 Study All 100 Groups]
+    CLevels --> CGroups[📁 Study All 100 Groups]
+    JavaLevels --> JavaGroups[📁 Study All 100 Groups]
+    
+    PythonGroups --> Compare1{Compare with other languages?}
+    CppGroups --> Compare2{Compare with other languages?}
+    CGroups --> Compare3{Compare with other languages?}
+    JavaGroups --> Compare4{Compare with other languages?}
+    
+    Compare1 -->|Yes| CompareAll[🔄 Compare All Implementations]
+    Compare2 -->|Yes| CompareAll
+    Compare3 -->|Yes| CompareAll
+    Compare4 -->|Yes| CompareAll
+    
+    Compare1 -->|No| Practice1[💻 Practice & Apply]
+    Compare2 -->|No| Practice2[💻 Practice & Apply]
+    Compare3 -->|No| Practice3[💻 Practice & Apply]
+    Compare4 -->|No| Practice4[💻 Practice & Apply]
+    
+    CompareAll --> PracticeAll[💻 Practice & Apply]
+    
+    Practice1 --> Mastery1[🏆 Master Python]
+    Practice2 --> Mastery2[🏆 Master C++]
+    Practice3 --> Mastery3[🏆 Master C]
+    Practice4 --> Mastery4[🏆 Master Java]
+    PracticeAll --> MasteryAll[🏆 Master All Languages]
+    
+    Mastery1 --> Interview[🎯 Interview Ready]
+    Mastery2 --> Interview
+    Mastery3 --> Interview
+    Mastery4 --> Interview
+    MasteryAll --> Interview
+    
+    style Start fill:#e8f5e8
+    style Python fill:#c8e6c9
+    style Cpp fill:#ffcdd2
+    style C fill:#fff3e0
+    style Java fill:#f3e5f5
+    style Interview fill:#ffeb3b
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Comparison Diagram -->
+            <div id="comparison" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-code-branch"></i> Multi-Language Code Comparison
+                    </div>
+                    <div class="diagram-description">
+                        Same algorithm implemented in 4 different programming languages
+                    </div>
+                    
+                    <div class="mermaid">
+graph LR
+    subgraph "🎯 SAME ALGORITHM"
+        Algo[Reverse Array Algorithm]
+    end
+
+    subgraph "🐍 PYTHON"
+        PyCode[def reverse_array(arr):<br/>    left, right = 0, len(arr) - 1<br/>    while left < right:<br/>        arr[left], arr[right] = arr[right], arr[left]<br/>        left += 1<br/>        right -= 1<br/>    return arr]
+    end
+
+    subgraph "⚡ C++"
+        CppCode[void reverse_array(vector<int>& arr) {<br/>    int left = 0, right = arr.size() - 1;<br/>    while (left < right) {<br/>        swap(arr[left], arr[right]);<br/>        left++;<br/>        right--;<br/>    }<br/>}]
+    end
+
+    subgraph "🔧 C"
+        CCode[void reverse_array(int arr[], int n) {<br/>    int left = 0, right = n - 1;<br/>    while (left < right) {<br/>        int temp = arr[left];<br/>        arr[left] = arr[right];<br/>        arr[right] = temp;<br/>        left++;<br/>        right--;<br/>    }<br/>}]
+    end
+
+    subgraph "☕ JAVA"
+        JavaCode[public static void reverseArray(int[] arr) {<br/>    int left = 0, right = arr.length - 1;<br/>    while (left < right) {<br/>        int temp = arr[left];<br/>        arr[left] = arr[right];<br/>        arr[right] = temp;<br/>        left++;<br/>        right--;<br/>    }<br/>}]
+    end
+
+    Algo --> PyCode
+    Algo --> CppCode
+    Algo --> CCode
+    Algo --> JavaCode
+
+    style Algo fill:#e3f2fd
+    style PyCode fill:#c8e6c9
+    style CppCode fill:#ffcdd2
+    style CCode fill:#fff3e0
+    style JavaCode fill:#f3e5f5
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Diagram -->
+            <div id="stats" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-chart-bar"></i> File Distribution Statistics
+                    </div>
+                    <div class="diagram-description">
+                        Visual representation of file distribution and code examples across languages
+                    </div>
+                    
+                    <div class="mermaid">
+pie title "File Distribution by Language"
+    "Python_LEVELS.md" : 100
+    "C++_LEVELS.md" : 100
+    "C_LEVELS.md" : 100
+    "Java_LEVELS.md" : 100
+    "LEVELS.md (Combined)" : 100
+    "README.md" : 100
+    "Other Summary Files" : 5
+                    </div>
+                    
+                    <div class="mermaid">
+pie title "Code Examples Distribution"
+    "Python Examples" : 2000
+    "C++ Examples" : 2000
+    "C Examples" : 2000
+    "Java Examples" : 2000
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage Workflow Diagram -->
+            <div id="workflow" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-project-diagram"></i> System Usage Workflow
+                    </div>
+                    <div class="diagram-description">
+                        Step-by-step guide on how to effectively use the algorithm system
+                    </div>
+                    
+                    <div class="mermaid">
+sequenceDiagram
+    participant User as 👤 User
+    participant Overview as 📄 LANGUAGE_FILES_OVERVIEW.md
+    participant Group as 📁 Algorithm Group
+    participant LangFile as 📄 Language_LEVELS.md
+    participant Code as 💻 Code Implementation
+
+    User->>Overview: Open overview file
+    Overview->>User: Show all groups and languages
+    
+    User->>Group: Choose algorithm group
+    Group->>User: Show available language files
+    
+    User->>LangFile: Open specific language file
+    LangFile->>User: Display 20 levels of code
+    
+    User->>Code: Study specific level
+    Code->>User: Show implementation + examples
+    
+    User->>LangFile: Practice next level
+    LangFile->>User: Continue learning
+    
+    Note over User,Code: User can switch between languages for comparison
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Diagram -->
+            <div id="benefits" class="diagram-section">
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-star"></i> System Benefits & Advantages
+                    </div>
+                    <div class="diagram-description">
+                        Comprehensive overview of the benefits provided by the multilingual algorithm system
+                    </div>
+                    
+                    <div class="mermaid">
+mindmap
+  root((Multilingual Algorithm System))
+    Learning Benefits
+      Focused Learning
+        Single Language at a Time
+        No Distractions
+        Clear Progression
+      Easy Comparison
+        Side-by-Side Analysis
+        Syntax Differences
+        Performance Trade-offs
+      Quick Navigation
+        Language-Specific Search
+        Targeted Study
+        Efficient Review
+    
+    Organization Benefits
+      Clean Structure
+        Separate Files per Language
+        Logical Grouping
+        Easy Maintenance
+      Version Control
+        Language-Specific Changes
+        Independent Updates
+        Clear History
+      Scalability
+        Add New Languages
+        Extend Algorithms
+        Modular Design
+    
+    Professional Benefits
+      Interview Preparation
+        Multiple Language Skills
+        Company Preferences
+        Technical Depth
+      Real-World Application
+        Project-Specific Languages
+        Performance Requirements
+        Team Collaboration
+      Career Growth
+        Skill Diversification
+        Technology Mastery
+        Competitive Advantage
+                    </div>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="feature-title">Structured Learning</div>
+                        <div class="feature-desc">
+                            Each algorithm group contains 20 levels of increasing difficulty, 
+                            providing a clear learning progression from beginner to expert.
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="feature-title">Multi-Language Support</div>
+                        <div class="feature-desc">
+                            Complete implementations in Python, C++, C, and Java, 
+                            allowing you to learn and compare across different programming paradigms.
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="feature-title">8,000 Code Examples</div>
+                        <div class="feature-desc">
+                            Comprehensive code examples with detailed explanations, 
+                            covering edge cases and optimization techniques.
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="feature-title">Easy Navigation</div>
+                        <div class="feature-desc">
+                            Separate files for each language make it easy to find 
+                            specific implementations and compare solutions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>
+            <i class="fas fa-heart"></i> 
+            Enhanced Algorithm System Visualization | 
+            <i class="fas fa-code"></i> Interactive Diagrams | 
+            <i class="fas fa-star"></i> Professional Grade
+        </p>
+    </div>
+
+    <script defer>
+        // Initialize Mermaid with enhanced configuration
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            sequence: {
+                useMaxWidth: true,
+                diagramMarginX: 50,
+                diagramMarginY: 10,
+                actorMargin: 50,
+                width: 150,
+                height: 65,
+                boxMargin: 10,
+                boxTextMargin: 5,
+                noteMargin: 10,
+                messageMargin: 35,
+                mirrorActors: true,
+                bottomMarginAdj: 1,
+                useMaxWidth: true,
+                rightAngles: false,
+                showSequenceNumbers: false
+            },
+            gantt: {
+                titleTopMargin: 25,
+                barHeight: 20,
+                barGap: 4,
+                topPadding: 50,
+                leftPadding: 75,
+                gridLineStartPadding: 35,
+                fontSize: 11,
+                fontFamily: '"Open-Sans", "sans-serif"',
+                numberSectionStyles: 4,
+                axisFormat: '%Y-%m-%d'
+            },
+            pie: {
+                useWidth: 800,
+                useHeight: 600
+            }
+        });
+
+        // Navigation function with enhanced features
+        function showDiagram(diagramId) {
+            // Hide all diagrams
+            const diagrams = document.querySelectorAll('.diagram-section');
+            diagrams.forEach(diagram => {
+                diagram.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected diagram
+            const selectedDiagram = document.getElementById(diagramId);
+            if (selectedDiagram) {
+                selectedDiagram.classList.add('active');
+            }
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            
+            // Reinitialize mermaid after a short delay
+            setTimeout(() => {
+                mermaid.init();
+            }, 100);
+        }
+
+        // Zoom control functions
+        function zoomIn() {
+            const mermaidDivs = document.querySelectorAll('.mermaid');
+            mermaidDivs.forEach(div => {
+                const svg = div.querySelector('svg');
+                if (svg) {
+                    const currentScale = svg.style.transform.match(/scale\(([^)]+)\)/);
+                    const scale = currentScale ? parseFloat(currentScale[1]) * 1.2 : 1.2;
+                    svg.style.transform = `scale(${scale})`;
+                }
+            });
+        }
+
+        function zoomOut() {
+            const mermaidDivs = document.querySelectorAll('.mermaid');
+            mermaidDivs.forEach(div => {
+                const svg = div.querySelector('svg');
+                if (svg) {
+                    const currentScale = svg.style.transform.match(/scale\(([^)]+)\)/);
+                    const scale = currentScale ? parseFloat(currentScale[1]) / 1.2 : 0.8;
+                    svg.style.transform = `scale(${scale})`;
+                }
+            });
+        }
+
+        function resetZoom() {
+            const mermaidDivs = document.querySelectorAll('.mermaid');
+            mermaidDivs.forEach(div => {
+                const svg = div.querySelector('svg');
+                if (svg) {
+                    svg.style.transform = 'scale(1)';
+                }
+            });
+        }
+
+        // Enhanced initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading animation
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'loading';
+            loadingDiv.innerHTML = '<i class="fas fa-spinner"></i><br>Loading diagrams...';
+            document.body.appendChild(loadingDiv);
+            
+            // Remove loading after initialization
+            setTimeout(() => {
+                loadingDiv.remove();
+            }, 2000);
+            
+            // Add smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                const activeTab = document.querySelector('.nav-tab.active');
+                const tabs = Array.from(document.querySelectorAll('.nav-tab'));
+                const currentIndex = tabs.indexOf(activeTab);
+                
+                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    const nextIndex = (currentIndex + 1) % tabs.length;
+                    tabs[nextIndex].click();
+                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    const prevIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+                    tabs[prevIndex].click();
+                }
+            });
+        });
+
+        // Add smooth transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .mermaid svg {
+                    transition: transform 0.3s ease;
+                }
+                .diagram-section {
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+
+    <!-- Shared JavaScript -->
+    <script defer src="../shared/scripts.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

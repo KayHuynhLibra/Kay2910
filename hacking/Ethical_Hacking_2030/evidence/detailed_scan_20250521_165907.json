@@ -1,0 +1,63 @@
+{
+    "scan_timestamp": "2025-05-21T16:59:07.700164",
+    "target_url": "https://codercareer.blogspot.com/",
+    "scan_type": "Passive security headers analysis",
+    "findings": {
+        "vulnerabilities": [
+            "Missing X-Frame-Options header (clickjacking vulnerability)",
+            "Missing HSTS header (SSL/TLS vulnerability)",
+            "Missing Content-Security-Policy header (XSS vulnerability)",
+            "Missing Referrer-Policy header (information leakage)",
+            "Missing Permissions-Policy header (feature policy)",
+            "Missing COOP header (cross-origin isolation)",
+            "Missing COEP header (cross-origin isolation)",
+            "Missing CORP header (cross-origin isolation)"
+        ],
+        "security_headers": {
+            "Content-Type": "text/html; charset=UTF-8",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Server": "GSE"
+        },
+        "technologies": [
+            "Angular",
+            "Google Analytics",
+            "Facebook Pixel",
+            "Twitter Widget",
+            "Pinterest"
+        ],
+        "open_ports": [
+            80,
+            443
+        ],
+        "dns_records": {
+            "A": "142.250.191.161",
+            "CNAME": "blogspot.l.googleusercontent.com."
+        },
+        "ssl_tls": {
+            "version": "TLSv1.3",
+            "issuer": "Google Trust Services",
+            "valid_until": "2025-07-14"
+        }
+    },
+    "test_notes": {
+        "purpose": "Educational security research",
+        "methodology": "Passive scanning of security headers",
+        "scope": "Limited to non-intrusive analysis",
+        "findings_summary": "Several security headers missing, but basic security measures in place",
+        "risk_level": "Low - No critical vulnerabilities found",
+        "recommendations": [
+            "Implement missing security headers",
+            "Enable HSTS for better SSL/TLS security",
+            "Add Content-Security-Policy to prevent XSS",
+            "Configure Referrer-Policy to control information leakage"
+        ]
+    },
+    "ethical_considerations": {
+        "permission_status": "No explicit permission obtained",
+        "data_collection": "Limited to public security headers",
+        "impact": "No impact on website functionality",
+        "intention": "Educational purposes only",
+        "disclosure": "Findings will be reported if permission granted"
+    }
+}

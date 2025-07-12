@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDEV Learning - Học Code Thực Tế</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #f8f9fa;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+        }
+
+        .nav-tab {
+            background: none;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #6c757d;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-tab:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .nav-tab.active {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Home Section */
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .welcome-section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-section p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Learning Paths */
+        .learning-paths {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .path-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .path-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .path-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .path-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .path-icon.python { background: #3776ab; }
+        .path-icon.web { background: #f7df1e; }
+        .path-icon.data { background: #ff6b6b; }
+        .path-icon.ml { background: #4ecdc4; }
+        .path-icon.oop { background: #9c27b0; }
+        .path-icon.agents { background: #ff9800; }
+
+        .path-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .path-desc {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .path-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #e9ecef;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        /* Lessons Grid */
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .lesson-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #e9ecef;
+            transition: background 0.3s ease;
+        }
+
+        .lesson-card.completed::before {
+            background: #28a745;
+        }
+
+        .lesson-card.active::before {
+            background: #667eea;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .lesson-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .lesson-header i {
+            font-size: 1.2rem;
+            color: #667eea;
+        }
+
+        .lesson-title {
+            flex: 1;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .lesson-desc {
+            color: #6c757d;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .lesson-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .difficulty {
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .difficulty.easy {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .difficulty.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .difficulty.hard {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Back button */
+        .back-btn {
+            background: #f8f9fa;
+            color: #6c757d;
+            border: 1px solid #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        /* Code Viewer */
+        .code-viewer {
+            background: #1e1e1e;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .code-viewer pre {
+            color: #d4d4d4;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .code-viewer .comment {
+            color: #6a9955;
+        }
+
+        .code-viewer .string {
+            color: #ce9178;
+        }
+
+        .code-viewer .keyword {
+            color: #569cd6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-tabs {
+                padding: 0.5rem 0;
+            }
+            
+            .nav-tab {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .main-content {
+                padding: 1rem;
+            }
+            
+            .learning-paths {
+                grid-template-columns: 1fr;
+            }
+            
+            .lessons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-code"></i> AIDEV Learning</h1>
+            <p>Học code từ các file thực tế trong dự án AIDEV</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="home">
+                    <i class="fas fa-home"></i> Trang chủ
+                </button>
+                <button class="nav-tab" data-section="python-basic">
+                    <i class="fab fa-python"></i> Python Cơ Bản
+                </button>
+                <button class="nav-tab" data-section="python-oop">
+                    <i class="fas fa-cube"></i> Python OOP
+                </button>
+                <button class="nav-tab" data-section="web-dev">
+                    <i class="fas fa-globe"></i> Web Development
+                </button>
+                <button class="nav-tab" data-section="data-science">
+                    <i class="fas fa-chart-bar"></i> Data Science
+                </button>
+                <button class="nav-tab" data-section="ai-agents">
+                    <i class="fas fa-robot"></i> AI Agents
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="welcome-section">
+                    <h2>Chào mừng đến với AIDEV Learning!</h2>
+                    <p>Khám phá các bài học code thực tế từ dự án AIDEV. Mỗi bài học đều có file code thực tế để bạn học và thực hành.</p>
+                </div>
+
+                <div class="learning-paths">
+                    <div class="path-card" onclick="switchSection('python-basic')">
+                        <div class="path-header">
+                            <div class="path-icon python">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="path-title">Python Cơ Bản</div>
+                        </div>
+                        <div class="path-desc">
+                            Học Python từ cơ bản: biến, cấu trúc điều khiển, hàm và xử lý file. Dựa trên các file thực tế trong thư mục learning/01_basic_programming.
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('python-oop')">
+                        <div class="path-header">
+                            <div class="path-icon oop">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="path-title">Python OOP</div>
+                        </div>
+                        <div class="path-desc">
+                            Học lập trình hướng đối tượng với Python: classes, inheritance, encapsulation. Dựa trên các file trong learning/python_basics/02_oop.
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('web-dev')">
+                        <div class="path-header">
+                            <div class="path-icon web">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="path-title">Web Development</div>
+                        </div>
+                        <div class="path-desc">
+                            Học phát triển web với các công nghệ hiện đại. Dựa trên các file trong learning/02_web_development.
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('data-science')">
+                        <div class="path-header">
+                            <div class="path-icon data">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="path-title">Data Science</div>
+                        </div>
+                        <div class="path-desc">
+                            Khám phá khoa học dữ liệu và machine learning. Dựa trên các file trong learning/04_data_science và learning/05_machine_learning.
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="path-card" onclick="switchSection('ai-agents')">
+                        <div class="path-header">
+                            <div class="path-icon agents">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="path-title">AI Agents</div>
+                        </div>
+                        <div class="path-desc">
+                            Học về AI agents và autonomous systems. Dựa trên các file trong learning/09_ai_agents và ai_system/agents.
+                        </div>
+                        <div class="path-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-play"></i> Bắt đầu học
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Python Basic Section -->
+            <section id="python-basic" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fab fa-python"></i> Python Cơ Bản</h2>
+                    <p>Học Python từ các file thực tế trong thư mục learning/01_basic_programming/python_basics</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="viewCode('python-basic', 'variables')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">01_variables.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về biến và kiểu dữ liệu trong Python. File thực tế: learning/01_basic_programming/python_basics/01_variables.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('python-basic', 'control')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">02_control_structures.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về cấu trúc điều khiển: if-else, loops. File thực tế: learning/01_basic_programming/python_basics/02_control_structures.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty easy">Dễ</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('python-basic', 'functions')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">03_functions.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về hàm và cách tổ chức code. File thực tế: learning/01_basic_programming/python_basics/03_functions.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('python-basic', 'files')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">04_file_handling.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học cách đọc và ghi file trong Python. File thực tế: learning/01_basic_programming/python_basics/04_file_handling.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Python OOP Section -->
+            <section id="python-oop" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-cube"></i> Python OOP</h2>
+                    <p>Học lập trình hướng đối tượng với Python</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="viewCode('python-oop', 'classes')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">classes.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về classes và objects trong Python. File thực tế: learning/python_basics/02_oop/classes.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('python-oop', 'inheritance')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">inheritance.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về inheritance và polymorphism. File thực tế: learning/python_basics/02_oop/inheritance.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('python-oop', 'encapsulation')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">encapsulation.py</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về encapsulation và access modifiers. File thực tế: learning/python_basics/02_oop/encapsulation.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Development Section -->
+            <section id="web-dev" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-globe"></i> Web Development</h2>
+                    <p>Học phát triển web với các công nghệ hiện đại</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="viewCode('web-dev', 'rest-api')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">REST API</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về REST API development. Thư mục: learning/02_web_development/backend/01_rest_api
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('web-dev', 'graphql')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">GraphQL</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về GraphQL. Thư mục: learning/02_web_development/backend/02_graphql
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('web-dev', 'websockets')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">WebSockets</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về WebSockets và real-time communication. Thư mục: learning/02_web_development/backend/03_websockets
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('web-dev', 'microservices')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Microservices</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về microservices architecture. Thư mục: learning/02_web_development/backend/04_microservices
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Science Section -->
+            <section id="data-science" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-chart-bar"></i> Data Science</h2>
+                    <p>Khám phá khoa học dữ liệu và machine learning</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="viewCode('data-science', 'data-analysis')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Data Analysis</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học phân tích dữ liệu. Thư mục: learning/04_data_science/data_analysis
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('data-science', 'statistics')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Statistics</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học thống kê cơ bản. Thư mục: learning/04_data_science/statistics
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('data-science', 'visualization')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Data Visualization</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học trực quan hóa dữ liệu. Thư mục: learning/04_data_science/visualization
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty medium">Trung bình</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('data-science', 'machine-learning')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Machine Learning</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học machine learning. Thư mục: learning/05_machine_learning
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>Thư mục thực tế</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Agents Section -->
+            <section id="ai-agents" class="content-section">
+                <button class="back-btn" onclick="switchSection('home')">
+                    <i class="fas fa-arrow-left"></i> Quay lại trang chủ
+                </button>
+                
+                <div class="welcome-section">
+                    <h2><i class="fas fa-robot"></i> AI Agents</h2>
+                    <p>Học về AI agents và autonomous systems</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card" onclick="viewCode('ai-agents', 'base-agent')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Base Agent</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về base agent architecture. File thực tế: ai_system/agents/base_agent.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('ai-agents', 'learning-agent')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Learning Agent</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về learning agent. File thực tế: ai_system/agents/learning_agent.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('ai-agents', 'chat-agent')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Chat Agent</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về chat agent. File thực tế: ai_system/agents/chat_agent.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card" onclick="viewCode('ai-agents', 'task-agent')">
+                        <div class="lesson-header">
+                            <i class="fas fa-code"></i>
+                            <div class="lesson-title">Task Agent</div>
+                        </div>
+                        <div class="lesson-desc">
+                            Học về task agent. File thực tế: ai_system/agents/task_agent.py
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="difficulty hard">Khó</span>
+                            <span>File thực tế</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Simple Learning Application
+        class SimpleLearning {
+            constructor() {
+                this.currentSection = 'home';
+                this.codeFiles = {
+                    'python-basic': {
+                        'variables': '../learning/01_basic_programming/python_basics/01_variables.py',
+                        'control': '../learning/01_basic_programming/python_basics/02_control_structures.py',
+                        'functions': '../learning/01_basic_programming/python_basics/03_functions.py',
+                        'files': '../learning/01_basic_programming/python_basics/04_file_handling.py'
+                    },
+                    'python-oop': {
+                        'classes': '../learning/python_basics/02_oop/classes.py',
+                        'inheritance': '../learning/python_basics/02_oop/inheritance.py',
+                        'encapsulation': '../learning/python_basics/02_oop/encapsulation.py'
+                    },
+                    'ai-agents': {
+                        'base-agent': '../ai_system/agents/base_agent.py',
+                        'learning-agent': '../ai_system/agents/learning_agent.py',
+                        'chat-agent': '../ai_system/agents/chat_agent.py',
+                        'task-agent': '../ai_system/agents/task_agent.py'
+                    }
+                };
+                
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+            }
+
+            setupEventListeners() {
+                // Navigation tabs
+                document.querySelectorAll('.nav-tab').forEach(tab => {
+                    tab.addEventListener('click', (e) => {
+                        const section = e.currentTarget.dataset.section;
+                        this.switchSection(section);
+                    });
+                });
+            }
+
+            switchSection(sectionName) {
+                // Update navigation
+                document.querySelectorAll('.nav-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelector(`[data-section="${sectionName}"]`).classList.add('active');
+
+                // Update content sections
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionName).classList.add('active');
+
+                this.currentSection = sectionName;
+            }
+
+            async viewCode(section, lessonId) {
+                const filePath = this.codeFiles[section]?.[lessonId];
+                if (!filePath) {
+                    // For sections without direct file mapping, show directory info
+                    this.showDirectoryInfo(section, lessonId);
+                    return;
+                }
+
+                try {
+                    const response = await fetch(filePath);
+                    if (!response.ok) {
+                        throw new Error('File không tìm thấy');
+                    }
+                    
+                    const code = await response.text();
+                    this.showCodeModal(lessonId, code, filePath);
+                } catch (error) {
+                    console.error('Error loading file:', error);
+                    this.showDirectoryInfo(section, lessonId);
+                }
+            }
+
+            showDirectoryInfo(section, lessonId) {
+                const directoryMap = {
+                    'web-dev': {
+                        'rest-api': 'learning/02_web_development/backend/01_rest_api',
+                        'graphql': 'learning/02_web_development/backend/02_graphql',
+                        'websockets': 'learning/02_web_development/backend/03_websockets',
+                        'microservices': 'learning/02_web_development/backend/04_microservices'
+                    },
+                    'data-science': {
+                        'data-analysis': 'learning/04_data_science/data_analysis',
+                        'statistics': 'learning/04_data_science/statistics',
+                        'visualization': 'learning/04_data_science/visualization',
+                        'machine-learning': 'learning/05_machine_learning'
+                    }
+                };
+
+                const dirPath = directoryMap[section]?.[lessonId];
+                if (dirPath) {
+                    this.showDirectoryModal(lessonId, dirPath);
+                } else {
+                    alert('Thông tin chưa có sẵn hoặc đang được cập nhật!');
+                }
+            }
+
+            showDirectoryModal(title, dirPath) {
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.8);
+                    z-index: 1000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                `;
+
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background: white;
+                    border-radius: 12px;
+                    max-width: 600px;
+                    width: 100%;
+                    overflow: hidden;
+                `;
+
+                const modalHeader = document.createElement('div');
+                modalHeader.style.cssText = `
+                    background: #667eea;
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                `;
+                modalHeader.innerHTML = `
+                    <h3>${title}</h3>
+                    <button onclick="this.closest('.modal').remove()" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">×</button>
+                `;
+
+                const modalBody = document.createElement('div');
+                modalBody.style.cssText = `
+                    padding: 2rem;
+                `;
+
+                modalBody.innerHTML = `
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <i class="fas fa-folder-open" style="font-size: 3rem; color: #667eea; margin-bottom: 1rem;"></i>
+                        <h4>Thư mục học tập</h4>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <strong>Đường dẫn:</strong> ${dirPath}
+                    </div>
+                    
+                    <p style="color: #6c757d; line-height: 1.6;">
+                        Đây là thư mục chứa các file và tài liệu học tập thực tế. 
+                        Bạn có thể mở thư mục này trong code editor để xem và học từ các file code thực tế.
+                    </p>
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <button onclick="window.open('file://${dirPath}', '_blank')" style="background: #667eea; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer; margin-right: 1rem;">
+                            <i class="fas fa-folder-open"></i> Mở thư mục
+                        </button>
+                        <button onclick="this.closest('.modal').remove()" style="background: #6c757d; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; cursor: pointer;">
+                            <i class="fas fa-times"></i> Đóng
+                        </button>
+                    </div>
+                `;
+
+                modalContent.appendChild(modalHeader);
+                modalContent.appendChild(modalBody);
+                modal.appendChild(modalContent);
+                modal.className = 'modal';
+
+                document.body.appendChild(modal);
+
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.remove();
+                    }
+                });
+            }
+
+            showCodeModal(title, code, filePath) {
+                // Create modal
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.8);
+                    z-index: 1000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                `;
+
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background: white;
+                    border-radius: 12px;
+                    max-width: 90%;
+                    max-height: 90%;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                `;
+
+                const modalHeader = document.createElement('div');
+                modalHeader.style.cssText = `
+                    background: #667eea;
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                `;
+                modalHeader.innerHTML = `
+                    <h3>${title}</h3>
+                    <button onclick="this.closest('.modal').remove()" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">×</button>
+                `;
+
+                const modalBody = document.createElement('div');
+                modalBody.style.cssText = `
+                    padding: 1rem;
+                    overflow-y: auto;
+                    flex: 1;
+                `;
+
+                // Add file path info
+                const fileInfo = document.createElement('div');
+                fileInfo.style.cssText = `
+                    background: #f8f9fa;
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                    margin-bottom: 1rem;
+                    font-family: monospace;
+                    font-size: 0.9rem;
+                    color: #666;
+                `;
+                fileInfo.textContent = `File: ${filePath}`;
+
+                // Add code viewer
+                const codeViewer = document.createElement('div');
+                codeViewer.className = 'code-viewer';
+                codeViewer.innerHTML = `<pre>${this.highlightCode(code)}</pre>`;
+
+                modalBody.appendChild(fileInfo);
+                modalBody.appendChild(codeViewer);
+
+                modalContent.appendChild(modalHeader);
+                modalContent.appendChild(modalBody);
+                modal.appendChild(modalContent);
+                modal.className = 'modal';
+
+                document.body.appendChild(modal);
+
+                // Close on background click
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.remove();
+                    }
+                });
+            }
+
+            highlightCode(code) {
+                // Simple syntax highlighting
+                return code
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/(".*?")/g, '<span class="string">$1</span>')
+                    .replace(/(#.*)/g, '<span class="comment">$1</span>')
+                    .replace(/\b(def|class|import|from|if|else|elif|for|while|try|except|finally|with|as|return|True|False|None)\b/g, '<span class="keyword">$1</span>');
+            }
+        }
+
+        // Global functions
+        function switchSection(sectionName) {
+            app.switchSection(sectionName);
+        }
+
+        function viewCode(section, lessonId) {
+            app.viewCode(section, lessonId);
+        }
+
+        // Initialize app
+        let app;
+        document.addEventListener('DOMContentLoaded', () => {
+            app = new SimpleLearning();
+        });
+    </script>
+</body>
+</html> 

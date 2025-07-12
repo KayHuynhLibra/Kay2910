@@ -1,0 +1,102 @@
+# Backup Configuration cho MLOps System
+
+# Database Backup
+database:
+  enabled: true
+  schedule: "0 0 * * *"  # Chạy mỗi ngày lúc 00:00
+  retention:
+    daily: 7  # Giữ 7 bản backup hàng ngày
+    weekly: 4  # Giữ 4 bản backup hàng tuần
+    monthly: 3  # Giữ 3 bản backup hàng tháng
+  storage:
+    type: "s3"  # Loại storage (s3, gcs, azure)
+    bucket: "mlops-backups"
+    path: "database/"
+  compression:
+    enabled: true
+    format: "gzip"
+    level: 6  # Compression level (1-9)
+
+# Model Backup
+model:
+  enabled: true
+  schedule: "0 */6 * * *"  # Chạy mỗi 6 giờ
+  retention:
+    versions: 10  # Số lượng phiên bản model giữ lại
+    days: 30  # Số ngày giữ backup
+  storage:
+    type: "s3"
+    bucket: "mlops-backups"
+    path: "models/"
+  include:
+    - "model_files"
+    - "configurations"
+    - "metadata"
+    - "metrics"
+
+# Data Backup
+data:
+  enabled: true
+  schedule: "0 */12 * * *"  # Chạy mỗi 12 giờ
+  retention:
+    days: 90  # Số ngày giữ backup
+  storage:
+    type: "s3"
+    bucket: "mlops-backups"
+    path: "data/"
+  include:
+    - "raw_data"
+    - "processed_data"
+    - "external_data"
+  exclude:
+    - "temp_files"
+    - "cache"
+
+# Log Backup
+logs:
+  enabled: true
+  schedule: "0 0 * * *"  # Chạy mỗi ngày
+  retention:
+    days: 365  # Số ngày giữ logs
+  storage:
+    type: "s3"
+    bucket: "mlops-backups"
+    path: "logs/"
+  include:
+    - "application_logs"
+    - "error_logs"
+    - "audit_logs"
+    - "performance_logs"
+
+# Backup Verification
+verification:
+  enabled: true
+  schedule: "0 1 * * *"  # Chạy mỗi ngày lúc 01:00
+  checks:
+    - "integrity_check"
+    - "restore_test"
+    - "data_validation"
+  notification:
+    on_success: true
+    on_failure: true
+    channels:
+      - "email"
+      - "slack"
+
+# Disaster Recovery
+disaster_recovery:
+  enabled: true
+  rpo: 3600  # Recovery Point Objective (1 giờ)
+  rto: 7200  # Recovery Time Objective (2 giờ)
+  regions:
+    - "us-east-1"
+    - "us-west-1"
+  failover:
+    automatic: true
+    manual_approval: true
+  testing:
+    schedule: "0 0 1 * *"  # Chạy mỗi tháng
+    include:
+      - "full_restore"
+      - "point_in_time_restore"
+      - "cross_region_restore" 
